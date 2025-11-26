@@ -1,2 +1,5 @@
 #directorio de dependencias de Node
-node_modules/
+node_modules
+
+#directorio de docusaurus que NO debe ser modificado por mi.
+.docusaurus

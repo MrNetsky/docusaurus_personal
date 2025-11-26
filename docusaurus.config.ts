@@ -25,7 +25,7 @@ const config: Config = {
   organizationName: 'MrNetsky', // Usually your GitHub org/user name.
   projectName: 'docusaurus_personal', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -100,48 +100,48 @@ const config: Config = {
       links: [
         {
           title: 'Docs',
-          items: [
-            {
-              label: 'Instalación de LazyVim',
-              to: 'https://github.com/MrNetsky/docusaurus_personal/docs/Instalación LNVim',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/pablo-acosta-cuestas-88426828a/',
-            },
-
-            {
-              label: 'X',
-              href: 'https://x.com/PablitooAC97',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'https://github.com/MrNetsky/docusaurus_personal/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/MrNetsky',
-            },
-          ],
+        //items: [
+          {
+          //label: 'Instalación de LazyVim',
+          //to: 'https://github.com/MrNetsky/docusaurus_personal/docs/Instalación LNVim',
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-  } satisfies Preset.ThemeConfig,
+      {
+  title: 'Community',
+    items: [
+      {
+        label: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/pablo-acosta-cuestas-88426828a/',
+      },
+
+      {
+        label: 'X',
+        href: 'https://x.com/PablitooAC97',
+      },
+    ],
+      },
+{
+  title: 'More',
+    items: [
+      {
+        //label: 'Blog',
+        //to: 'https://github.com/MrNetsky/docusaurus_personal/blog',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/MrNetsky',
+      },
+    ],
+      },
+    ],
+copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+  },
+prism: {
+  theme: prismThemes.github,
+    darkTheme: prismThemes.dracula,
+  },
+} satisfies Preset.ThemeConfig,
 };
 
 export default config;
