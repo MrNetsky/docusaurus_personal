@@ -3,55 +3,61 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    path: '/docusaurus_personal/__docusaurus/debug',
+    component: ComponentCreator('/docusaurus_personal/__docusaurus/debug', '208'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    path: '/docusaurus_personal/__docusaurus/debug/config',
+    component: ComponentCreator('/docusaurus_personal/__docusaurus/debug/config', '4a1'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    path: '/docusaurus_personal/__docusaurus/debug/content',
+    component: ComponentCreator('/docusaurus_personal/__docusaurus/debug/content', '9a9'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    path: '/docusaurus_personal/__docusaurus/debug/globalData',
+    component: ComponentCreator('/docusaurus_personal/__docusaurus/debug/globalData', '140'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    path: '/docusaurus_personal/__docusaurus/debug/metadata',
+    component: ComponentCreator('/docusaurus_personal/__docusaurus/debug/metadata', '688'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    path: '/docusaurus_personal/__docusaurus/debug/registry',
+    component: ComponentCreator('/docusaurus_personal/__docusaurus/debug/registry', '306'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    path: '/docusaurus_personal/__docusaurus/debug/routes',
+    component: ComponentCreator('/docusaurus_personal/__docusaurus/debug/routes', '1e7'),
     exact: true
   },
   {
-    path: '/docs',
-    component: ComponentCreator('/docs', '2b2'),
+    path: '/docusaurus_personal/docs',
+    component: ComponentCreator('/docusaurus_personal/docs', '85d'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', 'f39'),
+        path: '/docusaurus_personal/docs',
+        component: ComponentCreator('/docusaurus_personal/docs', '4d9'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', '980'),
+            path: '/docusaurus_personal/docs',
+            component: ComponentCreator('/docusaurus_personal/docs', '54f'),
             routes: [
               {
-                path: '/docs/Instalación LNVim',
-                component: ComponentCreator('/docs/Instalación LNVim', 'f34'),
+                path: '/docusaurus_personal/docs/Instalación LNVim',
+                component: ComponentCreator('/docusaurus_personal/docs/Instalación LNVim', '293'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docusaurus_personal/docs/intro',
+                component: ComponentCreator('/docusaurus_personal/docs/intro', 'd2f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -62,8 +68,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', 'e5f'),
+    path: '/docusaurus_personal/',
+    component: ComponentCreator('/docusaurus_personal/', '7d8'),
     exact: true
   },
   {

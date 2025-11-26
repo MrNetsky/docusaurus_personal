@@ -1,69 +1,73 @@
 {
-  "/__docusaurus/debug-5ff": {
+  "/docusaurus_personal/__docusaurus/debug-208": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "plugin---docusaurus-personal-docusaurus-debugb-38-566"
     }
   },
-  "/__docusaurus/debug/config-5ba": {
+  "/docusaurus_personal/__docusaurus/debug/config-4a1": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "plugin---docusaurus-personal-docusaurus-debugb-38-566"
     }
   },
-  "/__docusaurus/debug/content-a2b": {
+  "/docusaurus_personal/__docusaurus/debug/content-9a9": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "plugin---docusaurus-personal-docusaurus-debugb-38-566"
     },
-    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+    "__props": "__props---docusaurus-personal-docusaurus-debug-content-013-a00"
   },
-  "/__docusaurus/debug/globalData-c3c": {
+  "/docusaurus_personal/__docusaurus/debug/globalData-140": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "plugin---docusaurus-personal-docusaurus-debugb-38-566"
     }
   },
-  "/__docusaurus/debug/metadata-156": {
+  "/docusaurus_personal/__docusaurus/debug/metadata-688": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "plugin---docusaurus-personal-docusaurus-debugb-38-566"
     }
   },
-  "/__docusaurus/debug/registry-88c": {
+  "/docusaurus_personal/__docusaurus/debug/registry-306": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "plugin---docusaurus-personal-docusaurus-debugb-38-566"
     }
   },
-  "/__docusaurus/debug/routes-000": {
+  "/docusaurus_personal/__docusaurus/debug/routes-1e7": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
+      "plugin": "plugin---docusaurus-personal-docusaurus-debugb-38-566"
     }
   },
-  "/docs-2b2": {
+  "/docusaurus_personal/docs-85d": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "plugin---docsaba-d7c"
+      "plugin": "plugin---docusaurus-personal-docsaba-71a"
     }
   },
-  "/docs-f39": {
+  "/docusaurus_personal/docs-4d9": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docs-005-788"
+    "__props": "__props---docusaurus-personal-docs-7-d-8-8c0"
   },
-  "/docs-980": {
+  "/docusaurus_personal/docs-54f": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/docs/Instalación LNVim-f34": {
+  "/docusaurus_personal/docs/Instalación LNVim-293": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-instalacion-ln-vimee-3-71d"
+    "content": "content---docusaurus-personal-docs-instalacion-ln-vimee-3-232"
   },
-  "/-e5f": {
+  "/docusaurus_personal/docs/intro-d2f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docusaurus-personal-docs-intro-0-e-3-d2d"
+  },
+  "/docusaurus_personal/-7d8": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---a-74-9d6"
+      "plugin": "plugin---docusaurus-personal-a-74-b4d"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "config---docusaurus-personal-5-e-9-b30"
   }
 }

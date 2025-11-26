@@ -1,18 +1,23 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/docusaurus_personal/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/docusaurus_personal/docs",
           "mainDocId": "Instalación LNVim",
           "docs": [
             {
               "id": "Instalación LNVim",
-              "path": "/docs/Instalación LNVim",
+              "path": "/docusaurus_personal/docs/Instalación LNVim",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docusaurus_personal/docs/intro",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -20,7 +25,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/Instalación LNVim",
+                "path": "/docusaurus_personal/docs/Instalación LNVim",
                 "label": "Instalación LNVim"
               }
             }

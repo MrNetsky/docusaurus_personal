@@ -13,8 +13,8 @@
       "calendar": "gregory",
       "path": "es",
       "translate": false,
-      "url": "https://your-docusaurus-site.example.com",
-      "baseUrl": "/"
+      "url": "https://MrNetsky.github.io",
+      "baseUrl": "/docusaurus_personal/"
     }
   }
 }

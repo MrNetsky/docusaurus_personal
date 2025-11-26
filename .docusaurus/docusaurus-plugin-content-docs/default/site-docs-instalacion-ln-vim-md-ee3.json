@@ -5,12 +5,16 @@
   "source": "@site/docs/Instalación LNVim.md",
   "sourceDirName": ".",
   "slug": "/Instalación LNVim",
-  "permalink": "/docs/Instalación LNVim",
+  "permalink": "/docusaurus_personal/docs/Instalación LNVim",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/Instalación LNVim.md",
+  "editUrl": "https://github.com/MrNetsky/docusaurus_personal/tree/main/docs/Instalación LNVim.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
-  "sidebar": "tutorialSidebar"
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "intro",
+    "permalink": "/docusaurus_personal/docs/intro"
+  }
 }

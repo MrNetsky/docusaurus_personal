@@ -28,10 +28,10 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "url": "https://MrNetsky.github.io",
+  "baseUrl": "/docusaurus_personal/",
+  "organizationName": "MrNetsky",
+  "projectName": "docusaurus_personal",
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "es",
@@ -47,7 +47,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.ts",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/MrNetsky/docusaurus_personal/tree/main/"
         },
         "blog": {
           "showReadingTime": true,
@@ -95,7 +95,7 @@ export default {
           "position": "left"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/MrNetsky/docusaurus_personal",
           "label": "GitHub",
           "position": "right"
         }
@@ -110,7 +110,7 @@ export default {
           "items": [
             {
               "label": "Instalación de LazyVim",
-              "to": "/docs/Instalación LNVim"
+              "to": "https://github.com/MrNetsky/docusaurus_personal/docs/Instalación LNVim"
             }
           ]
         },
@@ -118,16 +118,12 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
+              "label": "LinkedIn",
+              "href": "https://www.linkedin.com/in/pablo-acosta-cuestas-88426828a/"
             },
             {
               "label": "X",
-              "href": "https://x.com/docusaurus"
+              "href": "https://x.com/PablitooAC97"
             }
           ]
         },
@@ -140,7 +136,7 @@ export default {
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/MrNetsky"
             }
           ]
         }
