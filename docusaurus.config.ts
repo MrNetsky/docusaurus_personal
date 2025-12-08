@@ -52,11 +52,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -106,7 +101,7 @@ const config: Config = {
           title: 'Social',
           items: [
             {
-              label: 'LinkeIn',
+              label: 'LinkedIn',
               href: 'https://www.linkedin.com/pablo-acosta-cuestas-88426828a/',
             },
             {
