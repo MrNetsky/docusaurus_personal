@@ -1,9 +1,11 @@
 Instalación de LazyVim
 ======================
 
-:::danger ATENCIÓN
-Este documento aún está en construcción, falta terminar el apartado de la instalación de NeoVim y la instalación de lazyvim. Cuando esté terminado esta etiquete se eliminará
-:::
+{/* 
+Esto es un comentario para el código JavaScript/JSX/React. No es un comentario de Markdown. ¿Entonces por qué lo hago de esta manera? Pues el entorno de Docusaurus se ejecta en JS/JSX/React.
+*/}
+
+<!-- Pero así también puedo acotar y diría que es mejor. -->
 
 Mi motivación en aprender a usar esta herramienta surge desde la necesidad de utilizar una notebook vieja. Debido a sus limitaciones, pese a que puedo instalar y utilizar VSCode, no es práctico, por su extrema lentitud, obviamente por las limitaciones propias de este hardware.
 
@@ -34,7 +36,7 @@ Si bien el orden NO es estrictamente necesario, yo lo hice así y recomiendo que
     + fdfind
     + ripgrep
 8. lazygit
-
+9. lazyvim
 Antes de empezar con todo esto, utilizar:
 
 ```bash
@@ -54,6 +56,30 @@ sudo apt install neovim
 
 Es probable que instale un versión más antigua, pero estable. En mi caso fue la 0.9.5, por lo que ahí debo cambiar la versión que descarga. Yo tengo instalado la 0.12.0 que es la última, pero no necesariamente debes descargar ésta. Fue la que pude instalar y de momento me es útil. El procedimineto es el siguiente:
 
+Modificar el PPA.
+
+```bash
+sudo add-apt-repository ppa:neovim-ppa/stable
+```
+:::info Personal Package Archive
+Ó Archivo personal de paquetes (PPA) es un repositorio de terceros que permite distribuir versiones de software más recientes que las disponibles en los repositorios de Mint o Ubuntu. Modificarlo me permitió descargar la última versión de NeoVim.
+:::
+Actualizar el índice de paquetes.
+
+```bash
+sudo apt update
+```
+
+Instalar.
+
+```bash
+sudo apt install neovim
+```
+
+Verifica la versión. Si te devuelve 0.12.0 es porque se ha instalado correctamente.
+```bash
+nvim --version
+```
 
 
 ### Instalación git
@@ -216,9 +242,7 @@ echo $PATH
 sudo ln -s /usr/bin/fdfind /usr/local/bin/fd 
 ```
 
-
 ### Instalación de lazygit
-
 
 :::tip NOTA
 Esta instalación es OPCIONAL
@@ -269,5 +293,54 @@ Finalmente chequearemos la versión para serciorarnos de que la instalación se 
 ```bash
 lazygit --version
 ```
+
+### Instalación de lazyvim
+
+Hacer una copia de seguridad de mis archivos actuales de NeoVim. Vease que los 3 que están separados, NO son obligatorios, pero si recomendables.
+
+```bash
+mv ~/.config/nvim{,.bak}
+
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+```
+Clonar el motor de arranque:
+
+```bash
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+```
+Elimina la carpeta .git para que puedas agregarla a tu propio repositorio más tarde.
+
+```bash
+rm -rf ~/.config/nvim/.git
+```
+
+¡Empieza Neovim!
+
+```bash
+nvim
+```
+
+----
+
+Y luego de todo este procedimiento tenemos finalmente configurado nuestro IDE, espero te haya gustado y sevido esta guía, posteriormente haremos un tutorial sobre el uso de esta magnífica herramienta que seguramente podrás ver por aquí también, sin nada más para agregar, ¡hasta pronto!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
