@@ -37,7 +37,7 @@ Notese la diferencia entre uno y otro. El 1ro da error, porque cuando trabajas e
 
 </div>
 
-**Proceso de elección**
+## Proceso de elección
 
 :::warning ADVERTENCIA:
 Nuestra elección de dispositivos y cantidades están dirigidas a los combatiententes del fuego, a las situaciones que deben afrontar y a nuestras creencias sobre las necesidades que deben estar cubiertas.
@@ -58,7 +58,7 @@ Se decidió inicialmente conformar un kit de 4 nodos portátiles, 2 tipo tarjeta
 
 Otros factores que influyeron en la desición fueron la necesidad de testear al menos un dispositivo de cada una de las empresas manufactureras (que si te interean saber cuales son [*aquí*](/blog/fabricantes-ensambladores) puedes verlas). También fue de nuestro intrés usar distintos lugares de compra (sitio web propietario de la empresa, o sitios externos de reventa, como AliExpress o Amazon) con el fin de conseguir dispositivos en stock, comparar precios, costos(de envío, impuestos o algún otro costo extra), tiempos estimados de llegada, así como tiempos reales y cotejar los diferentes couriers disponibles (FedEx, DHL, UPS, etc.)
 
-**Proceso de compra**
+## Proceso de compra
 
 Se definieron en primer lugar, los sitios de compra. Poteriormente algunos tuvieron que variar por su falta de stock o por errores nuestros al intentar armar la ingeniería de envío, dándonos cuenta al momento de la compra que el sitio web NO hace envíos a Argentina. Errores de los cuales nos hemos reido y aprendido.
 
