@@ -19,5 +19,6 @@ Este apartado **NO** sigue un órden lógico, al menos no de momento. Ya que voy
 + space + e --> Abre el explorador
 + ctrl + 'h' ó 'l' --> Para alternar entre el explorador y la ventana activa.
 + ':' + 'q' --> Para cerrar el explorador. IMPORTANTE: tener activo el explorador, de lo contrario cerrará lo que encuentre activo. ¿Es este el método correcto? No lo sé, pero funciona.
++ esc --> Para cerrar el explorador, solamente tenés que estar situado en él, no hagas la boludes de ahí arriba.
 
 + shift + 'h' ó 'l' --> Para scrollear entre las ventanas actívas. IMPORTANTE: Este scroll no incluye al explorador y no tiene tope, ya que si tienes dos documentos abiertos y haces dos veces shift + 'l' volverás al mismo documento del que partíste. 

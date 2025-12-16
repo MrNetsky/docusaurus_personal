@@ -7,7 +7,6 @@ tags: [dispositivos]
 
 # El ecosistema Meshtastic: De los fabricantes de módulos a los ensambladores de dispositivos
 
-
 El ecosistema de dispositivos LoRa enfocado en las comunicaciones descentralizadas se encuentra en un proceso de rápido desarrollo e innovación. En este contexto, la tecnología Meshtastic ha revolucionado la comunicación de largo alcance fuera de la red, permitiendo que pequeños dispositivos de radio LoRa (Long Range) creen redes de malla descentralizadas y seguras, independientemente de la infraestructura celular o Wi-Fi.
 
 En esta etapa de maduración, hemos identificado a dos actores fundamentales cuya relación define el hardware disponible en el mercado:
@@ -38,7 +37,6 @@ Destaca por la innovación y la variedad de factores de forma (como smartwatches
 Enfoque en la calidad industrial y módulos de bajo consumo, con un fuerte soporte para la comunidad LoRaWAN y Meshtastic.
 * [*Seedstudio:*](https://www.seeedstudio.com/)
 Provee soluciones completas de hardware y módulos, muy populares por su línea SenseCAP, que incluyen trackers y dispositivos fijos.
-
 
 **Ensambladores**
 
