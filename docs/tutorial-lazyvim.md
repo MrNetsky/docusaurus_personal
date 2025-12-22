@@ -16,9 +16,25 @@ Este documento se encontrará en constante actualización.
 Este apartado **NO** sigue un órden lógico, al menos no de momento. Ya que voy anotando lo que me parece útil y a medida que lo voy aprendiendo, pero si en un futuro esto cmaio, verá esta etiqueta modificada o directamente no la verá
 :::
 
-+ space + e --> Abre el explorador
-+ ctrl + 'h' ó 'l' --> Para alternar entre el explorador y la ventana activa.
-+ ':' + 'q' --> Para cerrar el explorador. IMPORTANTE: tener activo el explorador, de lo contrario cerrará lo que encuentre activo. ¿Es este el método correcto? No lo sé, pero funciona.
-+ esc --> Para cerrar el explorador, solamente tenés que estar situado en él, no hagas la boludes de ahí arriba.
+**Insert + salto de linea**
+> 'o'
 
-+ shift + 'h' ó 'l' --> Para scrollear entre las ventanas actívas. IMPORTANTE: Este scroll no incluye al explorador y no tiene tope, ya que si tienes dos documentos abiertos y haces dos veces shift + 'l' volverás al mismo documento del que partíste. 
+**Explorador**
+> space + e
+
+**Srcoll entre el explorador y el buffer activo**
+> ctrl + 'h' ó 'l'
+
+**Scroll entre buffers**
+> shift + 'h' ó 'l' IMPORTANTE: Este scroll no incluye al explorador y no tiene tope, ya que si tienes dos documentos abiertos y haces dos veces shift + 'l' volverás al mismo del que partíste. 
+
+**Cerrar el explorador** 
+> esc ó ':' + 'q' IMPORTANTE: tener activo el explorador, de lo contrario cerrará lo que encuentre activo.
+
+**Crea un archivo nuevo**
+> space + 'e' + 'a'
+
+**Cerrar un buffer (archivo abierto)**
+> space + 'b' + 'd' ó : + 'b' + 'd'
+
+

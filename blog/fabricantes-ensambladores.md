@@ -5,9 +5,10 @@ authors: [MrNetsky]
 tags: [dispositivos]
 ---
 
-# El ecosistema Meshtastic: De los fabricantes de módulos a los ensambladores de dispositivos
+# El ecosistema Meshtastic: Entre los fabricantes de módulos y los ensambladores de dispositivos
 
-El ecosistema de dispositivos LoRa enfocado en las comunicaciones descentralizadas se encuentra en un proceso de rápido desarrollo e innovación. En este contexto, la tecnología Meshtastic ha revolucionado la comunicación de largo alcance fuera de la red, permitiendo que pequeños dispositivos de radio LoRa (Long Range) creen redes de malla descentralizadas y seguras, independientemente de la infraestructura celular o Wi-Fi.
+
+El ecosistema de dispositivos LoRa (Long Range) enfocado en las comunicaciones descentralizadas se encuentra en un proceso de rápido desarrollo e innovación. En este contexto, la tecnología Meshtastic ha revolucionado la comunicación de largo alcance fuera de la red, permitiendo que pequeños dispositivos de radio LoRa  creen redes de malla descentralizadas y seguras, independientemente de la infraestructura celular o Wi-Fi.
 
 En esta etapa de maduración, hemos identificado a dos actores fundamentales cuya relación define el hardware disponible en el mercado:
 
@@ -15,7 +16,7 @@ En esta etapa de maduración, hemos identificado a dos actores fundamentales cuy
 
 + *Los Integradores o Ensambladores:* Quienes toman estos módulos base y los transforman en productos finales robustos y optimizados para el usuario.
 
-Esta distinción es crucial: el fabricante del componente principal no solo ofrece el hardware base, sino que en ocasiones también presenta dispositivos terminados listos para el usuario. Por otro lado, los integradores utilizan estos componentes para crear productos finales que aportan valor en diseño, packaging y optimización de uso. Evaluar el trabajo de cada actor requiere entender esta relación simbiótica, y qué responsabilidad tiene cada quien en el proceso de innovación, ya que unos dependen del hardware del otro para llevar sus desarrollos al mercado. continuación, exploramos los principales nombres que impulsan la adopción de Meshtastic en todo el mundo, separandolos según correspondan al grupo de fabricantes o ensambladores.
+Esta distinción es crucial: el fabricante del componente principal no solo ofrece el hardware base, sino que en ocasiones también presenta dispositivos terminados listos para el usuario. Por otro lado, los integradores utilizan estos componentes para crear productos finales que aportan valor en diseño, packaging y optimización de uso. Evaluar el trabajo de cada actor requiere entender esta relación simbiótica, y qué responsabilidad tiene cada quien en el proceso de innovación, ya que unos dependen del hardware del otro para llevar sus desarrollos al mercado. A continuación, exploramos los principales nombres que impulsan la adopción de Meshtastic en todo el mundo, sepárandolos según correspondan al grupo de fabricantes o ensambladores.
 
 :::tip NOTA:
 Aclaramos desde este espacio que hemos encontrado y valuado a estas empresas con el fin de adquirir alguno de sus productos, pero **NO** significa que sean las únicas, solamente las que hasta la fecha nosotros conocemos.
@@ -26,13 +27,13 @@ Aclaramos desde este espacio que hemos encontrado y valuado a estas empresas con
 Es fundamental destacar que estas empresas no solo suministran componentes a los Ensambladores (los segundos actores del ecosistema), sino que su participación es vital para la innovación.
 
 * [*ByQ Consulting:*](https://shop.uniteng.com/)
-Soluciones especializadas, a menudo basadas en la eficiencia energética.
+Brinda soluciones especializadas, a menudo basadas en la eficiencia energética.
 * [*Elecrow:*](https://www.elecrow.com/)
-Amplia gama de componentes, desde placas de desarrollo hasta módulos listos para integración.
+Tiene una amplia gama de componentes, desde placas de desarrollo hasta módulos listos para integración.
 * [*Heltec:*](https://heltec.org/)
-Conocido por sus productos robustos que integran LoRa, Wi-Fi y Bluetooth en módulos compactos. Actualmente se estan introduciendo al desarrolo de dispositivos que integren el nRF52
+Es conocido por sus productos robustos que integran LoRa, Wi-Fi y Bluetooth en módulos compactos. Actualmente se están introduciendo en el desarrolo de dispositivos que integren el chip nRF52.
 * [*LilyGo:*](https://lilygo.cc/)
-Destaca por la innovación y la variedad de factores de forma (como smartwatches y dispositivos tipo celular).
+Destaca por la innovación y la variedad de factores de forma como smartwatches y dispositivos tipo celular.
 * [*RAK:*](https://store.rakwireless.com/)
 Enfoque en la calidad industrial y módulos de bajo consumo, con un fuerte soporte para la comunidad LoRaWAN y Meshtastic.
 * [*Seedstudio:*](https://www.seeedstudio.com/)
@@ -42,14 +43,16 @@ Provee soluciones completas de hardware y módulos, muy populares por su línea 
 
 Si los Fabricantes nos proporcionan los cimientos tecnológicos del ecosistema Meshtastic (los módulos y chips LoRa), los Ensambladores son los arquitectos que toman esos componentes y los transforman en soluciones optimizadas, robustas y listas para el despliegue en el campo. Su rol es crucial para la adopción masiva, ya que se centran en la experiencia del usuario, la durabilidad y el factor de forma.
 
-Estos actores se especializan en la integración de hardware, añadiendo elementos esenciales como carcasas protectoras, baterías de alta capacidad, antenas calibradas y diseños ergonómicos para usos específicos (por ejemplo, entornos vehiculares, tracking discreto o comunicaciones de mano).
+Estos actores se especializan en la integración de hardware, añadiendo elementos esenciales como carcasas protectoras, baterías de alta capacidad, antenas calibradas y diseños ergonómicos para usos específicos por ejemplo, entornos vehiculares, tracking discreto o comunicaciones de mano.
+
+Estas son las marcas de ensambladores que nos llamaron la atención por sus características:
 
 * [*Atlavox:*](https://atlavox.com/)
-Dispositivos compactos y portátiles, buscando la máxima eficiencia y discreción. No son una marca económica pero tienen dispositivos interesantes, destacando su nodo fijo que al menos desde la teoría, es el mejor del mercado, pero poee un coste elevado, razón por la cual, nsotros no o hemos probado.
+Dispositivos compactos y portátiles, buscando la máxima eficiencia y discreción. No son una marca económica pero tienen dispositivos interesantes.Se destaca su nodo fijo que teoricamente, es el mejor del mercado. Nosotros no lo hemos probado aún por su costo.
 * [*CanaryOne:*](https://canaryradio.io/)
 Soluciones robustas para comunicaciones de emergencia y monitoreo.
 * [*Constellation response:*](https://constellationresponse.com/)
-Enfocado en radios MANET (Mobile Ad-hoc Network) endurecidas (ruggedized) para entornos críticos. El dispositivo portable que ofrece, es prácticamente indestructible, eso si, por un precio muy elevado. 
+Enfocado en radios MANET (Mobile Ad-hoc Network) endurecidas (ruggedized) para entornos críticos. El dispositivo portable que ofrece, es prácticamente indestructible, eso sí, por un precio muy elevado. 
 * [*Low Mesh:*](https://lowmesh.com/ )
 Proveedor de kits y soluciones asequibles, facilitando la entrada al ecosistema.
 * [*Maker Nova:*](https://makernova.io/)
@@ -57,7 +60,7 @@ Desarrollador de hardware innovador, a menudo dirigido a la comunidad maker y a 
 * [*Meshnology:*](https://meshnology.com/)
 Productos con énfasis en la ergonomía y la interfaz de usuario, como su popular modelo N37.
 * [*Spec5:*](https://specfive.com/)
-Posiblemente la marca más interesante, por el amplio aspectro de dispositivos que pueden ser usados en una variedad de escenarios, poseen precios un poco más elevados de la media, pero innovan en muchos campos, similar a los fabricantes.
+Posiblemente la marca más interesante, por el amplio espectro de dispositivos que pueden ser usados en una variedad de escenarios. Poseen precios un poco más elevados de la media, pero innovan en muchos campos, siendo así similares a los fabricantes.
 * [*Yeti Wurks:*](https://www.yetiwurks.com/)
 Enfocado en la creación de nodos de alto rendimiento, a menudo con baterías de larga duración y diseños modulares.
 
