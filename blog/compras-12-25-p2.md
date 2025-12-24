@@ -20,7 +20,11 @@ Este artículo se encuentra en proceso.
 
 
  ¿Enfoque? en c/dispositivo c/forma de envío? -->
+ 
+***Contenido:***
 
++ Cronología
++ Conclusión
 
 ## Cronología
 
@@ -49,6 +53,32 @@ Este artículo se encuentra en proceso.
 - 04/12/25 --> Compra de 3 WishMesh Tag desde AliExpress. Se estima que llegue el 25/12/25.
 - 11/12/25 --> Despacho del paquete. Envío via DHL.
 - 15/12/25 --> Ingreso a aduana + Pago de impuestos.
+- 22/12/25 --> Paquete recibido
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 513g
+    + Dimensiones:
+        + Largo: 21.5cm
+        + Ancho: 16.5cm
+        + Alto: 9.0cm
++ Paquete unitario:
+    + Peso: 121g
+    + Dimensiones:
+        + Largo: 14.5cm
+        + Ancho: 9.7cm
+        + Alto: 4.5cm
+    + Contenido:
+        + WisMesh Tag
+        + Manual
+        + Cable de carga
+        + Correa
++ WishMesh Tag:
+    + Peso: 48g
+    + Dimensiones:
+        + Largo: 9.0cm
+        + Ancho: 5.8cm
+        + Alto: 0.4cm
 
 **Compra N°2:**
 - 08/12/25 --> Compra de 3 WishMesh Tag desde RAK. Sin estimación de fecha de entrega
@@ -62,5 +92,7 @@ Este artículo se encuentra en proceso.
 ### Spec5
 - 10/12/25 --> Compra de 1 Voyager. Se estima que llegue el 22/12/25 a los depósitos de AeroBox en EEUU.
 - 18/12/25 --> Despacho del paquete. Envío vía USPS.
+- 22/12/25 --> Arribo del paquete a los depósititos de Aerobox en Miami.
+- 24/12/25 --> Solicitud de envío del paquete desde Miami a Argentina.
 
 
