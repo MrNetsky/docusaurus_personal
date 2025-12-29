@@ -30,8 +30,8 @@ Puedes hacerlo desde el gestor de archivos. Aquí solo debes buscar el pendrive,
 Una vez finalizado el proceso, puedes empezar a grabar tus juegos.
 
 - Más de 32 Gb:
-Tenes dos opciones.
-  + **Particionar el usb:** En espacios más pequeños, los que sean necesarios, dependiedo del tamaño de tu pendrive. Particularmente no he probado este método para correr los juegos, pero es sencillo particionarlo. Para elllo deberás hacer click derecho en inicio y seleccionas la opción 'Administración de discos', verás lo siguiente:
+
+Acá tenes dos opciones. Una es **particionar el usb** en espacios más pequeños, los que sean necesarios, dependiedo del tamaño de tu pendrive. Particularmente no he probado este método para correr los juegos, pero es sencillo particionarlo. Para elllo deberás hacer click derecho en inicio y seleccionas la opción 'Administración de discos', verás lo siguiente:
 <div style={{ textAlign: 'center', marginBottom: '40px' }}>
   <img 
     src={useBaseUrl("/img/PS2/admin-discos.png")}
@@ -45,6 +45,60 @@ Tenes dos opciones.
   />
 </div>
 Entonces aquí deberás seleccionar el disco, puedes ponerle nombre a la partición, aunque no es obligatorio. Si es importante que la cantidad que elijas NO supere los 30Gb y que el formato que elijas sea FAT32.
+
+<div style={{ textAlign: 'center', marginBottom: '40px' }}>
+  <img 
+    src={useBaseUrl("/img/PS2/1.png")}
+    alt="Partición del pendrive 1"
+    style={{
+      maxWidth: '100%',
+      height: 'auto',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</div>
+
+<div style={{ textAlign: 'center', marginBottom: '40px' }}>
+  <img 
+    src={useBaseUrl("/img/PS2/3.png")}
+    alt="Partición del pendrive 2"
+    style={{
+      maxWidth: '100%',
+      height: 'auto',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</div>
+
+<div style={{ textAlign: 'center', marginBottom: '40px' }}>
+  <img 
+    src={useBaseUrl("/img/PS2/5.png")}
+    alt="Partición del pendrive 3"
+    style={{
+      maxWidth: '100%',
+      height: 'auto',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</div>
+
+<div style={{ textAlign: 'center', marginBottom: '40px' }}>
+  <img 
+    src={useBaseUrl("/img/PS2/6.png")}
+    alt="Partición terminada."
+    style={{
+      maxWidth: '100%',
+      height: 'auto',
+      display: 'block',
+      margin: '0 auto'
+    }}
+  />
+</div>
+
+
 
   + **Formatearlo con Rufus**
 

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Linux for all',
-  tagline: 'Este es mi proceso de aprendizaje de Linux y de programación en general',
+  title: 'RootNode',
+  tagline: 'Explorando la tecnología: del modding retro al código moderno.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -70,7 +70,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Linux for all',
+      title: 'RootNode',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',

@@ -1,0 +1,62 @@
+
+
+Cosas a evaluar:
+- Calidad
+- Alcance
+    - Analizar si es necesario buscar una antena más potente
+- Rendimiento energético
+    - Analizar la posibilidad de buscar un powerbank
+- Comunicación 
+    - Canales de Meshtastic
+    - Configuración inicial
+    - Diferencias en este aspecto con otros dispositivos y marcas
+- Configuración de saltos 
+- Impacto de los datos telemétricos en el tráfico aereo.
+- Intercomunicación con MeshCore
+
+
+Ficha técnica:
+- Nombre
+- Marca
+- Función que cumple
+- Peso
+- Pantalla
+  - Tipo
+  - Tamaño
+- Conectividad
+  - Bluetooh
+  - WiFi
+  - GPS
+  - Sensores
+    - Especificar.
+- Interacción c/dispositivo
+  - Botones
+    - Cantidad 
+    - Funciones
+- Cerificación IP 
+- Radio y recepción
+  - Chip
+  - Antena
+    - Tipo
+    - 
+- Case:
+  - Material
+  - Puntos de fijación
+  - 
+- Firmware
+  - Versión
+  - Actualizaciones
+    - Cantidad
+    - Versión actual
+    - Dificultad
+- Energía
+  - Puerto de carga
+    - Cantidad
+    - Tipo
+  - Baterías
+    - Cantidad
+    - Tipo 
+  - Panel solar
+    - 
+
+
