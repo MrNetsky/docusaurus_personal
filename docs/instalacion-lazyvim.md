@@ -30,7 +30,9 @@ Si bien el orden NO es estrictamente necesario, yo lo hice así y recomiendo que
     + gcc/clang
     + NodeJS/npm
 5. curl
-6. alacritty
+6. Terminal
+    + alacritty
+    + ghostty
 7. fzf-lua
     + fzf
     + fdfind
@@ -44,6 +46,7 @@ sudo apt update
 sudo apt upgrade
 ```
 Esto es porque update actualiza la información sobre qué software existe y dónde encontrarlo. Mientras que upgrade previene conflictos de dependencias, mantiene la seguridad y garantiza la estabilidad.
+
 ### Instalación de NeoVim
 
 :::tip NOTA 
@@ -54,33 +57,24 @@ Es importante tener una versión a 0.11.2 o posterior.
 sudo apt install neovim
 ```
 
-Es probable que instale un versión más antigua, pero estable. En mi caso fue la 0.9.5, por lo que ahí debo cambiar la versión que descarga. Yo tengo instalado la 0.12.0 que es la última, pero no necesariamente debes descargar ésta. Fue la que pude instalar y de momento me es útil. El procedimineto es el siguiente:
-
-Modificar el PPA.
+Es probable que instale un versión más antigua, pero estable, en mi caso fue la 0.9.5, entonces lo que hice fue elegir la versión, luego descargar el archivo .appimage o .tar.gz de la siguiente <u>[**página**](https://github.com/neovim/neovim/releases)</u>. Yo en este caso elegí la versión 0.11.5 y descargaré el archivo nvim-linux-x86_64.tar.gz. Con esto listo, hacemos lo siguiente:
 
 ```bash
-sudo add-apt-repository ppa:neovim-ppa/stable
+tar xzvf nvim-linux-x86_64.tar.gz
 ```
-:::info Personal Package Archive
-Ó Archivo personal de paquetes (PPA) es un repositorio de terceros que permite distribuir versiones de software más recientes que las disponibles en los repositorios de Mint o Ubuntu. Modificarlo me permitió descargar la última versión de NeoVim.
-:::
-Actualizar el índice de paquetes.
+Una vez extraidos los datos del archivo, ya quedó listo, el siguiente código **NO** es una instalación, lo que escribiremos es una ruta de acceso:
 
 ```bash
-sudo apt update
+./nvim-linux-x86_64/bin/nvim
 ```
-
-Instalar.
-
+Aquí ya quedó funcionando, pero escribir el código anterior cada vez que querramos usar NeoVim es impráctico, por lo que procederemos a 'renombrarlo'. Lo que hace esta primera linea de código, es que cada vez que se escriba 'nvim' ejecute './nvim-linux-x86_64/bin/nvim', haciendo más cómodo el uso de NeoVim.
 ```bash
-sudo apt install neovim
+echo "alias nvim='~/Descargas/nvim-linux-x86_64/bin/nvim'" >> ~/.bashrc
 ```
-
-Verifica la versión. Si te devuelve 0.12.0 es porque se ha instalado correctamente.
+Lo que hace la segunda línea de código es ejecutar los cambios inmediatamente. Esto lo hacemos para no tener que cerrar y abrir nuevamente la terminal para que se apliquen los cambios.
 ```bash
-nvim --version
+source ~/.bashrc
 ```
-
 
 ### Instalación git
 
@@ -107,17 +101,19 @@ mv  ~/Descargas/HackNerdFont-Bold.ttf ~/.local/share/fonts/ttf/
 El proceso lo repetiremos tantas veces como NerdFont tengamos. Es importante resaltar que la carpeta fonts no existía en mi sistema por ende la tuve crear, mucho menos la carpeta ttf, la cual también cree. Use el procedimiento, pero las carpetas y sus ubicaciones pueden variar de sistema a sistema, por lo que debe tener cuidado.
 
 :::danger IMPORTANTE
-Cada editor tendrá su forma para configurar estas fuentes. Aquí sólo se verá la forma de configurarlo en Alacritty, cuya instlación podrá ver más adelante, por lo que deberá primero instalar y luego volver a esta sección.
+Cada editor tendrá su forma para configurar estas fuentes. Aquí sólo se verá la forma de configurarlo en alacritty y ghostty, cuya instlación podrá ver más adelante, por lo que deberá primero instalar y luego volver a esta sección.
 
 En caso de que usted use otra terminal, deberá buscar cómo hacer esta configuración.
 :::
 
-Será necesario ir al archivo de configuraciones de alacritty y editarlo. Yo lo hice en NeoVim, pero puedes hacerlo también en Nano
+<u>**alacritty**</u>
+
+Será necesario ir al archivo de configuraciones y editarlo. Yo lo hice en NeoVim, pero puedes hacerlo también en Nano
 
 ```bash
 nvim ~/.config/alacritty/alacritty.toml
 ```
-No olvide que la fuente aquí mencionada es la que yo elegí, pero hay otras opciones y si usted ha optado por otra, deberá modificar y usar la syua. Una vez aquí, escribiremos lo siguiente:
+No olvide que la fuente aquí mencionada es la que yo elegí, pero hay otras opciones y si usted ha optado por otra, deberá modificar y usar la suya. Una vez aquí, escribiremos lo siguiente:
 
 ```bash
 [font]
@@ -135,6 +131,19 @@ family = 'Hack Nerd Font'
 [font.italic]
 
 family = 'Hack Nerd Font'
+```
+
+<u>**ghostty**</u>
+
+Aquí la sintaxis es un poco diferente, pero en escencia es lo mismo. Por cierto, el tamaño de la letra no es necesario. Yo lo especifiqué así porque es de mi preferencia.
+```bash
+font-family = "Hack Nerd Font"
+font-style = "Regular"
+font-style-bold = "Bold"
+font-style-italic = "Italic"
+font-style-bold-italic = "Bold Italic"
+
+font-size = 13
 ```
 ### Instalación de tree-sitter-cli
 Es requisito FUNDAMENTAL tener instalado un complilador de C para que nvim-treesitter pueda instalar cualquier parser de idioma. Esto es porque tree-sitter-cli es la herramienta gestora que coordina la creación de la biblioteca del parser, mientras que el complilador de C transforma el código fuente del parser, en la biblioteca binaria que NeoVim usar para entender el código.
@@ -179,15 +188,15 @@ curl --version
 ```
 Similar que en git, simplemente es ésto.
 
-### Instalación de Alacritty
-
-:::tip NOTA
-Esta instalación es OPCIONAL
-:::
+### Instalación de una terminal nueva
 
 :::danger IMPORTANTE
-Si no descargas esta terminal, tienes que elegir otra, ya que soportan todos los colores e íconos de lazyvim y las nerdfonts. Además de ésta, se sugieren estas: kitty(Linux y MacOS), wezterm, iterm2(MacOS) y ghostty. Yo elegí esta ya que este proceso lo llevo a cabo en una notbook del 2008 y es la que menos recursos le significaban a mi equipo. 
+Si no descargas alguna de estas dos terminales, deberás elegir otra, ya que soportan todos los colores e íconos de lazyvim y las nerdfonts. Se sugieren estas: alacritty, kitty(Linux y MacOS), wezterm, iterm2(MacOS) y ghostty(Linux y MacOS).
 :::
+
+<u>**alacritty**</u>
+
+Yo elegí esta ya que este proceso lo llevo a cabo en una notbook del 2008 y es la que menos recursos le significaban a mi equipo. 
 
 El proceso es el siguiente:
 ```bash
@@ -196,6 +205,18 @@ sudo apt install alacritty
 Posteriormente corroboro la versión.
 ```bash
 alacritty --version
+```
+
+<u>**ghostty**</u>
+
+Elegí esta terminal porque me gustó lo que vi, para probarla, ya que ahora quiero instalar nuevamente lazyvim pero en una notebook más actual, una Lenovo T470s con 256Gb NVMe, 16Gb de RAM y un procesador i5 7ma gen. El proceso es sencillo y es el siguiente:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mkasberg/ghostty-ubuntu/HEAD/install.sh)"
+```
+Posteriormente corroboro la versión.
+```bash
+ghostty --version
 ```
 
 ### Instalación de fzf-lua

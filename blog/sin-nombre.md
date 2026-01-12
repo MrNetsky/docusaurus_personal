@@ -41,4 +41,4 @@ Originalmente fue creado por el gobierno británico en 1909 para facilitar la co
 3. Prioridad: Deje el canal libre si escucha un mensaje de emergencia (SOS).
 4. Estado de Batería: Reporte si su nodo entra en batería baja antes de quedar QRT. 
 
-## Criterios teóricos de posicionamiento de nodos fijosa
+## Criterios teóricos de posicionamiento de nodos fijos

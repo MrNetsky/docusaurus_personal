@@ -13,7 +13,7 @@ Este documento se encontrará en constante actualización.
 ## Comandos útiles
 
 :::info INFORMACIÓN
-Este apartado **NO** sigue un órden lógico, al menos no de momento. Ya que voy anotando lo que me parece útil y a medida que lo voy aprendiendo, pero si en un futuro esto cmaio, verá esta etiqueta modificada o directamente no la verá
+Este apartado **NO** sigue un órden lógico, al menos no de momento. Ya que voy anotando lo que me parece útil y a medida que lo voy aprendiendo, pero si en un futuro esto cambia, verá esta etiqueta modificada o directamente no la verá. 
 :::
 
 **Insert + salto de linea**
