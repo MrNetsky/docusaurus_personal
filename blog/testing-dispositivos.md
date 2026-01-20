@@ -1,20 +1,22 @@
+<u>Cosas a evaluar:</u>
 
-
-Cosas a evaluar:
 - Calidad
 - Alcance
     - Analizar si es necesario buscar una antena más potente
 - Rendimiento energético
     - Analizar la posibilidad de buscar un powerbank
 - Comunicación 
-    - Canales de Meshtastic
-    - Configuración inicial
-    - Diferencias en este aspecto con otros dispositivos y marcas
-- Configuración de saltos 
-- Impacto de los datos telemétricos en el tráfico aereo.
+  - Canales de Meshtastic
+  - Configuración inicial
+  - Diferencias en este aspecto con otros dispositivos y marcas
+  - Configuración de saltos 
+  - Impacto de los datos telemétricos en el tráfico aereo.
+  - Evaluar la potencia de salida de los diferentes dispositivos.
 - Intercomunicación con MeshCore
+- Evaluar tiempos de actualizacion y quienes llevarán a cabo este proceso.
 
-
+- ¿Es útil tener un excel con estos datos de los diferentes dispositivos?
+- De ser útil... ¿Faltan datos? ¿Sobran?
 Ficha técnica:
 - Nombre
 - Marca
@@ -57,6 +59,3 @@ Ficha técnica:
     - Cantidad
     - Tipo 
   - Panel solar
-    - 
-
-

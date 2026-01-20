@@ -25,7 +25,7 @@ ESP32 (de Espressif Systems): Es el más común y versátil. Suele ser más econ
 + *nRF52* (de Nordic Semiconductor):
 No incluyen Wi-Fi, son más costosos y menos potente. Aún con ello su consumo de energía ultra bajo, lo hacen los más recomendables en nodos portátiles o tipo powerbank.
 
-Ambos incluyen conexión Bluetooh, necesaria para concetar el dispositivo con el teléfono.
+Ambos incluyen conexión Bluetooth, necesaria para concetar el dispositivo con el teléfono.
 
 Hay otras opciones, pero no encontramos dispositivos terminados con ellas, por lo que quedaron excluidas de esta lista.
 

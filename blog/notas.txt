@@ -1,7 +1,5 @@
-> Evaluar tiempos de actualizacion y quienes llevarán a cabo este proceso.
-
 > La comunidad meshtastic NO opta en primer instancia, por dispositivos listos para usar, buscan placas base como las de LilyGo o Heltec
 
-> Los nodo fijos, al tener un suministro fijo de energía, tendrá utilidad cabiar de chip? Usar un ESP32 con el fin que funcionen como gateway o se podrá modificar un nRF52 para que cumpla con este fin y si lo lagra hacer con qué eficiencia lo hará?
+> Los nodo fijos, al tener un suministro fijo de energía, tendrá utilidad cambiar de chip? Usar un ESP32 con el fin que funcionen como gateway o se podrá modificar un nRF52 para que cumpla con este fin y si lo lagra hacer con qué eficiencia lo hará?
 
 
