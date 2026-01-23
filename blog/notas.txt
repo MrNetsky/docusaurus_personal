@@ -2,4 +2,266 @@
 
 > Los nodo fijos, al tener un suministro fijo de energía, tendrá utilidad cambiar de chip? Usar un ESP32 con el fin que funcionen como gateway o se podrá modificar un nRF52 para que cumpla con este fin y si lo lagra hacer con qué eficiencia lo hará?
 
+> Escribir rl blogpost de la compilación y flasheado del firmware del ThinkNode M6.
 
+## Cronología
+
+:::warning 
+Los pagos de impuestos que se pueden ver aquí, son en pesos argentinos.
+:::
+
+### Elecrow
+
+**Compra N°1:**
+- 04/12/25 --> Compra de 3M1 y 2M6 desde la página oficial de Elecrow. Se estima que llegue entre el 11/12/25 y el 16/12/25
+- 11/12/25 --> Reintegro de 37 U$D por cambio de courier (FedEx a HK-DHL)
+- 02/01/26 --> Despachó el paquete. Envío via HK-DHL y se estima que llegue entre 14/01/26 y el 17/01/26
+- 06/01/26 --> Ingreso a aduana + Pago de impuestos ($126.890,40)
+- 08/01/26 --> Paquete recibido.
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 570g
+    + Dimensiones:
+        + Largo: cm
+        + Ancho: cm
+        + Alto: cm
+    + Contenido:
+      + M1: 3 u.
+      + M6: 2 u.
++ Paquete M6:
+    + Peso: 147g
+    + Dimensiones:
+        + Largo: 24,3cm
+        + Ancho: 16,7cm
+        + Alto: 8,7cm
+    + Contenido:
+        + ThinkNode M6
+        + Antena LoRa
+        + Antena GPS
+        + Cable USB C
+        + Manual
+        + Soporte plástico
+        + Tornillos/Tarugos
+
+**Compra N°2:**
+- 08/12/25 --> Compra de 3M1 desde la página oficial de Elecrow. Se estima que llegue entre el 15/12/25 y el 19/12/25
+- 11/12/25 --> Despachó el paquete. Envío via HK-DHL y se estima que llegue entre 14/12/25 y el 17/12/25
+- 16/12/25 --> Ingreso a aduana + Pago de impuestos ($44.915,97).
+- 22/12/25 --> Intento fallido de entrega, se deberá retirar en sucursal (Ayacucho 53 - Cba.)
+- 29/12/25 --> Paquete retirado
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 570g
+    + Dimensiones:
+        + Largo: 22,3cm
+        + Ancho: 21,3cm
+        + Alto: 5,0cm
++ Paquete M1:
+    + Peso: 147g
+    + Dimensiones:
+        + Largo: 10,2cm
+        + Ancho: 9,7cm
+        + Alto: 3,7cm
+    + Contenido:
+        + ThinkNode M1
+        + Antena LoRa
+        + 2 Junta de goma p/antena
+        + Cable USB - C
+        + Manual
+        + Correa
+
+**Compra N°3:**
+- 09/01/26 --> Compra de 3 M5 Pro. Se estima que llegue entre el 13/01/26 y el 16/01/26. Envío vía DHL.
+- 13/01/26 --> Despacho del paquete. Envío vía DHL. Se estima que llegue el 31/01/26
+- 16/01/26 --> Ingreso a aduana + Pago de impuestos ($71.142,17)
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 660g
+    + Dimensiones:
+        + Largo: 22,3cm
+        + Ancho: 21,3cm
+        + Alto: 5,0cm
++ Paquete M5 Pro:
+    + Peso: 144g
+    + Dimensiones:
+        + Largo: 10,2cm
+        + Ancho: 9,7cm
+        + Alto: 3,7cm
+    + Contenido:
+        + ThinkNode M5 Pro
+        + Antena LoRa
+        + 2 Junta de goma p/antena
+        + Cable USB - C
+        + Manual
+        + Sticker Meshtastic
+
+
+### Heltec
+**Compra N°1**
+- 04/12/25 --> Compra de 2 pack (1 amarillo y 1 gris) MeshPocket Qi2 (6u.) desde la página oficial de Heltec. Se estima que llegue entre 11/12/25 y el 16/12/25.
+- 29/12/25 --> Compra cancelada desde Heltec, sin motivos.
+
+**Compra N°2:**
+- 30/12/25 --> Compra de 3u. MeshPocket Qi2 color amarillo desde la página oficial de Heltec. 
+- 09/01/26 --> Compra cancelada desde Elecrow, por altos cargos de envío.
+
+**Compra N°3:**
+- 30/12/25 --> Compra de 3u. MeshPocket Qi2 color gris desde la página oficial de Heltec.
+- 09/01/26 --> Compra cancelada desde Elecrow, por altos cargos de envío.
+
+### LilyGo
+- 09/01/26 --> Compra de 3 T-Deck. 
+
+### Meshnology
+**Compra N°1:** 
+- 04/12/25 --> Compra de 1 pack N37 (2u.) por Amazon. Se estima que llegue el 23/12/25.  Se pagaron impuestos, cargos por importación e IVA total incluido. Vía Amazon priority shipping. 
+- 26/12/25 --> Pedido cancelado porque no pudo completar el pago.
+
+**Compra N°2:** 
+- 04/12/25 --> Compra de 2 pack N37 (4u.) por Amazon. Se estima que llegue el 30/12/25. Se pagaron impuestos, cargos por importación e IVA total incluido, sin embargo no se pagó envío. Vía Amazon standar shipping.
+- 29/12/25 --> Paquete recibido sin ningún costo extra.
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 844g
+    + Dimensiones:
+        + Largo: 30,8cm
+        + Ancho: 7,5cm
+        + Alto: 20,7cm
++ Paquete unitario:
+    + Peso: 325g  
+    + Dimensiones:
+        + Largo: 6,5cm
+        + Ancho: 9,0cm
+        + Alto: 4,0cm
+    + Contenido:
+        + Placa Wio Tracker L1
+        + Antena GPS
+        + Antena LoRa
+        + Conector SMA
+        + Batería de 300mAh
+        + Cable JST 1.5 a 
+        + Carcaza
+
+**Compra N°3:**
+- 30/12/25 --> NUEVA compra de 1 pack N37 (2u.), color rosa, por Amazon. Se estima que llegue el . Vía Amazon global estandar.
+- 07/01/26 --> Compra cancelada. Dado a la baja calidad del producto se decidió dar de baja la compra.
+
+### RAK
+**Compra N°1:**
+- 04/12/25 --> Compra de 3 WisMesh Tag desde AliExpress. Se estima que llegue el 26/12/25.
+- 11/12/25 --> Despacho del paquete. Envío vía DHL.
+- 15/12/25 --> Ingreso a aduana + Pago de impuestos ($47.394,49).
+- 22/12/25 --> Paquete recibido
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 513g
+    + Dimensiones:
+        + Largo: 21,5cm
+        + Ancho: 16,5cm
+        + Alto: 9,0cm
++ Paquete unitario:
+    + Peso: 121g
+    + Dimensiones:
+        + Largo: 14,5cm
+        + Ancho: 9,7cm
+        + Alto: 4,5cm
+    + Contenido:
+        + WisMesh Tag
+        + Manual
+        + Cable de carga
+        + Correa
+
+**Compra N°2:**
+- 08/12/25 --> Compra de 3 WisMesh Tag desde RAK. Sin estimación de fecha de entrega
+- 13/12/25 --> Despacho del paquete. Envío vía DHL y se estima que llegue el 19/12/25.
+- 18/12/25 --> Ingreso a aduana + Pago de impuestos ($216.634,30).
+- 22/12/25 --> Intento fallido de entrega, se deberá retirar en sucursal (Ayacucho 53 - Cba.)
+- 29/12/25 --> Paquete retirado
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 513g
+    + Dimensiones:
+        + Largo: 21,5cm
+        + Ancho: 16,5cm
+        + Alto: 9,0cm
+
+### SeedStudio 
+**Compra N°1:**
+
+- 10/12/25 --> Compra de 2 P1 a través de la página oficial de Seedstudio. Se estima que llegue entre 14/12/25 y el 18/12/25.
+- 11/12/25 --> Despacho del paquete. Envío vía FedEx.
+- 26/12/25 --> Entrega de paquete + pago de impuestos ($141.428,97)
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 3.162g
+    + Dimensiones:
+        + Largo: 33,5cm
+        + Ancho: 30,5cm
+        + Alto: 22,0cm
++ Paquete unitario:
+    + Peso: 1315g
+    + Dimensiones:
+        + Largo: 30,7cm
+        + Ancho: 22,5cm
+        + Alto: 7,5cm
+    + Contenido:
+        + SenseCAP Solar Node P1
+        + Manual
+        + Cable de carga
+        + Abrazadera metálica
+        + Antena
+        + Cable de antena
+        + Soporte metálico (2 piezas)
+        + Tornillos, arandelas y tuercas
+
+**Compra N°2:**
+- 07/01/26 --> Compra de 3 Wio Tracker L1 Pro. Se estima que llegue entre 09/01/26 y el 14/01/26
+- 08/01/26 --> Despacho del paquete.
+- 12/01/26 --> Ingreso a Aduana + Pago de impuestos ($81.688,40)
+
+<u>*Detalles:*</u>
++ Paquete:
+    + Peso: 434g
+    + Dimensiones:
+        + Largo: 17,5cm
+        + Ancho: 9,7cm
+        + Alto: 9,7cm
++ Paquete unitario:
+    + Peso: 114g
+    + Dimensiones:
+        + Largo: 10,2cm
+        + Ancho: 6,5cm
+        + Alto: 3,7cm
+    + Contenido:
+      - Wio Tracker L1
+      - Antena LoRa
+
+### Spec5
+- 10/12/25 --> Compra de 1 Voyager. Se estima que llegue el 22/12/25 a los depósitos de AeroBox en EEUU.
+- 18/12/25 --> Despacho del paquete. Envío vía USPS.
+- 22/12/25 --> Arribo del paquete a los depósitos de Aerobox en Miami.
+- 24/12/25 --> Solicitud de envío del paquete desde Miami a Argentina.
+- 26/12/25 --> Despacho del paquete hacia Argentina. Se estima que llegue el 02/01/26.
+- 31/12/25 --> Arribo del paquete a Argentina.
+- 05/01/26 --> Pago a Aerobox ($137.659,50) + Envío vía Andreani.
+- 12/01/26 --> Paquete recibido.
+
+<u>*Detalles:*</u>
++ Paquete unitario:
+    + Peso: 825g
+    + Dimensiones:
+        + Largo: 34,7cm
+        + Ancho: 25,9cm
+        + Alto: 5,5cm
+    + Contenido:
+    - Voyager
+    - Antena LoRa
+    - Folleto
+    - Tarjeta 
