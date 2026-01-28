@@ -94,7 +94,9 @@ Teníamos la *Hipótesis* de que el problema de la demora en el inicio y el scro
 
 <u>**Aspectos negativos:**</u>
 
-
++ Batería. Muestra que se encuentra cargando cuando no los está. Desde la app no se registra que tenga batería el nodo
++ Firmware. Puede ser una casualidad, pero el 22/1/26 quisimos flashearlo y se brickeo. El día siguiente funcionó sin problemas, creemos que puede deberse a un cambio en la interfaz de Meshtsatic.flasher que justo cambió en ese lapso de tiempo.
++ Pantalla. No muetra diferencias en la velocidad de movimiento entre menúes. Es igual que el M1, pero este tiene un procesador más potente.
 
 <u>**Balance:**</u>
 
@@ -108,7 +110,9 @@ Teníamos la *Hipótesis* de que el problema de la demora en el inicio y el scro
 
 <u>**Aspectos negativos:**</u>
 
-+ Firmware. No existente (01/26)
++ Firmware. 
+  - No existente (01/26)
+  - Alfa 2.7.19 compilada
 
 <u>**Balance:**</u>
 

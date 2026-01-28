@@ -2,7 +2,11 @@
 
 > Los nodo fijos, al tener un suministro fijo de energía, tendrá utilidad cambiar de chip? Usar un ESP32 con el fin que funcionen como gateway o se podrá modificar un nRF52 para que cumpla con este fin y si lo lagra hacer con qué eficiencia lo hará?
 
-> Escribir rl blogpost de la compilación y flasheado del firmware del ThinkNode M6.
+> Escribir el blogpost de la compilación y flasheado del firmware del ThinkNode M6.
+
+> Escribir el blogpost del primer vuelo.
+
+> Escribir sobre nuestro financiador.
 
 ## Cronología
 

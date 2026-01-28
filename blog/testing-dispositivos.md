@@ -15,6 +15,11 @@
 - Intercomunicación con MeshCore
 - Evaluar tiempos de actualizacion y quienes llevarán a cabo este proceso.
 
+- Escenarios de Comunicación
+  - Cuánto retiene un mensaje en un canal un repetidor?
+  - Cuanto retiene un mensaje dirécto un repetidor?
+  - Notifican si no llega el mensaje?
+
 - ¿Es útil tener un excel con estos datos de los diferentes dispositivos?
 - De ser útil... ¿Faltan datos? ¿Sobran?
 Ficha técnica:

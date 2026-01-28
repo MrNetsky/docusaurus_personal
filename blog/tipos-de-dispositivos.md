@@ -1,13 +1,18 @@
 ---
 slug: tipos-de-dispositivos
-title: Tipos de dispositivos
-authors: [MrNetsky]
+title: 'Más alla del tamaño: La guía definitiva para elegir un dispositivo basado en su función'
+sidebar_label: Tipos de dispositivos
+authors: 
+  - key: MrNetsky
+    title: Autor
+  - key: nicopace
+    title: Colaborador 
+  - key: aguslasp
+    title: Colaborador
 tags: [dispositivos]
 ---
-
-# Más alla del tamaño: La guía definitiva para elegir un dispositivo basado en su función.
-
-En un mundo cada vez más dependiente de la infraestructura centralizada, la capacidad de comunicarse fuera de la red (u off-grid) se ha convertido en una necesidad vital, ya sea por una emergencia, una aventura en la naturaleza o simplemente por resiliencia. El proyecto Meshtastic, basado en la robusta tecnología de radio LoRa, ofrece precisamente esta solución: una red de malla descentralizada, sin necesidad de Wi-Fi o cobertura celular.
+ 
+En un mundo cada vez más dependiente de la infraestructura centralizada, la capacidad de comunicarse fuera de la red (u off-grid) se ha convertido en una necesidad vital. El proyecto Meshtastic, basado en la robusta tecnología de radio LoRa, ofrece precisamente esta solución: una red de malla descentralizada, sin necesidad de Wi-Fi o cobertura celular.
 
 La clave para desplegar y optimizar tu propia red radica en elegir el dispositivo correcto para cada función. La comunidad Meshtastic ha generado una impresionante diversidad de hardware, lo que puede resultar abrumador a la hora de decidir.
 
@@ -20,7 +25,7 @@ En este artículo se hablará sobre chips nRF52840 y ESP32, que se utilizan para
 
 ## Portables
 
-Si la meta principal de Meshtastic es la comunicación descentralizada, los nodos portátiles son las herramientas que ponen esa capacidad directamente en manos del usuario, el excursionista o el explorador. A diferencia de las los nodos que pueden utilizarse como estaciones o bases estáticas, estos dispositivos están diseñados para operar con baterías de manera eficiente y acompañarte en el campo.
+Si la meta principal de Meshtastic es la comunicación descentralizada, los nodos portátiles son las herramientas que ponen esa capacidad directamente en manos del usuario, el excursionista o el explorador. A diferencia de los nodos que pueden utilizarse como estaciones o bases estáticas, estos dispositivos están diseñados para operar con baterías de manera eficiente y acompañarte en el campo.
 
 Esta categoría es la más diversa y se define por un constante equilibrio entre la portabilidad y la funcionalidad. Aquí, la elección se reduce a dos preguntas clave: ¿necesitas interacción inmediata o máxima autonomía?. En base a ello, te presentamos las siguientes opciones:
 
@@ -28,7 +33,7 @@ Esta categoría es la más diversa y se define por un constante equilibrio entre
 
 Son dispositivos diseñados para funcionar como pequeños comunicadores autónomos, similares a un walkie-talkie de texto, lo que los hace ideales para un usuario que quiere inmediatez y visibilidad del estado de la red sin depender siempre de un móvil. Busca un equilibrio entre la retroalimentación visual y la autonomía de la batería. Su propósito principal no es escribir mensajes, sino mostrar información clave de forma inmediata.
 
-Pueden incluir una pantalla OLED, LCD o E-Paper (las más eficientes en consumo de energía), buzzer y sensores. Los conectores de antena, de un porcentaje no menor de los dispositivos del mercado poseen un conector RP-SMA que permite intercambiar la antena,que está relacionado con su alcance. La mayoría se controlan mediante botones, profundizaremos en un artículo aparte la calidad de los mismos. Algunos incluyen la posibilidad de encender o apagar el GPS, permitiendo extender la duración de la batería, ya que el uso del GPS resulta ser el mayor consumo del dispositivo.
+Pueden incluir una pantalla OLED, LCD o E-Paper (las más eficientes en consumo de energía), buzzer y sensores. La mayoría se controlan mediante botones, algunos incluyen la posibilidad de encender o apagar el GPS, permitiendo extender la duración de la batería, ya que el uso del GPS resulta ser el mayor consumo del dispositivo.
 
 La resolución y el tamaño limitan la cantidad de información que se puede mostrar a la vez. El usuario debe seguir utilizando el móvil para la mayoría de las interacciones, escritura y configuración avanzada.
 
@@ -130,7 +135,7 @@ Los hay con y sin pantalla, con la potencia de radio similar a los dispositivos 
 
 Combinan la portabilidad extrema con una interacción directa limitada. Al estar sujeto en la muñeca del usuario, minimizan la posibilidad de que el dispositivo se extravíe. Esto es relevante, porque donde esté el dispositivo casi con seguridad también se encontrará el combatiente. Esto gana importancia en caso de que el combatiente se encuentre incapacitado para comunicarse.
 
-Es una iniciativa interesante, ya que, dentro de los datos telemétricos que envía, puede además de su posición, enviar datos de vital importancia relacionado con la salud en tiempo real del combatiente del fuego como lo puede ser la oxigenación en sangre o presión. Permitiendo a quienes coordinan el operativo saber en todo momento no sólo dónde se encuentran sus combatientes, sino también su estado de salud. Aunque en este momento esta es una funcionalidad NO existente.
+Es una iniciativa interesante, ya que, además de su posición, potencialmente puede enviar datos de vital importancia relacionado con la salud en tiempo real del combatiente del fuego como lo puede ser la oxigenación en sangre o presión. Permitiendo a quienes coordinan el operativo saber en todo momento no sólo dónde se encuentran sus combatientes, sino también su estado de salud. Aunque en este momento esta es una funcionalidad NO existente.
 
 Actualmente, tienen una escasa variedad en lo que a cantidad, modelos y marcas se refiere. Los modelos existentes poseen un chip ESP32, que es más demandante en cuanto a energía y sumado a una pequeña batería lo hace poco autónomo. Desde este espacio estamos atentos y a la expectativa de cómo avanza la tecnología de estos dispositivos.
 
