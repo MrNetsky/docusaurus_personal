@@ -34,7 +34,14 @@ const config: Config = {
     defaultLocale: 'es',
     locales: ['es'],
   },
-
+  scripts: [
+    {
+      src: 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0&appId=1555483722403051',
+      async: true,
+      defer: true,
+      crossOrigin: 'anonymous',
+    },
+  ],
   presets: [
     [
       'classic',
