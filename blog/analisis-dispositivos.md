@@ -65,6 +65,7 @@ Para redondear, aplaudimos la iniciativa del ensamblador, pero hoy no existen mo
 
 + Accesibilidad, manejo entre menúes óptimo y sencillo de entender y aprender.
 + Hermeticidad. Posee una junta en la conexión de la antena LoRa.
++ Rango. Conexión desde todos los presets de la radio a 4.5Km.
 
 <u>**Aspectos negativos:**</u>
 
@@ -90,7 +91,9 @@ Teníamos la *Hipótesis* de que el problema de la demora en el inicio y el scro
 
 <u>**Aspectos positivos:**</u>
 
-
++ Accesibilidad, manejo entre menúes óptimo y sencillo de entender y aprender.
++ Hermeticidad. Posee una junta en la conexión de la antena LoRa.
++ Rango. Conexión desde todos los presets de la radio a 4.5Km.
 
 <u>**Aspectos negativos:**</u>
 
@@ -112,7 +115,12 @@ Teníamos la *Hipótesis* de que el problema de la demora en el inicio y el scro
 
 + Firmware. 
   - No existente (01/26)
-  - Alfa 2.7.19 compilada
+  - Alfa 2.7.19 compilada sin soporte.
++ Soporte.
+  - Material. Plástico, se ve endeble.
+  - Limitado. No se puede poner en cualquier lado.
++ Antenas. 
+  - GPS y LoRa. Ambas diferenciadas una de otra. Sin embargo no indican dónde conectarlas.
 
 <u>**Balance:**</u>
 
@@ -140,11 +148,30 @@ Creemos que el dispositivo con el que habrá que compararlo es el M1. Poseen la 
 
 <u>**Aspectos positivos:**</u>
 
-
++ Pantalla táctil. Salva la usabilidad del producto, ya que soluciona todos los problemas del trackball.
++ Lenguaje. Disponible en español, su configuración es muy sencila.
++ Interfaz. 
+  - Mensajería. Clara visibilidad de los mensajes, historial, sus destinatarios y canales.
+  - Mapas.
 
 <u>**Aspectos negativos:**</u>
 
++ Trackbal. Inutil e inneficiente
++ Conectividad.
+  - BLE. Inutiliza el dispositivo, únicamente operable desde el celular.
+  - Ubicación del Bluetooth, es improbable que encuentres dónde hacer la conectividad mediante esta vía. Me pasó de reiniciar dos veces el dispositivo antes de entender cómo funcionaba.
++ Reset. Su botón está muy expuesto.
++ Interfaz. Esta bien, pero aún necesita mejoras significativas.
+  - No se puede copiar y pegar mensajes.
+  - Las opciones seleccionadas casi no se distinguen, dificultando saber dónde estás
++ Buzzer.
+  - Volumen bajo.
+  - Bajísima duración.
++ Case.
+  - Endeble
++ Teclado. Funcionamiento inadecuado
 
+--> Diferenciar firmware Meshtastic con Meshtastic UI
 
 <u>**Balance:**</u>
 

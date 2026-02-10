@@ -7,12 +7,12 @@ authors:
     title: Autor
   - key: nicopace
     title: Colaborador
-  - key: aguslasp
-    title: Colaborador
 tags: 
   - dispositivos
   - importacion
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::warning Advertencia
 Este artículo se encuentra en proceso.
@@ -44,13 +44,40 @@ Esta vez sí nos dieron un motivo, el sobreelevado precio del costo de envío de
 
 Estas preguntas aún siguen sin respuestas. Y debido a la nueva cancelación se tomó la determinación de **NO** adquirir dispositivos de Heltec, al menos para esta 1er compra, debido a la mala experiencia que tuvimos no una, sino dos veces. No obstante, esperamos desde este espacio que tomen nuestras críticas para mejorar la experiencia de usuario, ya que es de nuestro interés obtener productos de esta marca. Pero si queremos aclarar que de haber una tercera experiencia en un futuro y esta fuese exactamente igual a las anteriores, no se efectuarán compras a dicha empresa. 
 
-Pero como si queremos evaluar el funcionamiento de su tecnología, lo haremos a través de ensambladores que incluyan su hardware o bien revendedores de Heltec que sí sean confiables. Como es el caso de Muzi Works, los cuales no hacen envíos a Argentina, por lo cual, Aerobox se tuvo que convertir en heroe. Muzi Works terminó siendo quien más rápido despachó nuestro paquete.
-
-<!-- Terminar -->
+Pero como queremos evaluar el funcionamiento de su tecnología, lo haremos a través de ensambladores que incluyan su hardware o bien revendedores de Heltec que sí sean confiables. Como es el caso de Muzi Works, los cuales no hacen envíos a Argentina, por lo cual, Aerobox se tuvo que convertir en héroe.
 
 Una consecuencia extra fue la compra de 3 M5 Pro a Elecrow y 3 T-Deck a LilyGo. Esto fue debido al cambio en la postura inicial y se decidió tener en cuenta dispositivos que incluyan un ESP32. Por lo que la compra de los M5 Pro se orientó más a la comparativa directa con nodos como el N37, M1, WisMesh Tag, Wio Tracker L1 Pro o T-Echo, no solo en batería, donde muy probablemente pierda. Lo que a nosotros nos interesa en el aspecto de la batería es saber si puede soportar una jornada completa de combate contra el fuego. Además si hay alguna otra diferencia significativa con respecto a alcance o gestión de mensajería, entre otros aspectos a evaluar. 
 
 Mientras que la compra del T-Deck se orientó más a la investigación sobre qué características relevantes puede aportar o si es un gasto innecesario, por lo menos en el combate del fuego.
+
+También en esta etapa se decidió que se necesitaba un nodo para el dron, con la posibilidad de hacer de puente para comunicaciones en donde sea más rápido desplegarse vía aérea. Pero luego de la dudable calidad del producto de Spec5, se decidió no adquirir el Spec5 Copilot, se buscaron opciones de la comunidad como carcasas impresas en 3D junto a hardware adaptado. Pero finalmente se fue por lo más sencillo, imprimir un soporte 3D para el WisMesh Tag que se agarre con un precinto a la parte baja del dron. El resultado, aunque sencillo, fue muy bueno. Obviamente no se podía despegar o aterrizar en el suelo, pero desde el funcionamiento superó ampliamente nuestras expectativas.
+
+<div style={{
+  display: 'flex',
+  gap: '20px',
+  justifyContent: 'center',
+  alignItems: 'flex-start'
+}}>
+  <div style={{ flex: 1, textAlign: 'center' }}>
+    <img
+      src={useBaseUrl('/img/wmtag-soporte.jpeg')}
+      alt="WisMesh Tag"
+      style={{ height: '300px', width: 'auto', objectFit: 'contain' }}
+    />
+    <p>**WisMesh Tag con soporte**</p>
+  </div>
+  
+  <div style={{ flex: 1, textAlign: 'center' }}>
+    <img
+      src={useBaseUrl('/img/dron-repetidor-meshtastic-1.jpeg')}
+      alt="Dron repetidor"
+      style={{ height: '300px', width: 'auto', objectFit: 'contain' }}
+    />
+    <p>**Anclaje a dron**</p>
+  </div>
+</div>
+
+¿Es esta la solución de los nodos para drones? La respuesta corta es no. Pero si creemos que aportó sensaciones positivas y por un bajísimo coste económico y de tiempo, se pudieron realizar unas primeras pruebas de manera óptima. 
 
 Para cerrar este apartado diría que en líneas generales, fue un proceso que llevamos a cabo con éxito, con sensaciones positivas que nos dejaron muchísimos aprendizajes. Obviamente hubo problemas y sinsabores, pero como suele suceder en la vida, no obstante, nos quedamos con lo positivo de esta experiencia.
 
@@ -64,11 +91,17 @@ Elecrow es un caso similar a las anteriores, pero sí hubo un envío que se demo
 
 Meshnology y Spec5 han cumplido, podemos resaltar que para ambos envíos, el embalaje no fue el adecuado, sin dudas los más flojos, pero en cuanto a tiempos, cumplieron. Quién si dejó sensaciones positivas fue Aerobox que formó parte del envío del Spec5 Voyager, ya que fue quien lo trajo desde EEUU a nuestra locación. Fue un servicio rápido, no muy costoso, que te mantiene informado vía mail del movimiento del paquete. en base a nuestra primera experiencia es recomendable y que tendremos en cuenta para posteriores compras.
 
-Está de más aclarar que Heltec no efectuó envíos. LilyGo en un inicio parece recorrer el mismo camino que Heltec, ya que se demoró en el despacho del producto.
+Está de más aclarar que Heltec no efectuó envíos. LilyGo en un inicio pareció recorrer el mismo camino que Heltec, ya que se demoró mucho en el despacho del producto. Pero, luego de un més FedEx lo tuvo en sus manos y en poco tiempo lo tuvimos en nuestras manos.
 
-Quería también hablar de los couriers. FedEx es un servicio que no nos comunicó nada hasta que estuvo en puerta, es costoso, pero llega en el tiempo estipulado. Creemos que es un buen servicio pero lo que sí nos llama la atención es que no nos trasladaron 3 ThinkNode M1 porque contenían baterías, hecho que nos obligó a cambiar de courier, pero si trajeron los N37 que poseían baterías más grandes. Por lo que no sabemos si traen o no baterías desde el exterior, la única diferencia relevante entre las compras que trajo FedEx fue el país, una de China y otro de EEUU, respectivamente.
+Muzi Works terminó siendo quien más rápido despachó nuestro paquete. Aunque no sabemos si llegó en tiempo a los depósitos de Aerobox. Y usted se preguntará ¿Cómo es esto posible? Bueno... Según Muzzi Works y USPS el paquete llegó una semana antes de lo que informa Aerobox. Hecho que nos preocupó, porque mientras de un lado nos decían paquete entregado, del otro nos decían que no había llegado nada. Pero por suerte todo salió bien. Sin embargo fueron los últimos dispositivos en llegar.
 
-DHL es y por escándalo lo mejor, no solo la velocidad sino la claridad del proceder, te avisaban cuando tenían tu pedido, cuando estaba en aduana, cuánto deberías pagar, realmente un muy buen servicio. En cuanto a precios, no sabríamos ubicarlos ya que los hubo muy bajos y muy altos, pero es un servicio por el que vale la pena pagar. Pero, no todo lo que brilla es oro y este también es un gran pero, hay problemas con los montos facturados. Resaltamos el buen servicio de atención al cliente vía teléfono y mail, no así vía wpp, pero lo que realmente nos parece importante destacar es la predisposición y la rapidez a la hora de solucionarte.
+<!-- ¡Terminar! -->
+
+Si creemos que a diferencia de la entrega anterior de Aerobox, donde sus demoras fueron nuestra responsabilidad, en este caso si se han demorado más. ¿Esto es malo? No, sigue siendo un buen servicio y relativamente rápido, pero es algo que no queríamos dejar de comentar.
+
+Quería también hablar de los couriers. FedEx el primer paquete que nos entregó, no nos comunicó nada hasta que estuvo en puerta, nos dieron una cuenta a la que hacer la transferencia, lo cual es curioso cuanto menos, ya que uno espera un servicio más 'profesional'. Pero ya para la segunda entrega si nos avisaron cuando estaban aduana, pagamos los impuestos y posteriormente nos entregaron el paquete. Es un servicio costoso, pero llega en el tiempo estipulado. Creemos que es un buen servicio pero lo que sí nos llama la atención es que no nos trasladaron 3 ThinkNode M1 porque contenían baterías, hecho que nos obligó a cambiar de courier, pero si trajeron los T-Deck que poseían baterías más grandes. Por lo que no sabemos si traen o no baterías desde el exterior, la única diferencia relevante entre las compras que trajo FedEx fue el país, una de China y otro de EEUU, respectivamente.
+
+DHL es y por escándalo lo mejor, no solo la velocidad sino la claridad del proceder, te avisaban cuando tenían tu pedido, cuando estaba en aduana, cuánto deberías pagar, realmente un muy buen servicio. En cuanto a precios, no sabríamos ubicarlos ya que los hubo muy bajos y muy altos, pero es un servicio por el que vale la pena pagar. Pero, no todo lo que brilla es oro y este también es un gran pero, hay problemas con los montos facturados. Resaltamos el buen servicio de atención al cliente vía teléfono y mail, no así vía wpp, pero lo que realmente nos parece importante destacar es la predisposición y la rapidez a la hora de solucionarte, además de que luego de mostrarles el error, nos reintegraron todo. Por lo que vuelvo a repetir, muy buen servicio.
 
 ### Primer encendido 
 
@@ -80,7 +113,7 @@ El proceso de actualización del firmware es algo que aplicó a *todos* los disp
 
 Posteriormente se flashearon los firmware de los WisMesh Tag y SenseCAP Solar Node P1. Ambos con sensaciones muy positivas. El primero por su durabilidad pese a su pequeña batería y simpleza de uso. 
 
-El segundo por su armado sencillo y hasta el momento se han hecho comunicaciones a 2.5km casi con total normalidad. Pero sí hay una cuestión que desde la página que no se informó o al menos nosotros no lo vimos y es la forma de la batería. ¿Por qué es relevante? Porque si bien nosotos sabíamos que usaban 4 baterías 18650, no sabíamos que necesariamente debían ser con relieve en el cátodo (comunmente conocido como botón o tetón). Entonces nosotros teníamos 4 baterías de esa forma, pero necesitabamos el doble (porque tenemos dos nodos). Lo que si es relevante es que con dos baterías el rendimiento es muy bueno.
+El segundo por su armado sencillo y hasta el momento se han hecho comunicaciones a 2.5km casi con total normalidad. Pero sí hay una cuestión que desde la página que no se informó o al menos nosotros no lo vimos y es la forma de la batería. ¿Por qué es relevante? Porque si bien nosotros sabíamos que usaban 4 baterías 18650, no sabíamos que necesariamente debían ser con relieve en el cátodo (comúnmente conocido como botón o tetón). Entonces nosotros teníamos 4 baterías de esa forma, pero necesitábamos el doble (porque tenemos dos nodos). Lo que sí es relevante es que con dos baterías el rendimiento es muy bueno.
 
 :::info ¿Sabías que...?
 Nos hemos propuesto reciclar baterías de litio 18650 de dispositivos rotos o en desuso con el fin de poder reutilizarlas. En nuestro caso particular son las que usamos dentro de los SenseCAP P1. Aunque también tenemos pensado agrupar las que sobren en un powerbank casero.
@@ -88,18 +121,22 @@ Nos hemos propuesto reciclar baterías de litio 18650 de dispositivos rotos o en
 
 De los M1 llamó poderosamente la atención el alto consumo de energía, implicando en una durabilidad del dispositivo que no supera las 48hs. Nosotros tenemos la teoría que al actualizarse la pantalla minuto a minuto la hora y cada tanto el porcentaje de batería, la pantalla se encuentra en constante trabajo, desgastando la batería. Lo que si es positivo es el cambio del firmware, porque le da una mejora muy grande en comparación con el que viene instalado de fábrica, aunque esto aplica para todos los nodos.
 
-Y hablando de firmware... El ThinkNode M6 no tiene firmware. Al menos eso creíamos, ya que no está disponible al momento de la publicación de este artículo, en la página de [flasher web meshtastic](https://flasher.meshtastic.org/). Entonces... ¿Dónde lo conseguimos? En el siguiente repo de GitHub, un heroe se puso a la tarea de crearlo, además allí te enseña cómo compilarlo y flashearlo. [Aquí les dejamos el repo en cuestión.](https://github.com/meshtastic/firmware)
+Y hablando de firmware... El ThinkNode M6 no tiene firmware. Al menos eso creíamos, ya que no está disponible al momento de la publicación de este artículo, en la página de [flasher web meshtastic](https://flasher.meshtastic.org/). Entonces... ¿Dónde lo conseguimos? En el siguiente repositorio de GitHub, un heroe se puso a la tarea de crearlo, además allí te enseña cómo compilarlo y flashearlo. [Aquí les dejamos el repo en cuestión.](https://github.com/meshtastic/firmware)
 
-Entre los nodos que empezaron a llegar mas tarde está el Wio Tracker L1 Pro, debido a su compra tardía y pudimos constatar las diferencias en el manejo del joystick con el N37. Otro que llegó tarde, aunque así se esperaba era el Spec5 Voyager, que en funcionamieno, anda muy bien, en cuanto a interacción con el mismo, es claramente el menos logrado. 219 U$D por un nodo que no tiene acceso al puerto USB, a botones o aunque sea una luz para saber si está o no en funcionamiento. 
+Entre los nodos que empezaron a llegar mas tarde está el Wio Tracker L1 Pro, debido a su compra tardía y pudimos constatar las diferencias en el manejo del joystick con el N37. Otro que llegó tarde, aunque así se esperaba era el Spec5 Voyager, que en funcionamiento, anda muy bien, en cuanto a interacción con el mismo, es claramente el menos logrado. 219 U$D por un nodo que no tiene acceso al puerto USB, a botones o aunque sea una luz para saber si está o no en funcionamiento. 
 
-Y si no hay botones... ¿Cómo se enciende? Deberás desarmarlo y conectar la batería. Y si quisieras saber si está operativo, deberás busacarlo desde alguna app o nodo, ya sea para conectarte a él o ver que el mismo se encuentre operativo. Un dispositivo que pese a sus interesantísimas características, esta poco logrado, aún más teniendo en cuenta su elevado precio. Para flashear el firmware deberás buscar el disponible para el WisBlock.
+Y si no hay botones... ¿Cómo se enciende? Deberás desarmarlo y conectar la batería. Y si quisieras saber si está operativo, deberás buscarlo desde alguna app o nodo, ya sea para conectarte a él o ver que el mismo se encuentre operativo. Un dispositivo que pese a sus interesantísimas características, esta poco logrado, aún más teniendo en cuenta su elevado precio. Para flashear el firmware deberás buscar el disponible para el WisBlock.
 
 Pero  de las compras tardías, la llegada que nosotros más esperábamos era la de los nodos cuyo procesador fuera un ESP32. Los primeros en llegar fueron los M5 Pro y su proceso de actualización fue preocupante. Porque cuando lo actualizamos, se 'rompió', pero esta vez, parecía peor. Tanto que el primer día no pudimos solucionar el problema. Hecho que nos condujo a comunicarnos, vía mail con Elecrow contándoles nuestro problema. Ellos se comunicaron con nosotros en menos de 24hs, nos sugirieron que *NO* usemos la opción de 'InkHUD', e intentaramos nuevamente. Pero nosotros el día anterior, habíamos probado esto sin éxito, pero lo intentamos una vez más y funcionó. ¿Por qué funcionó ahora y no antes? Lo ignoramos por completo, creemos que se debió a un problema ajeno al proceso en si, ya que la página cambió de interfaz de un día a otro, pero recalco nuevamente, ignoramos el motivo, esto es una suposición nuestra. Lo verdaderamente importante es que nuestro nodo, volvió a la vida mismo que a primeras luces no parece tener diferencias significativas con el M1. Pero hablaremos más a fondo de cada uno de los dispositivos en otro blog.
+
+El otro ESP32 que llegó fue el T-Deck Plus. Muy esperado por nuestra parte, cuyas expectativas se encontraban divididas, por lo que podía ofrecer, entre las limitaciones que posee. Su flasheo fue sencillo, su interfaz está bien, pero necesita mejorar aún más. La pantalla táctil soluciona los problemas del trackball, el cual creo es innecesario e inutil. Se deberá remover o mejorar su funcionamiento, pero creo que no puede coexistir con una pantalla táctil. Para conectarlo vía BLE, dejas de poder usar el dispositivo, para operarlo desde el celular. Algo que es una gran contra, ya que ninguno de los dispositivos que usamos hasta la fecha le sucede lo mismo. Tiene disponible el lenguaje español lo cual es muy positivo, ya que también es el único que tenemos con esta posibilidad. Yo creo que el balance es negativo que positivo, al menos en este primer encendido. Obviamente faltan pruebas y se verá que función desempeña finalmente y cómo puede hacerlo, pero aún creemos que puede llegar a ser útil.
+
+El último en llegar de todos fueron los MeshPocket Qi2. 
 
 ---
 
 El proceso de compra que inició en los primeros días de Diciembre se extendió hasta principio de Febrero con las cancelaciones y las compras posteriores. Fue un proceso que se extendió más de lo previsto, pero los dispositivos, llegaron aceptablemente rápido. 
 
-<!--Se adquirieron 30 unidades de casi todos los fabricantes de hardware, a excepción de Heltec. Nodos que pueden cumplir diferentes funciones, abarcando los dos procesadores del mercado como lo son el ESP32 y el nRF52.-->
+Se adquirieron 35 unidades de todos los fabricantes de hardware. Nodos que pueden cumplir diferentes funciones, abarcando los dos procesadores del mercado como lo son el ESP32 y el nRF52.
 
-Creemos que es un buen punto de partida para empezar a testear escenarios posibles y coordinar con nuestro equipo, así como con combatientes y gente aficionada que quiera formar parte de las primeras pruebas de campo en esta zona. Estamos felices y expectantes de los resultados que arrojarán estas experiencias, así como ansiosos de poder ayudar a nuestra comunidad.
+Creemos que es un buen punto de partida para empezar a testear escenarios posibles y coordinar con nuestro equipo, así como con combatientes y gente aficionada que quiera formar parte de las primeras pruebas de campo en esta zona. Estamos felices y expectantes de los resultados que arrojarán estas pruebas así como ansiosos de poder ayudar a nuestra comunidad.

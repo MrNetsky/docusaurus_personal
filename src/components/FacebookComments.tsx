@@ -1,18 +1,15 @@
-import React, { useEffect } from 'react';
-import { useLocation } from '@docusaurus/router';
+import React, { useEffect } from "react";
+import { useLocation } from "@docusaurus/router";
 
 export default function FacebookComments() {
-  const location = useLocation();
-  const url =
-    typeof window !== 'undefined'
-      ? window.location.origin + location.pathname
-      : '';
+  const { pathname } = useLocation();
+  const url = typeof window !== "undefined" ? window.location.origin + pathname : "";
 
   useEffect(() => {
-    if (window.FB) {
-      window.FB.XFBML.parse();
+    if (window.FB && window.FB.XFBML) {
+      window.FB.XFBML.parse(); // <–– esto es lo que faltaba
     }
-  }, [url]);
+  }, [pathname]);
 
   return (
     <div
@@ -20,6 +17,6 @@ export default function FacebookComments() {
       data-href={url}
       data-width="100%"
       data-numposts="5"
-    />
+    ></div>
   );
 }

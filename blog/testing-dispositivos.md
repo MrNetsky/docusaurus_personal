@@ -15,6 +15,18 @@
 - Intercomunicación con MeshCore
 - Evaluar tiempos de actualizacion y quienes llevarán a cabo este proceso.
 
+- Dispositivo p/combatiente, forma/ funcionalidades
+  - Botones 
+    - Grandes 
+    - Pocos
+    - C/relieve (provee facilidad para distinguirlos)
+  - Pantalla grandes
+  - Funcionalidad optimizada a poco uso o uso automatizado
+  - Voz PTT (Esto le ahorraría peso si podemos usar de handy al dispositivo Meshtastic)
+  - GPS visible desde la pantalla.
+
+
+
 - Escenarios de Comunicación
   - Cuánto retiene un mensaje en un canal un repetidor?
   - Cuanto retiene un mensaje dirécto un repetidor?
