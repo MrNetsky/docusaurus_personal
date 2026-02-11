@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://MrNetsky.github.io/docusaurus_personal/blog</id>
+    <title>RootNode Blog</title>
+    <updated>2026-01-23T14:33:59.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://MrNetsky.github.io/docusaurus_personal/blog"/>
+    <subtitle>RootNode Blog</subtitle>
+    <icon>https://MrNetsky.github.io/docusaurus_personal/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Entendiendo el funcionamiento del universo Meshtastic]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/conceptos-necesarios</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/conceptos-necesarios"/>
+        <updated>2026-01-23T14:33:59.000Z</updated>
+        <summary type="html"><![CDATA[Conceptos escenciales]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conceptos-escenciales">Conceptos escenciales<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#conceptos-escenciales" class="hash-link" aria-label="Enlace directo al Conceptos escenciales" title="Enlace directo al Conceptos escenciales" translate="no">​</a></h2>
+<p>La radiofrecuencia (RF) es como una autopista invisible que transporta señales por el aire. Estas señales ayudan a que dispositivos como teléfonos, radios y nodos Meshtastic se comuniquen entre sí de forma inalámbrica. Para entender cómo funciona la RF, analicemos algunas ideas clave:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="propagación">Propagación<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#propagaci%C3%B3n" class="hash-link" aria-label="Enlace directo al Propagación" title="Enlace directo al Propagación" translate="no">​</a></h3>
+<p>La propagación es la forma en que las señales de radio viajan de un dispositivo a otro. Estas señales se mueven en ondas, como las ondulaciones en un estanque después de arrojar una piedra. Cuanto más viajan las ondas, más débiles se vuelven. Es por eso que algunas señales no llegan muy lejos, se quedan sin energía.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="línea-de-visión">Línea de visión<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#l%C3%ADnea-de-visi%C3%B3n" class="hash-link" aria-label="Enlace directo al Línea de visión" title="Enlace directo al Línea de visión" translate="no">​</a></h3>
+<p>Las señales de radio son como la luz: viajan mejor cuando no hay nada en el camino. Si hay un camino despejado (como estar parado en una colina sin árboles ni edificios en el camino), las señales pueden llegar más lejos. Cuando objetos como paredes, montañas o incluso árboles frondosos bloquean la señal, esta se debilita o no llega en absoluto.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="frecuencia">Frecuencia<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#frecuencia" class="hash-link" aria-label="Enlace directo al Frecuencia" title="Enlace directo al Frecuencia" translate="no">​</a></h3>
+<p>La frecuencia es la cantidad de veces que una onda se "mueve" en un segundo. Se mide en hercios (Hz).</p>
+<p>Las frecuencias más bajas viajan más lejos y manejan mejor los obstáculos, pero llevan menos información. Las frecuencias más altas pueden enviar más datos, pero solo funcionan bien en distancias cortas.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="potencia">Potencia<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#potencia" class="hash-link" aria-label="Enlace directo al Potencia" title="Enlace directo al Potencia" translate="no">​</a></h3>
+<p>La potencia es la fuerza de una señal. Imagina gritar en lugar de susurrar, los gritos se pueden escuchar desde más lejos, pero también consumen más energía. De manera similar, las radios de mayor potencia pueden enviar señales a mayor distancia, pero consumen más batería. Meshtastic logra un equilibrio para garantizar que tus dispositivos sigan siendo útiles durante mucho tiempo.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pérdida-de-señal">Pérdida de señal<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#p%C3%A9rdida-de-se%C3%B1al" class="hash-link" aria-label="Enlace directo al Pérdida de señal" title="Enlace directo al Pérdida de señal" translate="no">​</a></h3>
+<p>La pérdida de señal ocurre cuando una onda se debilita a medida que viaja. Esto puede deberse a:</p>
+<ul>
+<li class="">Distancia: cuanto más lejos viaja una señal, más débil se vuelve.</li>
+<li class="">Obstáculos: geográficos, árboles, humo, etc. dificultan llegar al otro nodo.</li>
+<li class="">Interferencia: otras señales (como redes WiFi u otras radios) pueden causar "atascos" en la autopista invisible, lo que dificulta la comunicación.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cómo-funcionan-bluetooth-wifi-y-lora-con-meshtastic">¿Cómo funcionan Bluetooth, WiFi y LoRa con Meshtastic?<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#c%C3%B3mo-funcionan-bluetooth-wifi-y-lora-con-meshtastic" class="hash-link" aria-label="Enlace directo al ¿Cómo funcionan Bluetooth, WiFi y LoRa con Meshtastic?" title="Enlace directo al ¿Cómo funcionan Bluetooth, WiFi y LoRa con Meshtastic?" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="bluetooth">Bluetooth<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#bluetooth" class="hash-link" aria-label="Enlace directo al Bluetooth" title="Enlace directo al Bluetooth" translate="no">​</a></h4>
+<p>Bluetooth es como un ayudante de corta distancia. Es la forma en que tu teléfono se comunica con tu nodo Meshtastic para enviar y recibir mensajes. Piensa en ello como un chat privado entre tu teléfono y el nodo, pero solo funciona cuando están cerca uno del otro (a unos pocos metros de distancia).</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="wifi">WiFi<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#wifi" class="hash-link" aria-label="Enlace directo al WiFi" title="Enlace directo al WiFi" translate="no">​</a></h4>
+<p>Meshtastic no depende de WiFi, pero si tu nodo está cerca de una red WiFi, a veces puede usarla para enviar mensajes a través de Internet. Esto puede ayudar a conectar tu red de malla con personas que están más lejos.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="lora">LoRa<a href="https://mrnetsky.github.io/docusaurus_personal/blog/conceptos-necesarios#lora" class="hash-link" aria-label="Enlace directo al LoRa" title="Enlace directo al LoRa" translate="no">​</a></h4>
+<p>Está diseñado para enviar mensajes a largas distancias mientras usa muy poca energía. Funciona enviando señales de baja frecuencia que pueden viajar kilómetros, incluso en entornos difíciles como arboledas o montañas.</p>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Análisis de nuestros dispositivos dispositivos]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos"/>
+        <updated>2026-01-02T17:28:54.000Z</updated>
+        <summary type="html"><![CDATA[Este artículo se encuentra en proceso.]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Advertencia</div><div class="admonitionContent_BuS1"><p>Este artículo se encuentra en proceso.</p></div></div>
+<p>En el siguiente artículo, podrás ver cuales, bajo nuestro criterio, son las características positivas, negativas y un balance de los dispositivos que nosotros utilizamos así como las apps que utilizamos para conectar dichos dispositivos. Es importante recalcar que estas observaciones no son absolutas e imparciales, ya que, nosotros los evaluamos desde un contexto en específico, el de los combatientes del fuego, por lo que puede que sin no formas parte de este entorno, pero lees este artículo para informarte sobre esta tecnología, lo que para nosotros es una característica negativa, puede que para vos no lo sea o tengas un punto de vista diferente.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dispositivos">Dispositivos<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#dispositivos" class="hash-link" aria-label="Enlace directo al Dispositivos" title="Enlace directo al Dispositivos" translate="no">​</a></h2>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>No actualizar el firmware vía BLE</div><div class="admonitionContent_BuS1"><p>En caso de haberlo hecho tocará desconectar la batería, conectarlo vía USB C al PC, presionar el botón de reinicio dos veces, eso lo hará entrar en modo DFU y aquí tocará actualizar el firmware. Cuando se desconecte solo del PC, reconectar la batería y rearmar el dispositivo.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meshnology-n37---wio-tracker-l1">Meshnology N37 - Wio Tracker L1<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#meshnology-n37---wio-tracker-l1" class="hash-link" aria-label="Enlace directo al Meshnology N37 - Wio Tracker L1" title="Enlace directo al Meshnology N37 - Wio Tracker L1" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Batería. Los 3000mAh han hecho que dure apróx 5 días.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">No viene armado.</li>
+<li class="">Buzzer. Debería tener más potencia de sonido.</li>
+<li class="">GPS Lock. Incapacidad de ubicarse dentro de un espacio cerrado.</li>
+<li class="">Case. Es el apartado principal que lo distingue de Wio Tracker L1 y pierde por goleada en este aspecto.<!-- -->
+<ul>
+<li class="">El material en el que fue impreso no debe estar expuesto al sol y al calor en tiempos prolongados, lo cual es exactamente el caso al que deben enfrentarse.</li>
+<li class="">Intersticios donde entra polvo. Si bien era sabido que no posee una certificación IP, no se esperaba que en el borde de la antena GPS hubiera tantísimo espacio sin cerrar.</li>
+<li class="">Movilidad limitada del joystick. Pese a que posee una interfaz dinámica y accesible, la experiencia del joystick lo convierte en una absoluta pesadilla, convirtiendo la experiencia de uso de pobre a muy mala.</li>
+<li class="">La base no le da estabilidad al dispositivo, es recomendable dejarlo recostado con la pantalla hacia arriba.</li>
+<li class="">Fragilidad. Una caída accidental de unos 75cm de altura, rompió el área de la carcasa que contiene el GPS, esto puede deberse al peso del mismo que es significativamente major al de los demás, pero particularmente al mal diseño de esta sección de la carcasa.</li>
+<li class="">Pantalla. Tiene una abertura de 1mm menos que el L1 Pro</li>
+</ul>
+</li>
+<li class="">Conexión con la pc. Técnicamente no son desconecciones esporádicas, porque figura que está conectado, pero no funciona bien como si estuviera conectado.</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<p>Las diferencias con el L1 Pro son el precio, la batería y el case. En el primer apartado no hay diferencias significativas, en el segundo apartado hay una diferencia notable, pero la pregunta acá sería ¿Es necesario? Y desde este espacio, creemos que no.
+Por último, el case. En este apartado pierde y por goleada porque no hay nada bien hecho, esto no significa que sea todo malo en cuanto al diseño de la carcasa pero pierde en muchísimos aspectos y en otros no mejora en comparativa con la carcasa del L1 Pro.
+Para redondear, aplaudimos la iniciativa del ensamblador, pero hoy no existen motivos por el cual elegir al N37 por encima del L1 Pro. Es un producto que necesita mejoras de mínimo o un rediseño, pero estaremos atentos a las novedades de este ensamblador.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensecap-solar-node-p1">SenseCAP Solar Node P1<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#sensecap-solar-node-p1" class="hash-link" aria-label="Enlace directo al SenseCAP Solar Node P1" title="Enlace directo al SenseCAP Solar Node P1" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Buen sistema de agarre.</li>
+<li class="">Alcance. Hasta el momento se realizaron comunicaciones de 2.5Km</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Baterías. Si bien se explica cuál debe llevar, no se aclara que deben poseer un teton, ya que de otra manera, no harán contacto</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thinknode-m1">ThinkNode M1<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#thinknode-m1" class="hash-link" aria-label="Enlace directo al ThinkNode M1" title="Enlace directo al ThinkNode M1" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Accesibilidad, manejo entre menúes óptimo y sencillo de entender y aprender.</li>
+<li class="">Hermeticidad. Posee una junta en la conexión de la antena LoRa.</li>
+<li class="">Rango. Conexión desde todos los presets de la radio a 4.5Km.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Buzzer. Tiene un volúmen muy bajo, sería casi como no tenerlo equipado.</li>
+<li class="">GPS Lock.<!-- -->
+<ul>
+<li class="">Exagerado el tiempo de conexión.</li>
+<li class="">Ubicación poco precisa.</li>
+</ul>
+</li>
+<li class="">Batería. No dura las 48hs prometidas por el fabricante.</li>
+<li class="">Pantalla.<!-- -->
+<ul>
+<li class="">Gran delay en el inicio del dispositivo y en el scroll entre menúes.</li>
+<li class="">Mientras tenga conectado el USB C, no reconoce que está desconectado del suministro energético. Le llevó aproximadamente 5' actualizar el estado, mientras se scroleaba entre menúes y se usa con total normalidad.</li>
+</ul>
+</li>
+<li class="">Bluetooth. Problemas para detectar este dispositivo desde Meshtastic CLI.</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<p>Posee un buen packaging, está buenísimo que incluya una correa y el cable de carga. Es muy cómodo de usar, de agarrar, habrá que encontrar cómo configurarlo para el uso, ya que la batería es un apartado donde pierde mucho, porque dura mucho menos que el L1 Pro, N37 y WishMesh Tag, poseyendo este último una batería más pequeña.</p>
+<p>Teníamos la <em>Hipótesis</em> de que el problema de la demora en el inicio y el scroll entre menús, es la interfaz con el parlante, ya que el T-Echo tiene el mismo firmware, con la misma pantalla, pero inicia más rápido y es mejor el scroll entre menúes, eso si, no posee buzzer. Luego de desactivar el buzzer para la interacción con el sistema, nos dimos cuenta que mejora el scroll entre menúes, pero sigue siendo más lento que el T-Echo y el inicio se mantuvo sin cambios, siendo hasta 6s más lento.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thinknode-m5-pro">ThinkNode M5 Pro<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#thinknode-m5-pro" class="hash-link" aria-label="Enlace directo al ThinkNode M5 Pro" title="Enlace directo al ThinkNode M5 Pro" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Accesibilidad, manejo entre menúes óptimo y sencillo de entender y aprender.</li>
+<li class="">Hermeticidad. Posee una junta en la conexión de la antena LoRa.</li>
+<li class="">Rango. Conexión desde todos los presets de la radio a 4.5Km.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Batería. Muestra que se encuentra cargando cuando no los está. Desde la app no se registra que tenga batería el nodo</li>
+<li class="">Firmware. Puede ser una casualidad, pero el 22/1/26 quisimos flashearlo y se brickeo. El día siguiente funcionó sin problemas, creemos que puede deberse a un cambio en la interfaz de Meshtsatic.flasher que justo cambió en ese lapso de tiempo.</li>
+<li class="">Pantalla. No muetra diferencias en la velocidad de movimiento entre menúes. Es igual que el M1, pero este tiene un procesador más potente.</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thinknode-m6">ThinkNode M6<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#thinknode-m6" class="hash-link" aria-label="Enlace directo al ThinkNode M6" title="Enlace directo al ThinkNode M6" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Firmware.<!-- -->
+<ul>
+<li class="">No existente (01/26)</li>
+<li class="">Alfa 2.7.19 compilada sin soporte.</li>
+</ul>
+</li>
+<li class="">Soporte.<!-- -->
+<ul>
+<li class="">Material. Plástico, se ve endeble.</li>
+<li class="">Limitado. No se puede poner en cualquier lado.</li>
+</ul>
+</li>
+<li class="">Antenas.<!-- -->
+<ul>
+<li class="">GPS y LoRa. Ambas diferenciadas una de otra. Sin embargo no indican dónde conectarlas.</li>
+</ul>
+</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="t-echo">T-Echo<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#t-echo" class="hash-link" aria-label="Enlace directo al T-Echo" title="Enlace directo al T-Echo" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Pantalla. Inicio rápido, óptimo scroll entre menúes.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">GPS Lock. Ubicación poco precisa.</li>
+<li class="">Batería. No reporta el nivel de batería</li>
+<li class="">Botones.<!-- -->
+<ul>
+<li class="">Tener muy expuesto el botón de reset puede ser problemático.</li>
+<li class="">Usar solo un botón para el uso de todo el dispositivo es impráctico.</li>
+</ul>
+</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<p>Creemos que el dispositivo con el que habrá que compararlo es el M1. Poseen la misma pantalla, pero es más lenta que la del M1, tiene una batería más pequeña y uno de los dispositivos se le rompió un botón pese a tener un bajo uso, puede ser un hecho aislado, como puede hablar de la calidad de este producto, pero desde este espacio no podemos aseverar una u otra opción, pero es nuestra obligación mostrar los hechos. Si está bueno el plástico de la carcasa, posiblemente sea el mejor comparado con los otros nodos portátiles. La antena es la misma y en cuanto al precio no hay diferencias significativas. Por lo que creemos que es un producto que de mínimo, no supera al M1, e incluso puede que esté un poco por debajo.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="t-deck">T-Deck<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#t-deck" class="hash-link" aria-label="Enlace directo al T-Deck" title="Enlace directo al T-Deck" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Pantalla táctil. Salva la usabilidad del producto, ya que soluciona todos los problemas del trackball.</li>
+<li class="">Lenguaje. Disponible en español, su configuración es muy sencila.</li>
+<li class="">Interfaz.<!-- -->
+<ul>
+<li class="">Mensajería. Clara visibilidad de los mensajes, historial, sus destinatarios y canales.</li>
+<li class="">Mapas.</li>
+</ul>
+</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Trackbal. Inutil e inneficiente</li>
+<li class="">Conectividad.<!-- -->
+<ul>
+<li class="">BLE. Inutiliza el dispositivo, únicamente operable desde el celular.</li>
+<li class="">Ubicación del Bluetooth, es improbable que encuentres dónde hacer la conectividad mediante esta vía. Me pasó de reiniciar dos veces el dispositivo antes de entender cómo funcionaba.</li>
+</ul>
+</li>
+<li class="">Reset. Su botón está muy expuesto.</li>
+<li class="">Interfaz. Esta bien, pero aún necesita mejoras significativas.<!-- -->
+<ul>
+<li class="">No se puede copiar y pegar mensajes.</li>
+<li class="">Las opciones seleccionadas casi no se distinguen, dificultando saber dónde estás</li>
+</ul>
+</li>
+<li class="">Buzzer.<!-- -->
+<ul>
+<li class="">Volumen bajo.</li>
+<li class="">Bajísima duración.</li>
+</ul>
+</li>
+<li class="">Case.<!-- -->
+<ul>
+<li class="">Endeble</li>
+</ul>
+</li>
+<li class="">Teclado. Funcionamiento inadecuado</li>
+</ul>
+<p>--&gt; Diferenciar firmware Meshtastic con Meshtastic UI</p>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voyager">Voyager<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#voyager" class="hash-link" aria-label="Enlace directo al Voyager" title="Enlace directo al Voyager" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Diseño. No hay botones de encendido, reset o puerto USB C. Hay que desarmarlo para:<!-- -->
+<ul>
+<li class="">Encenderlo. Es necesario que sepas cómo conectar la batería.</li>
+<li class="">Actualización de Firmware.<!-- -->
+<ul>
+<li class="">Deberás conectarlo al USB C que contiene dentro.</li>
+<li class="">El firmware que deberás usar es el del WisBlock</li>
+</ul>
+</li>
+<li class="">Tornillos. Torx ¿En serio? ¿Con qué necesidad?</li>
+</ul>
+</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wishmesh-tag">WishMesh Tag<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#wishmesh-tag" class="hash-link" aria-label="Enlace directo al WishMesh Tag" title="Enlace directo al WishMesh Tag" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Tamaño. Totalmente fácil de llevar.</li>
+<li class="">GPS.<!-- -->
+<ul>
+<li class="">Sorprende que incluso en espacios cerrados, se ubique.</li>
+<li class="">Oprimiendo dos veces el botón central se envía la posición actual.</li>
+</ul>
+</li>
+<li class="">Buzzer. Potencia, realmente es claro y alto el sonido.</li>
+<li class="">Adopción. Pese a tener dos botones, el acompañamiento de luces y el sonido hacen casi innecesaria la interacción con una pantalla.</li>
+<li class="">Batería. Duración superior a las 48hs</li>
+<li class="">Botón trasero.<!-- -->
+<ul>
+<li class="">Pasa inadvertido</li>
+<li class="">Difícil de apretar</li>
+</ul>
+</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>
+<p>Productazo, literalmente había pocas expectativas con respecto a este producto, pero está bueno el case, la duración de la batería es óptima, su uso con un solo botón es fácil de entender, muy portátil, que traiga la correa es un plus que esta muy bueno y además incluye el USB de carga que quizás pueda que les parezca la norma, pero hay dispositivos que no lo incluyen, no es el caso de este producto. El packaging es ultra seguro. Es un muy buen producto.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wio-tracker-l1-pro">Wio Tracker L1 Pro<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#wio-tracker-l1-pro" class="hash-link" aria-label="Enlace directo al Wio Tracker L1 Pro" title="Enlace directo al Wio Tracker L1 Pro" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Joystick. Buen funcionamiento, es poco probable un movimiento accidental.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Joystick. No se puede usar con guantes.</li>
+<li class="">Buzzer. Desde la web te anuncian que no lo incluye, pero si lo trae.</li>
+<li class="">Manual. No incluido</li>
+<li class="">Case.<!-- -->
+<ul>
+<li class="">Hermeticidad. Tipo rejilla trasera donde puede entrar muchísima suciedad.</li>
+<li class="">Inestabilidad, al tener un centro de masa movido hacia atrás, hace que se caiga con poco esfuerzo.</li>
+</ul>
+</li>
+<li class="">Carga. No hay una notificación en pantalla que se encuentre cargando, pero si se enciende una luz al costado en este estado.</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<p>Creo que hay detalles, que si bien no podría catalogarlos como negativos, estaría bueno que los tengan en cuenta. Como por ejemplo el no traer un manual o guía de inicio rápido. Está bueno que tenga dentro del diseño la posibilidad de ponerle una correa al dispositivo, pero incluila en el paquete, Elecrow o RAK lo han hecho con el M1 y el WishMesh Tag. Repito, no son aspectos negativos, pero sí serían le sumarían un valor agregado al producto, que de por sí es bueno, tiene un packaging minimalista que me gusta.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="clientes">Clientes<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#clientes" class="hash-link" aria-label="Enlace directo al Clientes" title="Enlace directo al Clientes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meshtastic-android-app">Meshtastic Android app<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#meshtastic-android-app" class="hash-link" aria-label="Enlace directo al Meshtastic Android app" title="Enlace directo al Meshtastic Android app" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meshsense">MeshSense<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#meshsense" class="hash-link" aria-label="Enlace directo al MeshSense" title="Enlace directo al MeshSense" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="clientmeshtasticorg">client.meshtastic.org<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#clientmeshtasticorg" class="hash-link" aria-label="Enlace directo al client.meshtastic.org" title="Enlace directo al client.meshtastic.org" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meshtastic-network-manager">Meshtastic Network Manager<a href="https://mrnetsky.github.io/docusaurus_personal/blog/analisis-dispositivos#meshtastic-network-manager" class="hash-link" aria-label="Enlace directo al Meshtastic Network Manager" title="Enlace directo al Meshtastic Network Manager" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Proceso de pensamiento]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/sin-nombre</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/sin-nombre"/>
+        <updated>2025-12-29T15:49:04.000Z</updated>
+        <summary type="html"><![CDATA[Este artículo se encuentra en proceso.]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Advertencia</div><div class="admonitionContent_BuS1"><p>Este artículo se encuentra en proceso.</p></div></div>
+<p>Cosas a tener en cuenta, de cara a las prubas de campo.</p>
+<ul>
+<li class="">Código Q</li>
+<li class="">Criterios de posicionamiento de nodos fijos</li>
+<li class="">Criterios de actualizacción de firmware</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="código-q">Código Q<a href="https://mrnetsky.github.io/docusaurus_personal/blog/sin-nombre#c%C3%B3digo-q" class="hash-link" aria-label="Enlace directo al Código Q" title="Enlace directo al Código Q" translate="no">​</a></h2>
+<p>El Código Q es un conjunto de abreviaturas de tres letras que se utiliza en las comunicaciones por radio para transmitir información compleja de manera rápida y precisa.</p>
+<p>Originalmente fue creado por el gobierno británico en 1909 para facilitar la comunicación entre barcos y estaciones costeras que hablaban diferentes idiomas, pero hoy es un estándar mundial en la radioafición, la navegación marítima, la aviación y, por supuesto, es una herramienta muy útil para usuarios de Meshtastic en situaciones de emergencia.</p>
+<div style="margin-left:auto;margin-right:auto;width:fit-content"><table><thead><tr><th style="text-align:center">Código</th><th style="text-align:center">Significado</th><th style="text-align:center">Ejemplo de uso</th></tr></thead><tbody><tr><td style="text-align:center">QSL</td><td style="text-align:center">Mensaje recibido y entendido</td><td style="text-align:center">"QSL, avanzando a zona 2"</td></tr><tr><td style="text-align:center">QTH</td><td style="text-align:center">Ubicación o posición actual</td><td style="text-align:center">"¿Cuál es tu QTH?" / "QTH: Base Sur"</td></tr><tr><td style="text-align:center">QRV</td><td style="text-align:center">Estoy listo / atento / operativo</td><td style="text-align:center">"Unidad 1 QRV en el canal"</td></tr><tr><td style="text-align:center">QRT</td><td style="text-align:center">Fin de la comunicación / Apago nodo</td><td style="text-align:center">"Misión cumplida, QRT"</td></tr><tr><td style="text-align:center">QSY</td><td style="text-align:center">Cambiar de canal o frecuencia</td><td style="text-align:center">"QSY al canal de Emergencia"</td></tr><tr><td style="text-align:center">QRX</td><td style="text-align:center">Espere un momento (Stand-by)</td><td style="text-align:center">"QRX 5 min, recargando batería"</td></tr><tr><td style="text-align:center">QSO</td><td style="text-align:center">Contacto o charla establecida</td><td style="text-align:center">"Iniciando QSO con base central"</td></tr><tr><td style="text-align:center">QRZ</td><td style="text-align:center">¿Quién me llama? (No identifiqué ID)</td><td style="text-align:center">"QRZ? Repita mensaje"</td></tr></tbody></table></div>
+<p><strong>REGLAS DE ORO EN EMERGENCIAS</strong></p>
+<ol>
+<li class="">Piense, luego escriba: Sea breve y conciso.</li>
+<li class="">Confirme: Si recibe una instrucción crítica, responda siempre con un QSL.</li>
+<li class="">Prioridad: Deje el canal libre si escucha un mensaje de emergencia (SOS).</li>
+<li class="">Estado de Batería: Reporte si su nodo entra en batería baja antes de quedar QRT.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="criterios-teóricos-de-posicionamiento-de-nodos-fijos">Criterios teóricos de posicionamiento de nodos fijos<a href="https://mrnetsky.github.io/docusaurus_personal/blog/sin-nombre#criterios-te%C3%B3ricos-de-posicionamiento-de-nodos-fijos" class="hash-link" aria-label="Enlace directo al Criterios teóricos de posicionamiento de nodos fijos" title="Enlace directo al Criterios teóricos de posicionamiento de nodos fijos" translate="no">​</a></h2>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[testing-dispositivos]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/testing-dispositivos</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/testing-dispositivos"/>
+        <updated>2025-12-29T15:49:04.000Z</updated>
+        <summary type="html"><![CDATA[Cosas a evaluar:]]></summary>
+        <content type="html"><![CDATA[<u>Cosas a evaluar:</u>
+<ul>
+<li class="">
+<p>Calidad</p>
+</li>
+<li class="">
+<p>Alcance</p>
+<ul>
+<li class="">Analizar si es necesario buscar una antena más potente</li>
+</ul>
+</li>
+<li class="">
+<p>Rendimiento energético</p>
+<ul>
+<li class="">Analizar la posibilidad de buscar un powerbank</li>
+</ul>
+</li>
+<li class="">
+<p>Comunicación</p>
+<ul>
+<li class="">Canales de Meshtastic</li>
+<li class="">Configuración inicial</li>
+<li class="">Diferencias en este aspecto con otros dispositivos y marcas</li>
+<li class="">Configuración de saltos</li>
+<li class="">Impacto de los datos telemétricos en el tráfico aereo.</li>
+<li class="">Evaluar la potencia de salida de los diferentes dispositivos.</li>
+</ul>
+</li>
+<li class="">
+<p>Intercomunicación con MeshCore</p>
+</li>
+<li class="">
+<p>Evaluar tiempos de actualizacion y quienes llevarán a cabo este proceso.</p>
+</li>
+<li class="">
+<p>Dispositivo p/combatiente, forma/ funcionalidades</p>
+<ul>
+<li class="">Botones<!-- -->
+<ul>
+<li class="">Grandes</li>
+<li class="">Pocos</li>
+<li class="">C/relieve (provee facilidad para distinguirlos)</li>
+</ul>
+</li>
+<li class="">Pantalla grandes</li>
+<li class="">Funcionalidad optimizada a poco uso o uso automatizado</li>
+<li class="">Voz PTT (Esto le ahorraría peso si podemos usar de handy al dispositivo Meshtastic)</li>
+<li class="">GPS visible desde la pantalla.</li>
+</ul>
+</li>
+<li class="">
+<p>Escenarios de Comunicación</p>
+<ul>
+<li class="">Cuánto retiene un mensaje en un canal un repetidor?</li>
+<li class="">Cuanto retiene un mensaje dirécto un repetidor?</li>
+<li class="">Notifican si no llega el mensaje?</li>
+</ul>
+</li>
+<li class="">
+<p>¿Es útil tener un excel con estos datos de los diferentes dispositivos?</p>
+</li>
+<li class="">
+<p>De ser útil... ¿Faltan datos? ¿Sobran?
+Ficha técnica:</p>
+</li>
+<li class="">
+<p>Nombre</p>
+</li>
+<li class="">
+<p>Marca</p>
+</li>
+<li class="">
+<p>Función que cumple</p>
+</li>
+<li class="">
+<p>Peso</p>
+</li>
+<li class="">
+<p>Pantalla</p>
+<ul>
+<li class="">Tipo</li>
+<li class="">Tamaño</li>
+</ul>
+</li>
+<li class="">
+<p>Conectividad</p>
+<ul>
+<li class="">Bluetooh</li>
+<li class="">WiFi</li>
+<li class="">GPS</li>
+<li class="">Sensores<!-- -->
+<ul>
+<li class="">Especificar.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">
+<p>Interacción c/dispositivo</p>
+<ul>
+<li class="">Botones<!-- -->
+<ul>
+<li class="">Cantidad</li>
+<li class="">Funciones</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">
+<p>Cerificación IP</p>
+</li>
+<li class="">
+<p>Radio y recepción</p>
+<ul>
+<li class="">Chip</li>
+<li class="">Antena<!-- -->
+<ul>
+<li class="">Tipo</li>
+<li class=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">
+<p>Case:</p>
+<ul>
+<li class="">Material</li>
+<li class="">Puntos de fijación</li>
+<li class=""></li>
+</ul>
+</li>
+<li class="">
+<p>Firmware</p>
+<ul>
+<li class="">Versión</li>
+<li class="">Actualizaciones<!-- -->
+<ul>
+<li class="">Cantidad</li>
+<li class="">Versión actual</li>
+<li class="">Dificultad</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">
+<p>Energía</p>
+<ul>
+<li class="">Puerto de carga<!-- -->
+<ul>
+<li class="">Cantidad</li>
+<li class="">Tipo</li>
+</ul>
+</li>
+<li class="">Baterías<!-- -->
+<ul>
+<li class="">Cantidad</li>
+<li class="">Tipo</li>
+</ul>
+</li>
+<li class="">Panel solar</li>
+</ul>
+</li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nos fuimos de compras: Nuestra primera experiencia adquiriendo dispositivos Meshtastic]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/compras-12-25-p2</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/compras-12-25-p2"/>
+        <updated>2025-12-16T14:58:42.000Z</updated>
+        <summary type="html"><![CDATA[Este artículo se encuentra en proceso.]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Advertencia</div><div class="admonitionContent_BuS1"><p>Este artículo se encuentra en proceso.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="proceso-de-recepción-de-los-dispositivos">Proceso de recepción de los dispositivos<a href="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25-p2#proceso-de-recepci%C3%B3n-de-los-dispositivos" class="hash-link" aria-label="Enlace directo al Proceso de recepción de los dispositivos" title="Enlace directo al Proceso de recepción de los dispositivos" translate="no">​</a></h2>
+<p>Los dispositivos fueron llegando con el correr de los días, con relativa rapidez, uno esperaría que se demoren de mes, a mes y medio en empezar a llegar los dispositivos, incluso no era loco pensar que podrían demorar hasta dos meses, o al menos eso pensábamos nosotros, incluso después de que las páginas anunciasen tiempos notablemente más cortos que nuestras expectativas al momento de la compra. Pero lo que realmente sucedió fue que se acercó mucho más a los tiempos estimados de compras que a nuestras expectativas, lo cual es espectacular, porque hay un promedio entre 15 a 21 días para la llegada de los dispositivos. Para nosotros es relativamente rápido, obviamente hubo compras que estuvieron debajo del promedio, así como hubo otras que se extendieron de ese plazo, pero en promedio está bien.</p>
+<p><strong>Pero a lo que vinimos... ¿Llegaron todos sin problemas?</strong></p>
+<p>La respuesta corta es no.</p>
+<p>Ahora bien, podemos rescatar que el paquete que teníamos miedo de que la aduana lo retuviera, no lo retuvo, llegó sano y salvo a nuestras manos. Lo irónico es que la otra compra en Amazon de dos dispositivos N37 de Meshnology, no llegó. La compra nunca se terminó de efectuar debido a problemas que desconocemos relacionadas con el pago. Lo positivo es que no se debitó el monto de la tarjeta de crédito. Rehicimos esta compra, pero luego de estar interactuando con los dispositivos decidimos darla de baja, debido a la cuestionable calidad del mismo y en su lugar efectuamos una compra de 3 Wio Tracker L1 Pro, cuyo hardware es el que Meshnology usó para la creación del N37.</p>
+<p>¿Por qué esa elección? La usabilidad del dispositivo era mala y queríamos constatar si era un problema de diseño de la carcasa del N37 o bien era un problema de diseño del hardware del Wio Tracker L1.</p>
+<p>¿Llegamos a una conclusión? Si. El mayor problema del N37 está en el diseño del botón que lo hace prácticamente inútil a la hora de intentar interactuar con el dispositivo. Problema que no posee el Wio Tracker L1 Pro, pero si creemos que debe haber mejoras en el joystick. Nos explayaremos mejor al respecto cuando hablemos específicamente de los dispositivos que hemos adquirido.</p>
+<p>No fue el único problema que tuvimos, con Heltec no hemos tenido una buena primera experiencia. Ustedes se preguntarán por qué y el motivo fue que nuestra compra estuvo en proceso por más de dos semanas, hasta que cancelaron la compra, no hubo avisos de que esto estaba por ocurrir o el motivo, por lo que, quizás con el diario del lunes, tomamos una mala decisión. Rehicimos la misma compra a Heltec, nuevamente desde su página, pero la compra, luego de casi dos semanas nuestra compra fue cancelada. Parecía una broma de mal gusto.</p>
+<p>Esta vez sí nos dieron un motivo, el sobreelevado precio del costo de envío debido a las baterías grandes, recordemos que estos dispositivos tenían una batería de 10.000mAh, sin embargo nosotros adquirimos productos con baterías de 7.000mAh como el P1 de Seed Studio y no hubo problemas. Y desde este espacio, apreciamos que nos quieran cuidar el bolsillo, pero también nos surgen preguntas... Si esto lo sabían</p>
+<ul>
+<li class="">¿Por qué no nos dieron la posibilidad de decidir si dar o no de baja la compra? Recordemos que ambas cancelaciones se hicieron unilateralmente por parte de Heltec.</li>
+<li class="">¿Por qué no nos lo informan <strong>antes</strong> de la compra? No sólo a nosotros, sino a los clientes en general, ya que es información sumamente importante.</li>
+<li class="">Si este fue el motivo de la cancelación de la primera compra ¿Por qué no nos lo informaron? Ya que recordamos que la primera compra fue dada de baja sin motivo.</li>
+<li class="">¿Fue efectivamente el problema el tamaño de las baterías o el número de dispositivos también tuvo que ver?</li>
+<li class="">¿Por qué al momento de efectuar la segunda compra no nos avisan al momento de esta situación?</li>
+<li class="">¿Por qué se demoró significativamente el reintegro del dinero de las compras que la empresa misma canceló? Recordamos que hay una compra a principios de Diciembre y otra a finales del mismo mes. Y es más nos reintegraron primero el monto de la segunda compra.</li>
+</ul>
+<p>Estas preguntas aún siguen sin respuestas. Y debido a la nueva cancelación se tomó la determinación de <strong>NO</strong> adquirir dispositivos de Heltec, al menos para esta 1er compra, debido a la mala experiencia que tuvimos no una, sino dos veces. No obstante, esperamos desde este espacio que tomen nuestras críticas para mejorar la experiencia de usuario, ya que es de nuestro interés obtener productos de esta marca. Pero si queremos aclarar que de haber una tercera experiencia en un futuro y esta fuese exactamente igual a las anteriores, no se efectuarán compras a dicha empresa.</p>
+<p>Pero como queremos evaluar el funcionamiento de su tecnología, lo haremos a través de ensambladores que incluyan su hardware o bien revendedores de Heltec que sí sean confiables. Como es el caso de Muzi Works, los cuales no hacen envíos a Argentina, por lo cual, Aerobox se tuvo que convertir en héroe.</p>
+<p>Una consecuencia extra fue la compra de 3 M5 Pro a Elecrow y 3 T-Deck a LilyGo. Esto fue debido al cambio en la postura inicial y se decidió tener en cuenta dispositivos que incluyan un ESP32. Por lo que la compra de los M5 Pro se orientó más a la comparativa directa con nodos como el N37, M1, WisMesh Tag, Wio Tracker L1 Pro o T-Echo, no solo en batería, donde muy probablemente pierda. Lo que a nosotros nos interesa en el aspecto de la batería es saber si puede soportar una jornada completa de combate contra el fuego. Además si hay alguna otra diferencia significativa con respecto a alcance o gestión de mensajería, entre otros aspectos a evaluar.</p>
+<p>Mientras que la compra del T-Deck se orientó más a la investigación sobre qué características relevantes puede aportar o si es un gasto innecesario, por lo menos en el combate del fuego.</p>
+<p>También en esta etapa se decidió que se necesitaba un nodo para el dron, con la posibilidad de hacer de puente para comunicaciones en donde sea más rápido desplegarse vía aérea. Pero luego de la dudable calidad del producto de Spec5, se decidió no adquirir el Spec5 Copilot, se buscaron opciones de la comunidad como carcasas impresas en 3D junto a hardware adaptado. Pero finalmente se fue por lo más sencillo, imprimir un soporte 3D para el WisMesh Tag que se agarre con un precinto a la parte baja del dron. El resultado, aunque sencillo, fue muy bueno. Obviamente no se podía despegar o aterrizar en el suelo, pero desde el funcionamiento superó ampliamente nuestras expectativas.</p>
+<div style="display:flex;gap:20px;justify-content:center;align-items:flex-start"><div style="flex:1;text-align:center"><img src="https://mrnetsky.github.io/docusaurus_personal/img/wmtag-soporte.jpeg" alt="WisMesh Tag" style="height:300px;width:auto;object-fit:contain"><p><strong>WisMesh Tag con soporte</strong></p></div><div style="flex:1;text-align:center"><img src="https://mrnetsky.github.io/docusaurus_personal/img/dron-repetidor-meshtastic-1.jpeg" alt="Dron repetidor" style="height:300px;width:auto;object-fit:contain"><p><strong>Anclaje a dron</strong></p></div></div>
+<p>¿Es esta la solución de los nodos para drones? La respuesta corta es no. Pero si creemos que aportó sensaciones positivas y por un bajísimo coste económico y de tiempo, se pudieron realizar unas primeras pruebas de manera óptima.</p>
+<p>Para cerrar este apartado diría que en líneas generales, fue un proceso que llevamos a cabo con éxito, con sensaciones positivas que nos dejaron muchísimos aprendizajes. Obviamente hubo problemas y sinsabores, pero como suele suceder en la vida, no obstante, nos quedamos con lo positivo de esta experiencia.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusiones">Conclusiones<a href="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25-p2#conclusiones" class="hash-link" aria-label="Enlace directo al Conclusiones" title="Enlace directo al Conclusiones" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="envío">Envío<a href="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25-p2#env%C3%ADo" class="hash-link" aria-label="Enlace directo al Envío" title="Enlace directo al Envío" translate="no">​</a></h3>
+<p>Es importante resaltar que mientras más rápido una empresa despacha un producto más rápido podrá llegar a destino, quizás es una obviedad mencionarlo, pero no lo es tanto. Empresas como RAK o SeedStudio entienden y respetan esto, es por ello que han sido los productos que más rápido llegan a destino.</p>
+<p>Elecrow es un caso similar a las anteriores, pero sí hubo un envío que se demoró casi un mes en ser despachado, nosotros creemos que hubo un error por parte de ellos en anunciar un producto (ThinkNode M6), que quizás no había en stock a momento de la compra. Pero insisto que son conjeturas, ya que desde la empresa no hubo comunicados al respecto. Pero para la tercera compra nos enviaron un regalo, el verdadero 'así se cuida a un cliente', realmente unos tipazos.</p>
+<p>Meshnology y Spec5 han cumplido, podemos resaltar que para ambos envíos, el embalaje no fue el adecuado, sin dudas los más flojos, pero en cuanto a tiempos, cumplieron. Quién si dejó sensaciones positivas fue Aerobox que formó parte del envío del Spec5 Voyager, ya que fue quien lo trajo desde EEUU a nuestra locación. Fue un servicio rápido, no muy costoso, que te mantiene informado vía mail del movimiento del paquete. en base a nuestra primera experiencia es recomendable y que tendremos en cuenta para posteriores compras.</p>
+<p>Está de más aclarar que Heltec no efectuó envíos. LilyGo en un inicio pareció recorrer el mismo camino que Heltec, ya que se demoró mucho en el despacho del producto. Pero, luego de un més FedEx lo tuvo en sus manos y en poco tiempo lo tuvimos en nuestras manos.</p>
+<p>Muzi Works terminó siendo quien más rápido despachó nuestro paquete. Aunque no sabemos si llegó en tiempo a los depósitos de Aerobox. Y usted se preguntará ¿Cómo es esto posible? Bueno... Según Muzzi Works y USPS el paquete llegó una semana antes de lo que informa Aerobox. Hecho que nos preocupó, porque mientras de un lado nos decían paquete entregado, del otro nos decían que no había llegado nada. Pero por suerte todo salió bien. Sin embargo fueron los últimos dispositivos en llegar.</p>
+<p>Si creemos que a diferencia de la entrega anterior de Aerobox, donde sus demoras fueron nuestra responsabilidad, en este caso si se han demorado más. ¿Esto es malo? No, sigue siendo un buen servicio y relativamente rápido, pero es algo que no queríamos dejar de comentar.</p>
+<p>Quería también hablar de los couriers. FedEx el primer paquete que nos entregó, no nos comunicó nada hasta que estuvo en puerta, nos dieron una cuenta a la que hacer la transferencia, lo cual es curioso cuanto menos, ya que uno espera un servicio más 'profesional'. Pero ya para la segunda entrega si nos avisaron cuando estaban aduana, pagamos los impuestos y posteriormente nos entregaron el paquete. Es un servicio costoso, pero llega en el tiempo estipulado. Creemos que es un buen servicio pero lo que sí nos llama la atención es que no nos trasladaron 3 ThinkNode M1 porque contenían baterías, hecho que nos obligó a cambiar de courier, pero si trajeron los T-Deck que poseían baterías más grandes. Por lo que no sabemos si traen o no baterías desde el exterior, la única diferencia relevante entre las compras que trajo FedEx fue el país, una de China y otro de EEUU, respectivamente.</p>
+<p>DHL es y por escándalo lo mejor, no solo la velocidad sino la claridad del proceder, te avisaban cuando tenían tu pedido, cuando estaba en aduana, cuánto deberías pagar, realmente un muy buen servicio. En cuanto a precios, no sabríamos ubicarlos ya que los hubo muy bajos y muy altos, pero es un servicio por el que vale la pena pagar. Pero, no todo lo que brilla es oro y este también es un gran pero, hay problemas con los montos facturados. Resaltamos el buen servicio de atención al cliente vía teléfono y mail, no así vía wpp, pero lo que realmente nos parece importante destacar es la predisposición y la rapidez a la hora de solucionarte, además de que luego de mostrarles el error, nos reintegraron todo. Por lo que vuelvo a repetir, muy buen servicio.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="primer-encendido">Primer encendido<a href="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25-p2#primer-encendido" class="hash-link" aria-label="Enlace directo al Primer encendido" title="Enlace directo al Primer encendido" translate="no">​</a></h3>
+<p>Los primeros nodos que se encendieron, fueron los N37. Aquí cometimos nuestro primer error, a 5 minutos de haber encendido el dispositivo. Intentamos flashear el firmware vía bluetooth, algo que no se puede hacer desde la app de Android, por lo menos a la fecha de publicación de este artículo (y no es que no se pueda en la actualidad, pero nosotros no quisimos ahondar en este proceso por ahora), pero que en su momento nosotros sabíamos, lo que derivó en que el dispositivo se 'rompa'. Pero lo arreglamos a la brevedad.</p>
+<p>Para ello debimos desarmarlo, desconectar la batería y conectarlo vía USB al PC, es <em>importantísimo</em> que al momento de conectarlo, tenga la antena LoRa conectada, porque de lo contrario podemos dañar el dispositivo de manera permanente. Al tenerlo conectado, lo hacemos entrar en modo DFU, para ello oprimimos dos veces el botón de reset. Luego desde la página de web, flasheamos el firmware y resucitó.</p>
+<p>El proceso de actualización del firmware es algo que aplicó a <em>todos</em> los dispositivos.</p>
+<p>Posteriormente se flashearon los firmware de los WisMesh Tag y SenseCAP Solar Node P1. Ambos con sensaciones muy positivas. El primero por su durabilidad pese a su pequeña batería y simpleza de uso.</p>
+<p>El segundo por su armado sencillo y hasta el momento se han hecho comunicaciones a 2.5km casi con total normalidad. Pero sí hay una cuestión que desde la página que no se informó o al menos nosotros no lo vimos y es la forma de la batería. ¿Por qué es relevante? Porque si bien nosotros sabíamos que usaban 4 baterías 18650, no sabíamos que necesariamente debían ser con relieve en el cátodo (comúnmente conocido como botón o tetón). Entonces nosotros teníamos 4 baterías de esa forma, pero necesitábamos el doble (porque tenemos dos nodos). Lo que sí es relevante es que con dos baterías el rendimiento es muy bueno.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>¿Sabías que...?</div><div class="admonitionContent_BuS1"><p>Nos hemos propuesto reciclar baterías de litio 18650 de dispositivos rotos o en desuso con el fin de poder reutilizarlas. En nuestro caso particular son las que usamos dentro de los SenseCAP P1. Aunque también tenemos pensado agrupar las que sobren en un powerbank casero.</p></div></div>
+<p>De los M1 llamó poderosamente la atención el alto consumo de energía, implicando en una durabilidad del dispositivo que no supera las 48hs. Nosotros tenemos la teoría que al actualizarse la pantalla minuto a minuto la hora y cada tanto el porcentaje de batería, la pantalla se encuentra en constante trabajo, desgastando la batería. Lo que si es positivo es el cambio del firmware, porque le da una mejora muy grande en comparación con el que viene instalado de fábrica, aunque esto aplica para todos los nodos.</p>
+<p>Y hablando de firmware... El ThinkNode M6 no tiene firmware. Al menos eso creíamos, ya que no está disponible al momento de la publicación de este artículo, en la página de <a href="https://flasher.meshtastic.org/" target="_blank" rel="noopener noreferrer" class="">flasher web meshtastic</a>. Entonces... ¿Dónde lo conseguimos? En el siguiente repositorio de GitHub, un heroe se puso a la tarea de crearlo, además allí te enseña cómo compilarlo y flashearlo. <a href="https://github.com/meshtastic/firmware" target="_blank" rel="noopener noreferrer" class="">Aquí les dejamos el repo en cuestión.</a></p>
+<p>Entre los nodos que empezaron a llegar mas tarde está el Wio Tracker L1 Pro, debido a su compra tardía y pudimos constatar las diferencias en el manejo del joystick con el N37. Otro que llegó tarde, aunque así se esperaba era el Spec5 Voyager, que en funcionamiento, anda muy bien, en cuanto a interacción con el mismo, es claramente el menos logrado. 219 U$D por un nodo que no tiene acceso al puerto USB, a botones o aunque sea una luz para saber si está o no en funcionamiento.</p>
+<p>Y si no hay botones... ¿Cómo se enciende? Deberás desarmarlo y conectar la batería. Y si quisieras saber si está operativo, deberás buscarlo desde alguna app o nodo, ya sea para conectarte a él o ver que el mismo se encuentre operativo. Un dispositivo que pese a sus interesantísimas características, esta poco logrado, aún más teniendo en cuenta su elevado precio. Para flashear el firmware deberás buscar el disponible para el WisBlock.</p>
+<p>Pero  de las compras tardías, la llegada que nosotros más esperábamos era la de los nodos cuyo procesador fuera un ESP32. Los primeros en llegar fueron los M5 Pro y su proceso de actualización fue preocupante. Porque cuando lo actualizamos, se 'rompió', pero esta vez, parecía peor. Tanto que el primer día no pudimos solucionar el problema. Hecho que nos condujo a comunicarnos, vía mail con Elecrow contándoles nuestro problema. Ellos se comunicaron con nosotros en menos de 24hs, nos sugirieron que <em>NO</em> usemos la opción de 'InkHUD', e intentaramos nuevamente. Pero nosotros el día anterior, habíamos probado esto sin éxito, pero lo intentamos una vez más y funcionó. ¿Por qué funcionó ahora y no antes? Lo ignoramos por completo, creemos que se debió a un problema ajeno al proceso en si, ya que la página cambió de interfaz de un día a otro, pero recalco nuevamente, ignoramos el motivo, esto es una suposición nuestra. Lo verdaderamente importante es que nuestro nodo, volvió a la vida mismo que a primeras luces no parece tener diferencias significativas con el M1. Pero hablaremos más a fondo de cada uno de los dispositivos en otro blog.</p>
+<p>El otro ESP32 que llegó fue el T-Deck Plus. Muy esperado por nuestra parte, cuyas expectativas se encontraban divididas, por lo que podía ofrecer, entre las limitaciones que posee. Su flasheo fue sencillo, su interfaz está bien, pero necesita mejorar aún más. La pantalla táctil soluciona los problemas del trackball, el cual creo es innecesario e inutil. Se deberá remover o mejorar su funcionamiento, pero creo que no puede coexistir con una pantalla táctil. Para conectarlo vía BLE, dejas de poder usar el dispositivo, para operarlo desde el celular. Algo que es una gran contra, ya que ninguno de los dispositivos que usamos hasta la fecha le sucede lo mismo. Tiene disponible el lenguaje español lo cual es muy positivo, ya que también es el único que tenemos con esta posibilidad. Yo creo que el balance es negativo que positivo, al menos en este primer encendido. Obviamente faltan pruebas y se verá que función desempeña finalmente y cómo puede hacerlo, pero aún creemos que puede llegar a ser útil.</p>
+<p>El último en llegar de todos fueron los MeshPocket Qi2.</p>
+<hr>
+<p>El proceso de compra que inició en los primeros días de Diciembre se extendió hasta principio de Febrero con las cancelaciones y las compras posteriores. Fue un proceso que se extendió más de lo previsto, pero los dispositivos, llegaron aceptablemente rápido.</p>
+<p>Se adquirieron 35 unidades de todos los fabricantes de hardware. Nodos que pueden cumplir diferentes funciones, abarcando los dos procesadores del mercado como lo son el ESP32 y el nRF52.</p>
+<p>Creemos que es un buen punto de partida para empezar a testear escenarios posibles y coordinar con nuestro equipo, así como con combatientes y gente aficionada que quiera formar parte de las primeras pruebas de campo en esta zona. Estamos felices y expectantes de los resultados que arrojarán estas pruebas así como ansiosos de poder ayudar a nuestra comunidad.</p>
+<div class="fb-comments" data-href="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25-p2" data-width="100%" data-numposts="5"></div>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <author>
+            <name>Nicolas Pace</name>
+            <uri>https://nico.today</uri>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+        <category label="Importación de equipamiento" term="Importación de equipamiento"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Guía de configuración inicial paso a paso para tu dispositivo Meshtastic]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic"/>
+        <updated>2025-12-16T14:58:42.000Z</updated>
+        <summary type="html"><![CDATA[Este artículo fue creado en Febrero del 2026. En este mensaje podrá ver cuando fue actualizado por última vez este artículo. Esto es debido a que la tecnología se actualiza constantemente y esta guía puede quedar desactualizada con el progreso de las herramientas o el surgimiento de nuevas.]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Atención</div><div class="admonitionContent_BuS1"><p>Este artículo fue creado en Febrero del 2026. En este mensaje podrá ver cuando fue actualizado por última vez este artículo. Esto es debido a que la tecnología se actualiza constantemente y esta guía puede quedar desactualizada con el progreso de las herramientas o el surgimiento de nuevas.</p></div></div>
+<p>Ya hemos explorado qué es Meshtastic, por qué se ha convertido en la solución líder para la comunicación resiliente y cómo su ecosistema de Fabricantes y Ensambladores ha dado forma al hardware disponible. Ahora, es momento de dejar atrás la teoría y concentrarnos en el paso más crucial: activar tu primer nodo y ponerlo a trabajar.</p>
+<p>A través de un proceso sencillo y directo, abordaremos tres aspectos fundamentales:</p>
+<ul>
+<li class="">
+<p>Configuración: Aprenderás a encender correctamente el dispositivo, conectar la antena y, lo más importante, a vincularlo a tu smartphone mediante la aplicación Meshtastic (usando la conexión Bluetooth).</p>
+</li>
+<li class="">
+<p>Uso Básico: Entenderás cómo establecer parámetros vitales como la frecuencia regional (garantizando su legalidad y alcance) y el nombre de tu nodo.</p>
+</li>
+<li class="">
+<p>Funcionamiento: Te mostraremos cómo enviar tus primeros mensajes y cómo confirmar que tu dispositivo está efectivamente "saltando" la señal a otros nodos, extendiendo el alcance de la red.</p>
+</li>
+</ul>
+<p>Nuestro objetivo es que, en pocos minutos, tu dispositivo se convierta en un miembro activo y operativo de la comunicación descentralizada, garantizando que puedas empezar a explorar todo su potencial en tus aventuras o planes de emergencia.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="preparación-del-dispositivo">Preparación del dispositivo<a href="https://mrnetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic#preparaci%C3%B3n-del-dispositivo" class="hash-link" aria-label="Enlace directo al Preparación del dispositivo" title="Enlace directo al Preparación del dispositivo" translate="no">​</a></h2>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>información</div><div class="admonitionContent_BuS1"><p>Tenga en cuenta que estas configuraciones están pensadas para Argentina, por lo que si usted pertenece a otro país, puede que tenga que elegir otras opciones, pero la forma de acceder a dichas configuraciones es la misma para todos los países.</p></div></div>
+<ol>
+<li class=""><strong>Obtención de un dispositivo:</strong>
+Existe un gran variedad de dispositivos, el que hayas de elegir dependerá de su <a class="" href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos"><em>función</em></a>, también hay una gran variedad de <a class="" href="https://mrnetsky.github.io/docusaurus_personal/blog/fabricantes-ensambladores"><em>marcas</em></a> que se dedican al universo meshtastic. Nosotros a fines prácticos, usaremos un <del>rellene este espacio</del>,pero el proceso es el mismo para todos.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="región">Región<a href="https://mrnetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic#regi%C3%B3n" class="hash-link" aria-label="Enlace directo al Región" title="Enlace directo al Región" translate="no">​</a></h3>
+<p>Es importante este apartado, ya que no podrás utilizar el dispositivo, esto se puede hacer mediante tres medios, desde el dispositivo, la app del celular o desde Meshtastic CLI (comand line interface), pero en este artículo NO se ahondará sobre esta herramienta y su funcionamiento.</p>
+<ul>
+<li class="">Desde el dispositivo se puede hacer en dos momentos:<!-- -->
+<ul>
+<li class="">Al iniciar un dispositivo con pantalla sin haberlo conectado con un teléfono previamente con un firmware igual o superior al 2.7.15. Te dará la posibilidad de configurar la región, debiéndose elegir la opción <strong>ANZ</strong>.</li>
+<li class="">Desplazándose al menú de LoRa info, aquí lo que se debe acceder al menú de <em>LoRa actions</em> y seleccionar la opción <em>LoRa Region</em>. Allí debo elegir la opción <strong>ANZ</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><del>RECORDAR SACAR FOTOS</del></p>
+<ul>
+<li class="">Desde app, luego de la vinculación, en la misma ventana, verás una opción que te pide que indiques la región del dispositivo, aquí seleccionas la región de <strong>Australia/Brasil/Nueva Zelanda/</strong></li>
+</ul>
+<p><del>RECORDAR SACAR FOTOS</del></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="firmware">Firmware<a href="https://mrnetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic#firmware" class="hash-link" aria-label="Enlace directo al Firmware" title="Enlace directo al Firmware" translate="no">​</a></h3>
+<p>Existen dos métodos: vía BLE (bluetooth low energy) o vía USB. Pero desde este espacio, no recomendamos el primer método, al menos no al 01/26, porque intentando actualizarlo vía este método, el dispositivo se trabó, tuvimos que desarmarlo, desconectar la batería, actualizar el firmware via USB una vez que se actualizó, reconectamos la batería y rearmamos el dispositivo. Lo que, como podrás haber notado, nos llevó al segundo método, pero... Cómo se hace? Bueno, es sencillo siguiendo estos pasos:</p>
+<div class="theme-tabs-container tabs-container tabList__CuJ"><ul role="tablist" aria-orientation="horizontal" class="tabs"><li role="tab" tabindex="0" aria-selected="true" class="tabs__item tabItem_LNqP tabs__item--active"><div style="display:flex;align-items:center;gap:8px"><span>nRF52</span></div></li><li role="tab" tabindex="-1" aria-selected="false" class="tabs__item tabItem_LNqP"><div style="display:flex;align-items:center;gap:8px"><span>ESP32</span></div></li></ul><div class="margin-top--md"><div role="tabpanel" class="tabItem_Ymn6"><ol>
+<li class="">Ingresar a la página donde podes flasear el firmware. <a href="https://flasher.meshtastic.org/" target="_blank" rel="noopener noreferrer" class="">Aquí puedes acceder a la página</a></li>
+<li class="">Selecionas el dispositivo que vayas a flashear. Para que puedas encontrar más rápido el dispositivo, podes seleccionar la marca y te muestra todos los dispositivos disponibles de una marca. Si se lo compras a un ensamblador, lo que deberás buscar al fabricante de la placa. Por ejemlo, nosotros tenemos un Meshnology N37 que es prácticamente un Wio Tracker L1, entonces nosotros seleccionamos como nuestro dispositivo al Wio Tracker L1.</li>
+<li class="">Versión del firmware. Existen alfas (inestables) y betas (estables), recomendamos que utilices la última beta disponible.</li>
+<li class="">Antes de orpimir flashear, deberá conectar el dispositivo vía USB. ¿Debe esperar a hasta este punto para poder conectarlo? No, puede hacerlo incluso antes del primer paso.</li>
+<li class="">Hacerlo entrar en modo DFU (device firmware update). ¿Cómo se hace? Estando conectado al PC/Notebook, oprimiendo dos veces el botón de reset (también se lo puede hacer entrar en este modo desde Meshtastic CLI, pero no ahondaremos en ese proceso en este artículo). Como sabrá que logró hacerlo entrar en DFU, se le abrirá automáticamente la carpeta del dispositivo en la pantalla, o podrá acceder a la carpeta del dispositivo desde el gestor de archivos, independientemente del sistema operativo que poseas.</li>
+<li class="">Ahora si oprimimos flashear, allí nos mostrará en pantalla, dónde quieres descargar la versión del firmware, seleccionaras la darpeta del dispositivo y le das a aceptar. Puede ocurrir que el archivo que estes descargando tenga el mismo nombre que el del firmware actual de tu dispositivo, en ese caso te preguntará si quieres reescribir el nombre y le dirás que sí.</li>
+</ol><p>¿Cómo saber que el proceso terminó? El dispositivo se desconectará solo del PC, esto es debido a que se reinició para aplicar los cambios. Podrá ver que el proceso fue exitoso ya que le dará la versión que usted ha descargado.</p></div><div role="tabpanel" class="tabItem_Ymn6" hidden=""><p>Instrucciones ESP32</p></div></div></div>
+<p>¿Cada cuánto es recomendable actualizar el firmware? Aún no definimos una métrica recomendable que permita asegurar cada cuánto debe usted actualizar el firmware. Si recomendamos que haga este procedimiento apenas haya adquirido el producto, aunque no es necesario que lo haga antes de conectarlo al celular por primera vez.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="configuraciones-adicionales">Configuraciones adicionales<a href="https://mrnetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic#configuraciones-adicionales" class="hash-link" aria-label="Enlace directo al Configuraciones adicionales" title="Enlace directo al Configuraciones adicionales" translate="no">​</a></h3>
+<p>Aquí se mostrarán las modificaciones que quizá, no son tan escenciales, pero que nosotros hemos llevado a cabo.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="hora">Hora<a href="https://mrnetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic#hora" class="hash-link" aria-label="Enlace directo al Hora" title="Enlace directo al Hora" translate="no">​</a></h4>
+<p>Al momento de configurarla, es probable que se actualice sola al momento de vincular el dispositivo con el celular, pero puede que haya una diferencia de zona horaria, para ello la cambiaremos, desde la app o desde el nodo, pero puede que no aparezca Argentina, por lo que elegiremos una que coincida con la nuestra, en este caso utilizaremos Brasilia.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="canales">Canales<a href="https://mrnetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic#canales" class="hash-link" aria-label="Enlace directo al Canales" title="Enlace directo al Canales" translate="no">​</a></h4>
+<p>Desde la app entras al apartado de ajustes, en la sección de canales, ahí solo verás uno por defecto, se llama 'long fast'. Ahí verás un signo '+' el cual debes orpimir, una vez acá eliges el nombre de el canal y lo importante es la dirección del canal, el cual deberás compartir a quien/es que formará/n parte del canal. Una vez terminado, sales de esta ventana y aprietas en enviar. Importante es que envíes los datos, porque de lo contrario es como si no hubieses hecho nada.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ubicación-precisa">Ubicación precisa<a href="https://mrnetsky.github.io/docusaurus_personal/blog/configuracion-meshtastic#ubicaci%C3%B3n-precisa" class="hash-link" aria-label="Enlace directo al Ubicación precisa" title="Enlace directo al Ubicación precisa" translate="no">​</a></h4>
+<p>En el mismo lugar donde creaste el canal, uno de lo apartado es que puedas enviar la posición, debes de activar esa opción, una vez hecho esto, lo que debes es habilitar la ubicción prescisa. Sales de est ventana y le das a enviar.</p>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <author>
+            <name>Nicolas Pace</name>
+            <uri>https://nico.today</uri>
+        </author>
+        <author>
+            <name>Agus Las Peñas</name>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Meshtastic, la tecnología open source para la comunicación a larga distancia (LoRa)]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/primeros-pasos-meshtastic</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/primeros-pasos-meshtastic"/>
+        <updated>2025-12-16T14:58:42.000Z</updated>
+        <summary type="html"><![CDATA[Logo Meshtastic]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" src="https://i0.wp.com/pileupdx.com/wp-content/uploads/2024/04/meshtastic-banner.jpg?resize=1024%2C200&amp;ssl=1" alt="Logo Meshtastic" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introducción">Introducción<a href="https://mrnetsky.github.io/docusaurus_personal/blog/primeros-pasos-meshtastic#introducci%C3%B3n" class="hash-link" aria-label="Enlace directo al Introducción" title="Enlace directo al Introducción" translate="no">​</a></h2>
+<p>En el combate de incendios forestales y en las operaciones de búsqueda y rescate (SAR), la comunicación es un factor determinante para un accionar eficiente. En zonas de alta montaña o quebradas profundas, las redes celulares son inexistentes y las radios VHF/UHF convencionales suelen fallar debido a la geografía del lugar.</p>
+<p>Meshtastic surge como una solución de comunicación alternativa. No depende de infraestructura externa sino que permite crear una infraestructura propia.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="para-qué-sirve">¿Para qué sirve?<a href="https://mrnetsky.github.io/docusaurus_personal/blog/primeros-pasos-meshtastic#para-qu%C3%A9-sirve" class="hash-link" aria-label="Enlace directo al ¿Para qué sirve?" title="Enlace directo al ¿Para qué sirve?" translate="no">​</a></h3>
+<p>A diferencia de otros sistemas, Meshtastic está diseñado para operar en condiciones extremas:</p>
+<ul>
+<li class="">Red de seguridad autónoma 🆘: Si el repetidor central falla o el humo bloquea las señales satelitales, los nodos Meshtastic siguen operando entre sí.</li>
+<li class="">Geolocalización del personal 📍: Permite al <em>puesto de comando</em> visualizar en tiempo real la posición de cada brigadista o vehículo en el terreno, aumentando la conciencia del entorno y reduciendo riesgos como el de quedar atrapado por cambios en la dirección del viento o de extravío del combatiente. Además de saber dónde está qué y quién, es posible saber cómo llegó allí o dónde fue visto por última vez.</li>
+<li class="">Logística Silenciosa 📻: Envío de coordenadas y potencialmente estados de suministro (agua, combustible, etc) y alertas de evacuación mediante texto, evitando la saturación de los canales de voz críticos.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cómo-lo-hace">¿Cómo lo hace?<a href="https://mrnetsky.github.io/docusaurus_personal/blog/primeros-pasos-meshtastic#c%C3%B3mo-lo-hace" class="hash-link" aria-label="Enlace directo al ¿Cómo lo hace?" title="Enlace directo al ¿Cómo lo hace?" translate="no">​</a></h3>
+<p>Usando una señal de radio de baja potencia llamada LoRa, cada nodo puede enviar mensajes "saltando" de uno a otro, generando así lo que se conoce como malla colaborativa y cuyo alcance de la red se extiende con cada nodo. Los nodos Meshtastic son de bajo consumo energético, permitiéndoles durar días con una sola carga, lo que es perfecto para cubir las jornadas de combate del fuego.</p>
+<p>Algunos nodos operan de manera similar que un walkie-tolkie de texto, ya que poseen pantalla, botones, parlante (solo cumplen una función de emisión de sonido con el fin de enviar notificaciones al usuario) e incluso algunos tienen hasta teclado.
+Mientras que los que no cuentan con estas características, pueden vincularse con su teléfono a través de la aplicación Meshtastic, logrando así, compartir mensajes y ubicaciones de forma pública o privada sin depender de redes WiFi o celulares.</p>
+<p><img decoding="async" loading="lazy" src="https://www.ultimavincam.com/fileman/entradas/10/lora-topology-2-c80684f1eafdf2a71fbaf26e494fb26d.webp" alt="Intercomunicación Meshtastic" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>¿sabías qué?</div><div class="admonitionContent_BuS1"><p>Meshtastic es de código abierto y está impulsado por la comunidad, lo que significa que los usuarios tienen la libertad de ejecutar, modificar y mejorar el software. Se crea mediante la colaboración global, en la que todos trabajan juntos para mejorarlo.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="por-qué-nos-interesa">¿Por qué nos interesa?<a href="https://mrnetsky.github.io/docusaurus_personal/blog/primeros-pasos-meshtastic#por-qu%C3%A9-nos-interesa" class="hash-link" aria-label="Enlace directo al ¿Por qué nos interesa?" title="Enlace directo al ¿Por qué nos interesa?" translate="no">​</a></h3>
+<p>Porque posee características deseables en un sistema de comunicación de emergencias. La posibilidad de reenviar mensajes permite que los mensajes lleguen más lejos de lo que la infraestructura existente habilita. El bajo consumo permite que los dispositivos sean pequeños, portables, fáciles de desplegar, requiriendo poca infraestructura y baja inversión para su despliegue.</p>
+<p>Las comunicaciones digitales habilitan enviar información que antes, usando la voz, era difícil o imposible. Por ejemplo la ubicación de manera regular, e incluso poder recibir mensajes cuando uno no está prestando atención al dispositivo de comunicación y leerlo en otro momento, como lo haces habitualmente con tu teléfono. Todas estas características creemos que son claves para complementar un plan de comunicación en el combate del fuego.</p>
+<p>Entendemos que hay algunas barreras que limitan su implementación. Primero, mucha de la documentación existente para estas plataformas de comunicación se encuentra escrita en lenguaje técnico y su mayoría, en Ingles. Segundo, que al no estar pensada específicamente para el combate del fuego, la documentación no está adaptada a las necesidades del combate del fuego. Este proyecto busca trabajar en estos dos ejes. Por lo cual, esperen más contenido como este pronto.</p>
+<hr>
+<p>Meshtastic representa mucho más que una simple aplicación de radio; es una innovadora forma de conectividad, que al aprovechar el poder de la tecnología LoRa, ha creado un paradigma donde el alcance se maximiza y el consumo de energía se minimiza, haciendo que las comunicaciones de largo alcance sean posibles incluso en los lugares más complejos.</p>
+<p>No busca reemplazar a ninguno de los métodos actuales de comunicación, busca ofrecer una alternativa necesaria para cuando los demás, por diversos motivos, no pueden funcionar o no están disponibles y sumarse a las estrategias de comunicación que ya existen en el combate del fuego.</p>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <author>
+            <name>Nicolas Pace</name>
+            <uri>https://nico.today</uri>
+        </author>
+        <author>
+            <name>Agus Las Peñas</name>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nos fuimos de compras: Nuestra primera experiencia adquiriendo dispositivos Meshtastic]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/compras-12-25</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/compras-12-25"/>
+        <updated>2025-12-11T21:49:52.000Z</updated>
+        <summary type="html"><![CDATA[En el camino hacia la implementación de redes de comunicación descentralizadas para combatientes del fuego, la teoría y la planificación deben dar paso a la acción concreta. Después de un riguroso análisis de las funciones y especificaciones técnicas ideales para nuestros nodos Meshtastic, llegó el momento decisivo: el proceso de adquisición. Esta etapa, aparentemente sencilla, se transformó en una verdadera aventura logística y económica.]]></summary>
+        <content type="html"><![CDATA[<p>En el camino hacia la implementación de redes de comunicación descentralizadas para combatientes del fuego, la teoría y la planificación deben dar paso a la acción concreta. Después de un riguroso análisis de las funciones y especificaciones técnicas ideales para nuestros nodos Meshtastic, llegó el momento decisivo: el proceso de adquisición. Esta etapa, aparentemente sencilla, se transformó en una verdadera aventura logística y económica.</p>
+<p>Este artículo detalla nuestra primera experiencia de compra de dispositivos Meshtastic a nivel internacional, una inmersión forzosa en la dinámica del e-commerce global. Nuestro objetivo no solo era obtener el hardware necesario para iniciar talleres de formación y pruebas de campo, sino también evaluar los desafíos logísticos que enfrentará cualquier implementador en Argentina. A continuación, desglosamos cuáles fueron los dispositivos elegidos, el intrincado proceso de compra, los variados métodos de envío, los precios finales y los tiempos, tanto estimados como reales, de entrega. Esta guía está diseñada para convertir nuestra curva de aprendizaje en un camino más llano para futuros proyectos.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cuáles-son-y-por-qué-elegimos-estos-dispositivos">¿Cuáles son y por qué elegimos estos dispositivos?<a href="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25#cu%C3%A1les-son-y-por-qu%C3%A9-elegimos-estos-dispositivos" class="hash-link" aria-label="Enlace directo al ¿Cuáles son y por qué elegimos estos dispositivos?" title="Enlace directo al ¿Cuáles son y por qué elegimos estos dispositivos?" translate="no">​</a></h2>
+<p>Nuestro objetivo fue intentar abarcar la mayor cantidad de dispositivos que, a nuestro juicio, los combatientes pueden sacarle partido para poder llevar a cabo talleres de formación y prubas de campo. La elección sobre qué dispositivos se iban a adquirir no fue sencilla, pues hicimos un equilibrio entre la <a class="" href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos"><em>función</em></a> que pueden desempeñar y sus <a class="" href="https://mrnetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras"><em>especificaciones técnicas</em></a>, sin dejar afuera a ningún fabricante (tenga en cuenta que fabricante y ensamblador NO son lo mismo y <a class="" href="https://mrnetsky.github.io/docusaurus_personal/blog/fabricantes-ensambladores"><em>aquí</em></a> puede ver la diferencia).</p>
+<p>Si bien existe una gran cantidad de dispositivos en el mercado, luego de un análisis riguroso, los dispositivos y las cantidades que decidimos adquirir, son las siguientes:</p>
+<div style="margin-left:auto;margin-right:auto;width:fit-content"><table><thead><tr><th style="text-align:center">Modelo</th><th style="text-align:center">Marca</th><th style="text-align:center">Tipo</th><th style="text-align:center">Cantidad</th></tr></thead><tbody><tr><td style="text-align:center">N37</td><td style="text-align:center">Meshnology</td><td style="text-align:center">Portable c/pantalla</td><td style="text-align:center">6</td></tr><tr><td style="text-align:center">MeshPocket Qi2</td><td style="text-align:center">Heltec</td><td style="text-align:center">Powerbank</td><td style="text-align:center">6</td></tr><tr><td style="text-align:center">SenseCAP P1-Pro</td><td style="text-align:center">SeedStudio</td><td style="text-align:center">Fijo</td><td style="text-align:center">2</td></tr><tr><td style="text-align:center">Voyager</td><td style="text-align:center">Spec5</td><td style="text-align:center">Fijo p/Vehículo</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">ThinkNode M1</td><td style="text-align:center">Elecrow</td><td style="text-align:center">Portable c/pantalla</td><td style="text-align:center">6</td></tr><tr><td style="text-align:center">ThinkNode M6</td><td style="text-align:center">Elecrow</td><td style="text-align:center">Fijo</td><td style="text-align:center">2</td></tr><tr><td style="text-align:center">WisMesh Tag</td><td style="text-align:center">RAK</td><td style="text-align:center">Tarjeta</td><td style="text-align:center">6</td></tr></tbody></table></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="proceso-de-elección">Proceso de elección<a href="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25#proceso-de-elecci%C3%B3n" class="hash-link" aria-label="Enlace directo al Proceso de elección" title="Enlace directo al Proceso de elección" translate="no">​</a></h2>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>ADVERTENCIA:</div><div class="admonitionContent_BuS1"><p>Nuestra elección de dispositivos y cantidades están dirigidas a los combatientes del fuego, a las situaciones que deben afrontar y a nuestras creencias sobre las necesidades que deben estar cubiertas.</p></div></div>
+<p>Si hablamos de los dispositivos <strong>portables</strong>, adquirimos 6 de c/u (N37 y M1) y 6 MeshPocket. Aunque estos últimos son powerbanks (de 10.000mAh en el modelo elegido), también pueden desempeñarse como los dos anteriores. Es de nuestro intrés saber cómo trabajan estos dispositivos en entornos donde los dispositivos son homogéneos, para luego evaluarlos en escenarios mixtos, y contrastar los resultados obtenidos, ya que este último posiblemente se aproxime más a la realidad.</p>
+<p>La elección de los portables tuvo varios aspectos en cuenta. Desde un inicio se decidió NO contar con los procesadores ESP32, debido a su alto consumo de energía. La disponibilidad fue otra arista a evaluar, ya que modelos como el Nano G2 Ultra no se encuentran en stock. El precio también fue un factor, por lo que modelos como el WisMesh Pocket V2 quedaron fuera, pues en comparación a los elegidos, no ofrecía, bajo nuestro criterio, algo que justificara pagar la diferencia. El T-Echo de LilyGo no se tuvo en cuenta, ya que, contamos con 2 unidades y decidimos probar nuevas opciones, (no obstante,en un futuro próximo se publicará una reseña de este modelo y de todos los que se adquieran). Por ello elegimos al <strong>ThinkNode M1</strong> y al <strong>N37</strong> (basado en un WioTracker L1 de SeedStudio)</p>
+<p>Dentro del universo de dispositivos portables que no poseen una pantalla, elegimos a los tipo tarjeta. Estos dispositivos son un buen punto de partida para personas que no estén interesadas tanto en recibir mensajes, sino en transmitir su ubicación y ser repetidores, pensado más para personas que tienen menos exposición a la tecnología. Evaluaremos si este aparato cumple con esta función, cómo lo hará y si cumple con las expectativas, o por el contrario, necesitamos un aparato más robusto. Con esto en mente, elegimos al <em>WisMesh Tag</em> ya que hacía un gps lock en menor tiempo que su similar de seedstudio, mientras que el M3 de Elecrow no fue tomado en cuenta por su falta de stock.</p>
+<p>Para los dispositivos fijos, el <strong>P1</strong> y el <strong>M6</strong> fueron los elegidos. En cuanto a las prestaciones había mucha paridad, por lo que el aspecto económico, en este caso, fue más determinante que en las elecciones anteriores. Pero también se eligió el P1 sobre su versión Pro por varios aspectos: uno fue el envío, debido a que no incluye baterías es más fácil de gestionar su entrega con un courier, ya que hay empresas (como FedEx) que no hacen envíos cuyos productos poseen baterías. Consume menos energía, al no tener GPS integrado y por último, pero no menos importante, debido a que no posee baterías ni GPS, en comparación a sus similares del mercado, su precio es el más bajo.</p>
+<p>En el caso de del Spec5 Voyager, su compra fue un hecho aún más experimental, sumado a su precio, se decidió solamente adquirir una única unidad. Principalmente creemos que es importante saber dónde se encuentran todos los vehículos que participan del combate contra el fuego, pero también pueden contribuir a expandir la red ubicándose en puntos estratégicos. Esta función podrá desempeñarse por un largo tiempo debido al panel solar que incluye.</p>
+<p>Se decidió inicialmente conformar un kit de 4 nodos portátiles, 2 tipo tarjeta y 1 nodo fijo. Creemos que es suficiente para una brigada pequeña, al menos en un inicio. No obstante, está sujeto a modificaciones, ya que aún no se realizaron pruebas de campo junto a los combatientes.</p>
+<p>Otros factores que influyeron en la decisión fueron la necesidad de testear al menos un dispositivo de cada una de las empresas manufactureras (que si te genera curiosidad saber cuales son <a class="" href="https://mrnetsky.github.io/docusaurus_personal/blog/fabricantes-ensambladores"><em>aquí</em></a> puedes verlas). También fue de nuestro interés usar distintos lugares de compra (sitio web propietario de la empresa, o sitios externos de reventa, como AliExpress o Amazon) con el fin de conseguir dispositivos en stock, comparar precios, costos(de envío, impuestos o algún otro costo extra), tiempos estimados de llegada, así como tiempos reales y cotejar los diferentes couriers disponibles (FedEx, DHL, UPS, etc.)</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="proceso-de-compra">Proceso de compra<a href="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25#proceso-de-compra" class="hash-link" aria-label="Enlace directo al Proceso de compra" title="Enlace directo al Proceso de compra" translate="no">​</a></h2>
+<p>Se definieron en primer lugar, los sitios de compra. Posteriormente algunos tuvieron que variar por su falta de stock o por errores nuestros al intentar armar la ingeniería de envío, dándonos cuenta al momento de la compra que el sitio web NO hace envíos a Argentina. Errores de los cuales nos hemos reído y aprendido.</p>
+<p>También se definieron las cantidades de cada producto por envío. Esto fue limitado a 3 debido a la modalidad de pequeños envíos, la ley de importación que usamos/usaron los couriers para entrar nuestros paquetes a Argentina. La misma, permite importar productos para uso personal, sin fines comerciales, con un tope de hasta USD 3.000 por vuelo y 50 kg por paquete a un máximo de 3 unidades iguales de la misma especie por envío.</p>
+<p>Razón por la cual, en Heltec, por ejemplo, hicimos dos compras de 3 unidades. En Amazon encontramos una buena oferta de los N37: dos unidades a 99 U$D. Sin embargo, no sabíamos si era posible comprar 2 packs (4 unidades en total), por cómo lo tomaría la aduana, por lo que probaremos y también estaremos comunicando nuestros resultados (a cruzar los dedos para que no lo retenga la aduana <!-- -->🤞<!-- -->).</p>
+<p>Con respecto a los envíos, páginas como RAK y Heltec no nos dieron tiempos estimados de entrega, suponemos que, mientras está siendo procesado, no habrá una fecha, y seguramente nos la comunicarán una vez que hayan despachado nuestro paquete. Spec5 es una de las páginas que NO hace envíos a Argentina, de hecho, es muy limitado el número de países a los que sí envía. ¿Cómo resolvimos esto? Comprando en la tienda oficial, pero con la dirección de los depósitos de <strong>AeroBox</strong> en Estados Unidos. La finalidad es que ellos lo traigan hasta Argentina. Posteriormente, nosotros lo retiraremos en sus depósitos de nuestro país o pagaremos el envío al interior; aún no lo definimos. Lo que si queríamos comentar que el envío más económico de Spec5 dentro de USA demora aproximadamente <strong>12 días</strong>, lo cual es llamativo para tratarse de un envío dentro del mismo país, ya que hemos pagado envíos, con diferencias menores a 6U$D que en ese tiempo, supuestamente, lo trae hasta nuestra casa en ese mismo tiempo.</p>
+<p>Creemos que <strong>Amazon</strong> nos ha brindado la experiencia más gratificante de compra, con buen precio y facilidad de envío. El gran problema aquí es que no tienen variedad en los dispositivos Meshtastic. Pierde mucho en este aspecto con <strong>Rockland</strong>, que si posee variedad en aparatos de RAK, Heltec o LilyGo, pero pierde mucho en el envío, ya que no los hace a Argentina y comprar allí para que luego Aerbox lo importe, no tenía sentido desde lo económico y logístico. <strong>Tiendamía</strong> es un servicio similar a AeroBox, pero con un funcionamiento diferente. Ellos te efectúan la compra desde Amazon, eBay ó AliExpress y te lo importan. El problema es que no funcionó bien con los enlaces de compras de AliExpress y, al no manejar stock y variedad de las tiendas alojadas en EEUU (Amazon o eBay, ya que en Rockland hasta el momento no se puede) no pudimos efectuar compras por esta vía, aunque sigue siendo una posibilidad para una futura adquisición.</p>
+<p><strong>AliExpress</strong> tiene diferentes formas de envío, stock en la mayoría de productos, marcas con su tienda oficial ahí (como SeedStudio o Elecrow), precios competentes pero... Y este es un <strong>GRAN PERO</strong>, no puedes hacer compras sucesivas con la misma tarjeta, al menos en nuestra experiencia. Esto es debido al método que poseen de antifraude, lo cual es positivo, pero no hay información previa de lo que puede ocurrir y dicho suceso hemos visto, han sufrido otras personas que han usado el sitio. Razón por la cual, solo compramos 3 WisMesh Tag y no pudimos hacer la compra de los otros 3 con un envío diferente. Intentamos cambiar de día y de perfil, pero aún así no pudimos.</p>
+<p>Esto contribuyó a que <strong>SeedStudio</strong>, fuera un auténtico dolor de cabeza, ya que desde su página oficial no tiene casi stock de nada, muchos de sus productos estan en back order, otros sin stock y algunos con stock o bajo orden pero solo en USA o EU Entonces ustedes se preguntarán, ¿cuál es el problema?, si a esta altura del partido ya habían hecho compras en Estados Unidos y no existían motivos para no importar desde la Unión Europea. Bueno, la cuestión es que el warehuse que hace envíos a todo el mundo es China, los otros dos solo venden donde residen. De todas formas, conseguimos productos en stock en AliExpress, aquí el problema, era que no podíamos usar la tarjeta. A esta altura, las esperanzas se desvanecen, pero hubo un guiño del destino, luego de aproximadamente 3 semanas, conseguimos al <strong>P1</strong> en stock, nostros ni lentos ni perezosos efectuamos nuestra compra, completando así toda la lista.</p>
+<hr>
+<p>Este proceso de adquisición de hardware Meshtastic, más allá de llenar nuestro inventario, ha proporcionado una lección práctica e invaluable sobre la planificación logística internacional y las barreras de importación. Hemos confirmado que la implementación de redes de comunicación descentralizada en regiones con regulaciones aduaneras estrictas no depende únicamente de la tecnología, sino también de la ingeniería comercial y logística.</p>
+<p>Nuestra experiencia ha revelado varios puntos críticos para cualquier proyecto similar:</p>
+<ol>
+<li class="">
+<p><u>Flexibilidad de suministro:</u> La dependencia de un único fabricante o plataforma (como la restricción de tarjetas de AliExpress o la falta de stock en sitios oficiales) es un riesgo operativo significativo. Fue esencial recurrir a múltiples canales (Amazon, couriers especializados como AeroBox, y tiendas oficiales) para asegurar la lista completa de dispositivos.</p>
+</li>
+<li class="">
+<p><u>Baterías:</u> La restricción de envío de baterías por parte de couriers internacionales obliga a una planificación modular. Elegir dispositivos sin batería (como el P1) o utilizar servicios de importación indirecta (como con Spec5) añade complejidad, pero garantiza la llegada del hardware.</p>
+</li>
+<li class="">
+<p><u>Costo total de adquisición:</u> El precio inicial del dispositivo es solo una parte. Los costos de envío internacional y los impuestos aduaneros, sumados a la necesidad de usar servicios de re-shipping (AeroBox) para fabricantes que no envían a Argentina, redefinen el verdadero costo del proyecto.</p>
+</li>
+<li class="">
+<p><u>Tiempos reales de entrega:</u> La amplia dispersión en los tiempos de tránsito (desde envíos veloces de Amazon hasta las demoras en warehouses o la falta de fechas estimadas) subraya la necesidad de calendarios de implementación holgados y tolerantes al riesgo.</p>
+</li>
+</ol>
+<p>En conclusión, es una aventura, la cual, aún no ha finalizado y nos estaremos viendo de nuevo en la segunda parte de esta experiencia, donde podrá ver los tiempos reales de entrega, los precios finales de c/u de los dispositivos y demás observaciones pertinentes. ¡Hasta luego!</p>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <author>
+            <name>Nicolas Pace</name>
+            <uri>https://nico.today</uri>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+        <category label="Importación de equipamiento" term="Importación de equipamiento"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[¿Qué debes saber antes de comprar tu primer dispositivo Meshtastic?]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras"/>
+        <updated>2025-12-08T02:25:07.000Z</updated>
+        <summary type="html"><![CDATA[En los últimos años Meshtastic y proyectos similares han ido ganando popularidad, al punto que hoy ya empieza a parecer una tecnología que puede que deje de ser solo para hobbistas. Sin embargo, la amplia variedad de dispositivos disponibles en el mercado, que van desde simples placas de desarrollo hasta productos finales robustos, puede ser abrumadora. Antes de invertir en un nodo, es crucial entender cómo las especificaciones técnicas del hardware ya que afectarán tu experiencia de uso, sea en entornos urbanos densos o en vastas áreas rurales. Esperamos que esta guía te ayude a navegar por las especificaciones más importantes, para que puedas elegir el dispositivo que  se adapte a tu uso.]]></summary>
+        <content type="html"><![CDATA[<p>En los últimos años Meshtastic y proyectos similares han ido ganando popularidad, al punto que hoy ya empieza a parecer una tecnología que puede que deje de ser solo para hobbistas. Sin embargo, la amplia variedad de dispositivos disponibles en el mercado, que van desde simples placas de desarrollo hasta productos finales robustos, puede ser abrumadora. Antes de invertir en un nodo, es crucial entender cómo las especificaciones técnicas del hardware ya que afectarán tu experiencia de uso, sea en entornos urbanos densos o en vastas áreas rurales. Esperamos que esta guía te ayude a navegar por las especificaciones más importantes, para que puedas elegir el dispositivo que  se adapte a tu uso.</p>
+<p>En esta guía nos centraremos exclusivamente en dispositivos listos para usar, dejando de lado la posibilidad de construir tu nodo por tus propios medios (DIY), ya que esto requiere de conocimientos técnicos más avanzados.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="frecuencia-y-región">Frecuencia y Región<a href="https://mrnetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras#frecuencia-y-regi%C3%B3n" class="hash-link" aria-label="Enlace directo al Frecuencia y Región" title="Enlace directo al Frecuencia y Región" translate="no">​</a></h3>
+<p>Este es un punto muy importante, ya que comprar la frecuencia incorrecta hace que el dispositivo sea inutilizable en tu área. Por ello es necesario conocer la verificación regulatoria ya que los dispositivos LoRa operan en bandas de frecuencia ISM (industrial, ciencia, y medicina) que son diferentes en cada continente. Debes asegurarte de que el dispositivo que compres está configurado para la banda de tu región. En nuestro caso, en Argentina la adecuada es 915Mhz. Además la antena debe estar ajustada específicamente para la frecuencia elegida (ej. una antena de 868 MHz funcionará muy mal a 915 MHz).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="microcontrolador-mcu-y-conectividad">Microcontrolador (MCU) y Conectividad<a href="https://mrnetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras#microcontrolador-mcu-y-conectividad" class="hash-link" aria-label="Enlace directo al Microcontrolador (MCU) y Conectividad" title="Enlace directo al Microcontrolador (MCU) y Conectividad" translate="no">​</a></h3>
+<p>El chip principal determina el rendimiento, las capacidades y el consumo de energía del dispositivo. En este aspecto, encontramos 2 alternativas:</p>
+<ul>
+<li class="">
+<p><em>ESP32</em> (de Espressif Systems):
+ESP32 (de Espressif Systems): Es el más común y versátil. Suele ser más económico, tiene mucha memoria e incluye Wi-Fi. Pero conlleva un mayor consumo de energía, lo que reduce la duración de la batería. Actualmente es el más utilizado en dispositivos tipo celular, smartwatch.</p>
+</li>
+<li class="">
+<p><em>nRF52</em> (de Nordic Semiconductor):
+No incluyen Wi-Fi, son más costosos y menos potente. Aún con ello su consumo de energía ultra bajo, lo hacen los más recomendables en nodos portátiles o tipo powerbank.</p>
+</li>
+</ul>
+<p>Ambos incluyen conexión Bluetooth, necesaria para concetar el dispositivo con el teléfono.</p>
+<p>Hay otras opciones, pero no encontramos dispositivos terminados con ellas, por lo que quedaron excluidas de esta lista.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>NOTA:</div><div class="admonitionContent_BuS1"><p>¿Quieres saber cuales son o qué características conllevan los tipos de dispositivos aquí mencionados? <u> <a class="" href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos"><em><strong>Aquí tenemos un artículo donde hablamos de ello</strong></em></a> </u></p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gps">GPS<a href="https://mrnetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras#gps" class="hash-link" aria-label="Enlace directo al GPS" title="Enlace directo al GPS" translate="no">​</a></h3>
+<p>Es un apartado importante e innecesario a la vez y esto se debe al tipo de dispositivo que lo tenga. Me explico, si hablamos de dispositivos móviles, es una utilidad necesaria, e incluso hay dispositivos que pueden encender y apagar la posición según desee o si la necesidad de ahorrar batería apremia. Pero en nuestro caso particular, donde dirigimos el uso de estos dispositivos a los bomberos, se vuelve vital su uso.</p>
+<p>En contrapartida, en un nodo fijo, es mejor no tenerlo pues aumenta el precio del mismo y el consumo energético, pero si ya lo incluye, es mejor no hacer uso, porque demanda un consumo de energía y no aporta en absolutamente nada.</p>
+<p>Entonces usted en este momento se preguntará el por qué esta diferencia. Y esto se debe a que un nodo fijo se ubicará en un lugar específico, usted sabrá donde se encuentra, incluso puede mapearlo, sumado a que generalmente tienen un suministro constante de energía y baterías para cubrir los momentos en los que no, por lo que está conectado 24/7 y si desea saber si el nodo está activo sólo deberá comunicarse con el mismo.</p>
+<p>Además es importante saber con qué velocidad puede hacer GPS Lock, ya que mientras mayor sea ésta, mejor será. Otra apartado es el económico. ya que el incluir o no GPS, puede aumentar o disminuir el costo. Tenerlo en cuenta es vital si se tiene un presupuesto ajustado y no necesita en todos o en ningún dispositivo esta funcionalidad.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pantalla-y-tipo">Pantalla y tipo<a href="https://mrnetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras#pantalla-y-tipo" class="hash-link" aria-label="Enlace directo al Pantalla y tipo" title="Enlace directo al Pantalla y tipo" translate="no">​</a></h3>
+<p>Son útiles para interactuar con el dispositivo y existen 3 tipos:</p>
+<ul>
+<li class=""><em>LCD</em>:<!-- -->
+<ul>
+<li class="">Menos eficiencia energética.</li>
+<li class="">Pobre visibiliad en el exterior.</li>
+<li class="">Más económica.</li>
+</ul>
+</li>
+<li class=""><em>OLED</em>:<!-- -->
+<ul>
+<li class="">Eficiencia energética media.</li>
+<li class="">Posee una mejor visibilidad que la LCD, pero inferior a la E-Ink. Pero si posee el mejor contraste de las 3.</li>
+</ul>
+<ul>
+<li class="">Costo itermedio</li>
+</ul>
+</li>
+<li class=""><em>E-Paper</em>:<!-- -->
+<ul>
+<li class="">Mayor eficiencia energética.</li>
+<li class="">Ostenta la mejor vibilidad en el exterior. Suelen incluir un interruptor o reglador de luz.</li>
+<li class="">Tiempo de respuesta significativamente mayor en comparación con las otras.</li>
+<li class="">Más costosa.</li>
+</ul>
+</li>
+</ul>
+<p>Su consumo de energía disminuye la durabilidad de la batería. Por lo que para nodos portátiles será mejor usar un nRF52, en busca de una autonomía que permita ser usado durante una jornada completa de combate contra el fuego, sin la necesidad de depender de un powerbank o un nodo de repuesto. Las más usadas son las OLED y la de papel electrónico.</p>
+<p>Debido a la ausencia actual de pantallas en dispositivos fijos, este autor se pregunta, ¿serán de utilidad?. Y si lo fueran ¿cuán útiles serían?, ¿Qué tamaño deberían tener? ¿De qué tipo debería ser? ¿Esta decisión dependerá de un MCU específico?</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bateríamah">Batería(mAh)<a href="https://mrnetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras#bater%C3%ADamah" class="hash-link" aria-label="Enlace directo al Batería(mAh)" title="Enlace directo al Batería(mAh)" translate="no">​</a></h3>
+<p>Una capacidad mayor de miliamperios-hora es mejor. Sin embargo, el rendimiento final de la batería dependerá del MCU, si utiliza una pantalla cuyo consumo dependerá según sea el tipo y a qué información está enviando, ya que enviar la posición constantemente consume energía. Esto también aplica para cuando envía datos de los sensores.</p>
+<p>No interesa en si el tamaño de la batería, sino que la misma pueda nos permita completar las tareas, sin la necesidad de depender de un powerbank para poder completarlas.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="armazón">Armazón<a href="https://mrnetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras#armaz%C3%B3n" class="hash-link" aria-label="Enlace directo al Armazón" title="Enlace directo al Armazón" translate="no">​</a></h3>
+<p>Algunos de los aspectos que nos interesan son los siguientes:</p>
+<ul>
+<li class="">
+<u>Protección Ambiental:</u>
+<ul>
+<li class="">
+<p>Certificación IP67/IP68: Es lo más importante. Significa que es totalmente estanca al polvo y puede sumergirse en agua. Esta certificación puede aplicar a todo el dispositivo o a sólo una parte, como el puerto USB por ejemplo.</p>
+</li>
+<li class="">
+<p>Resistencia UV: Si vas a dejar el nodo en un techo o una montaña, el plástico común se rompe con el sol. Lo ideal es ABS, ASA o Policarbonato.</p>
+</li>
+</ul>
+</li>
+<li class="">
+<p><u>Material no conductor:</u> Evita carcasas de fibra de carbono o metales si la antena va interna, ya que interfieren con la señal.</p>
+</li>
+<li class="">
+<u>Usabilidad y Montaje:</u>
+<ul>
+<li class="">
+<p>Puntos de anclaje: Ranuras para pasar precintos (zip-ties), correas o imanes potentes para pegarlo a superficies metálicas.</p>
+</li>
+<li class="">
+<p>Interacción: Que su/s puertos o botón/es estén disponibles para el uso, sin la necesidad de tener que abrir el case para poder interactuar con ellos directamente desde la placa.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="antenas">Antenas<a href="https://mrnetsky.github.io/docusaurus_personal/blog/consideraciones-previas-compras#antenas" class="hash-link" aria-label="Enlace directo al Antenas" title="Enlace directo al Antenas" translate="no">​</a></h3>
+<p>En Meshtastic, las antenas se diferencian por tres factores clave:</p>
+<ul>
+<li class="">
+<p><u>Conectores (SMA vs. RP-SMA):</u> Es el error más común al comprar repuestos. El conector SMA (estándar en la mayoría de estos equipos) tiene un pin central en el cable. El RP-SMA (común en routers Wi-Fi) tiene el hueco. Si no coinciden, no habrá contacto físico y podrías dañar el transmisor de tu nodo.</p>
+</li>
+<li class="">
+<p><u>Ganancia (dBi):</u> Imagina que la señal es una linterna.</p>
+<ul>
+<li class="">
+<p>Baja ganancia (2-3 dBi): La señal sale como una esfera en todas direcciones. Es ideal para bomberos en terrenos montañosos o con muchos desniveles, donde la señal debe "subir y bajar" cerros.</p>
+</li>
+<li class="">
+<p>Alta ganancia (8-12 dBi): La señal se aplasta y se estira como un disco plano para llegar muy lejos. Es perfecta para nodos fijos en techos o torres que necesitan conectar con otros puntos distantes en el horizonte.</p>
+</li>
+</ul>
+</li>
+<li class="">
+<u>Tipo de construcción:</u>
+<ul>
+<li class="">
+<p>Rubber Duck (Varilla): Son las pequeñas y flexibles que vienen de fábrica, ideales para llevar en la mochila o el cinturón.</p>
+</li>
+<li class="">
+<p>Fibra de Vidrio (Omnidireccionales): Tubos rígidos y largos diseñados para exterior. Son la mejor opción para infraestructura fija por su durabilidad y rendimiento.</p>
+</li>
+<li class="">
+<p>Direccionales (Yagi): Solo envían y reciben señal en una dirección específica. Son útiles únicamente para "puentes" fijos entre dos puntos conocidos que están muy alejados.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>La incursión en el ecosistema Meshtastic exige pasar de la mera curiosidad tecnológica a una compra estratégica informada. Como hemos analizado, la elección del dispositivo es un ejercicio de equilibrio de compromisos que debe estar rigurosamente alineado con el entorno operativo y los objetivos de la misión.</p>
+<p>En última instancia, el dispositivo ideal es aquel que sacrifica la funcionalidad innecesaria para potenciar lo esencial. Para la comunicación de primera línea (móvil), la autonomía y el GPS confiable son innegociables, favoreciendo los chips nRF52 y las pantallas E-Paper. Para la infraestructura (fija), el enfoque está en la estabilidad 24/7, la potencia de transmisión y la carga solar robusta para asegurar la continuidad de la red.</p>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <author>
+            <name>Nicolas Pace</name>
+            <uri>https://nico.today</uri>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[El ecosistema Meshtastic: Entre los fabricantes de módulos y los ensambladores de dispositivos]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/fabricantes-ensambladores</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/fabricantes-ensambladores"/>
+        <updated>2025-12-08T02:25:07.000Z</updated>
+        <summary type="html"><![CDATA[El ecosistema de dispositivos LoRa enfocado en las comunicaciones descentralizadas se encuentra en un proceso de rápido desarrollo e innovación. En este contexto, la tecnología Meshtastic ha revolucionado la comunicación de largo alcance fuera de la red, permitiendo que pequeños dispositivos de radio LoRa  creen redes de malla descentralizadas y seguras, independientemente de la infraestructura celular o Wi-Fi.]]></summary>
+        <content type="html"><![CDATA[<p>El ecosistema de dispositivos LoRa enfocado en las comunicaciones descentralizadas se encuentra en un proceso de rápido desarrollo e innovación. En este contexto, la tecnología Meshtastic ha revolucionado la comunicación de largo alcance fuera de la red, permitiendo que pequeños dispositivos de radio LoRa  creen redes de malla descentralizadas y seguras, independientemente de la infraestructura celular o Wi-Fi.</p>
+<p>En esta etapa de maduración, hemos identificado a dos actores fundamentales cuya relación define el hardware disponible en el mercado:</p>
+<ul>
+<li class="">
+<p><em>Los Fabricantes de Módulos y Microcontroladores:</em> Quienes innovan en la tecnología base, proporcionando los chips LoRa (como el microcontrolador) y las tarjetas base.</p>
+</li>
+<li class="">
+<p><em>Los Integradores o Ensambladores:</em> Quienes toman estos módulos base y los transforman en productos finales robustos y optimizados para el usuario.</p>
+</li>
+</ul>
+<p>Esta distinción es crucial: el fabricante del componente principal no solo ofrece el hardware base, sino que en ocasiones también presenta dispositivos terminados listos para el usuario. Por otro lado, los integradores utilizan estos componentes para crear productos finales que aportan valor en diseño, packaging y optimización de uso. Evaluar el trabajo de cada actor requiere entender esta relación simbiótica, y qué responsabilidad tiene cada quien en el proceso de innovación, ya que unos dependen del hardware del otro para llevar sus desarrollos al mercado. A continuación, exploramos los principales nombres que impulsan la adopción de Meshtastic en todo el mundo, sepárandolos según correspondan al grupo de fabricantes o ensambladores.</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>atención:</div><div class="admonitionContent_BuS1"><p>Queremos aclarar que desde este espacio hemos encontrado y valuado a estas empresas con el fin de adquirir alguno de sus productos, pero <strong>NO</strong> significa que sean las únicas, solamente las que hasta la fecha nosotros conocemos.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fabricantes">Fabricantes<a href="https://mrnetsky.github.io/docusaurus_personal/blog/fabricantes-ensambladores#fabricantes" class="hash-link" aria-label="Enlace directo al Fabricantes" title="Enlace directo al Fabricantes" translate="no">​</a></h3>
+<p>Es fundamental destacar que estas empresas no solo suministran componentes a los Ensambladores (los segundos actores del ecosistema), sino que su participación es vital para la innovación.</p>
+<ul>
+<li class=""><a href="https://shop.uniteng.com/" target="_blank" rel="noopener noreferrer" class=""><em>ByQ Consulting:</em></a>
+Brinda soluciones especializadas, a menudo basadas en la eficiencia energética.</li>
+<li class=""><a href="https://www.elecrow.com/" target="_blank" rel="noopener noreferrer" class=""><em>Elecrow:</em></a>
+Tiene una amplia gama de componentes, desde placas de desarrollo hasta módulos listos para integración.</li>
+<li class=""><a href="https://heltec.org/" target="_blank" rel="noopener noreferrer" class=""><em>Heltec:</em></a>
+Es conocido por sus productos robustos que integran LoRa, Wi-Fi y Bluetooth en módulos compactos. Actualmente se están introduciendo en el desarrolo de dispositivos que integren el chip nRF52.</li>
+<li class=""><a href="https://lilygo.cc/" target="_blank" rel="noopener noreferrer" class=""><em>LilyGo:</em></a>
+Destaca por la innovación y la variedad de factores de forma como smartwatches y dispositivos tipo celular.</li>
+<li class=""><a href="https://store.rakwireless.com/" target="_blank" rel="noopener noreferrer" class=""><em>RAK:</em></a>
+Enfoque en la calidad industrial y módulos de bajo consumo, con un fuerte soporte para la comunidad LoRaWAN y Meshtastic.</li>
+<li class=""><a href="https://www.seeedstudio.com/" target="_blank" rel="noopener noreferrer" class=""><em>Seedstudio:</em></a>
+Provee soluciones completas de hardware y módulos, muy populares por su línea SenseCAP, que incluyen trackers y dispositivos fijos.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ensambladores">Ensambladores<a href="https://mrnetsky.github.io/docusaurus_personal/blog/fabricantes-ensambladores#ensambladores" class="hash-link" aria-label="Enlace directo al Ensambladores" title="Enlace directo al Ensambladores" translate="no">​</a></h3>
+<p>Si los fabricantes nos proporcionan los cimientos tecnológicos del ecosistema Meshtastic (los módulos y chips LoRa), los Ensambladores son los arquitectos que toman esos componentes y los transforman en soluciones optimizadas, robustas y listas para el despliegue en el campo. Su rol es crucial para la adopción masiva, ya que se centran en la experiencia del usuario, la durabilidad y el factor de forma.</p>
+<p>Estos actores se especializan en la integración de hardware, añadiendo elementos esenciales como carcasas protectoras, baterías de alta capacidad, antenas calibradas y diseños ergonómicos para usos específicos por ejemplo, entornos vehiculares, tracking discreto o comunicaciones de mano.</p>
+<p>Estas son las marcas de ensambladores que nos llamaron la atención por sus características:</p>
+<ul>
+<li class=""><a href="https://atlavox.com/" target="_blank" rel="noopener noreferrer" class=""><em>Atlavox:</em></a>
+Dispositivos compactos y portátiles, buscando la máxima eficiencia y discreción. No son una marca económica pero tienen dispositivos interesantes.Se destaca su nodo fijo que teoricamente, es el mejor del mercado. Nosotros no lo hemos probado aún por su costo.</li>
+<li class=""><a href="https://canaryradio.io/" target="_blank" rel="noopener noreferrer" class=""><em>CanaryOne:</em></a>
+Soluciones robustas para comunicaciones de emergencia y monitoreo.</li>
+<li class=""><a href="https://constellationresponse.com/" target="_blank" rel="noopener noreferrer" class=""><em>Constellation response:</em></a>
+Enfocado en radios MANET (Mobile Ad-hoc Network) endurecidas (ruggedized) para entornos críticos. El dispositivo portable que ofrece, es prácticamente indestructible, eso sí, por un precio muy elevado.</li>
+<li class=""><a href="https://lowmesh.com/" target="_blank" rel="noopener noreferrer" class=""><em>Low Mesh:</em></a>
+Proveedor de kits y soluciones asequibles, facilitando la entrada al ecosistema.</li>
+<li class=""><a href="https://makernova.io/" target="_blank" rel="noopener noreferrer" class=""><em>Maker Nova:</em></a>
+Desarrollador de hardware innovador, a menudo dirigido a la comunidad maker y a proyectos personalizados.</li>
+<li class=""><a href="https://meshnology.com/" target="_blank" rel="noopener noreferrer" class=""><em>Meshnology:</em></a>
+Productos con énfasis en la ergonomía y la interfaz de usuario, como su popular modelo N37.</li>
+<li class=""><a href="https://muzi.works/?srsltid=AfmBOopfIUjhl8uEBkAkWhVbn3i1H-2XMyZjCezD0kbtSOkFmkgia32r" target="_blank" rel="noopener noreferrer" class=""><em>Muzi works:</em></a>
+Empresa principalmente dedicada a la redistribución de nodos de algunos fabricantes. Pero que recientemente se están ingresando al mercado con su modelo R1 Neo.</li>
+<li class=""><a href="https://specfive.com/" target="_blank" rel="noopener noreferrer" class=""><em>Spec5:</em></a>
+Posiblemente la marca más interesante, por el amplio espectro de dispositivos que pueden ser usados en una variedad de escenarios. Poseen precios un poco más elevados de la media, pero innovan en muchos campos, siendo así similares a los fabricantes.</li>
+<li class=""><a href="https://www.yetiwurks.com/" target="_blank" rel="noopener noreferrer" class=""><em>Yeti Wurks:</em></a>
+Enfocado en la creación de nodos de alto rendimiento, a menudo con baterías de larga duración y diseños modulares.</li>
+</ul>
+<hr>
+<p>El floreciente ecosistema Meshtastic es un testimonio de la innovación abierta y la colaboración especializada. El hardware disponible no es el resultado de un único actor, sino de una relación simbiótica y codependiente entre dos fuerzas clave: los Fabricantes y los Ensambladores. Lo que garantiza que la red Meshtastic siga evolucionando, ofreciendo soluciones perfectamente adaptadas a cada necesidad de comunicación off-grid.</p>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <author>
+            <name>Nicolas Pace</name>
+            <uri>https://nico.today</uri>
+        </author>
+        <author>
+            <name>Agus Las Peñas</name>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Explorando los ecosistemas de comunicación de bajo ancho de banda y larga distancia]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/formatos-digitales-de-comunicacion</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/formatos-digitales-de-comunicacion"/>
+        <updated>2025-12-08T02:25:07.000Z</updated>
+        <summary type="html"><![CDATA[Nuestra dependencia de las infraestructuras de comunicación centralizadas (desde las torres celulares hasta la fibra óptica) ha crecido exponencialmente. Esto ha traído una comodidad sin precedentes, pero también ha creado dependencias. Desastres naturales, fallos de infraestructura o la simple necesidad de operar en áreas remotas revelan que nuestra conectividad no es tan robusta como imaginamos. Esta fragilidad es la que afrontan los combatientes del fuego y nos ha impulsado en la búsqueda de una alternativa y así hemos arribado a la conectividad descentralizada.]]></summary>
+        <content type="html"><![CDATA[<p>Nuestra dependencia de las infraestructuras de comunicación centralizadas (desde las torres celulares hasta la fibra óptica) ha crecido exponencialmente. Esto ha traído una comodidad sin precedentes, pero también ha creado dependencias. Desastres naturales, fallos de infraestructura o la simple necesidad de operar en áreas remotas revelan que nuestra conectividad no es tan robusta como imaginamos. Esta fragilidad es la que afrontan los combatientes del fuego y nos ha impulsado en la búsqueda de una alternativa y así hemos arribado a la conectividad descentralizada.</p>
+<p>Pero... ¿A qué nos referimos con una 'conectividad descentralizada'?</p>
+<p>Se refiere a una red donde la información y el control no pasan a través de una única entidad o punto central (como un servidor principal, una torre celular o una autoridad de gobierno), sino que se distribuyen entre múltiples participantes, conocidos como <em>nodos</em>. Este enfoque puede aplicarse a través de tecnologías como <em>redes de malla.</em></p>
+<p>¿Y qué es una red mesh o red de malla?</p>
+<p>Es un sistema de comunicación en donde los nodos trabajan juntos para crear una única red inalámbrica extendida, eliminando zonas sin cobertura. A diferencia de los routers tradicionales, que emiten una señal desde un solo punto, los sistemas mesh distribuyen la señal desde varios nodos interconectados. Esto permite una cobertura más amplia y estable.</p>
+<p>Desde este espacio nos hemos propuesto explorar este ecosistema descentralizado y dentro del mismo, diferenciaremos dos grupos.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="lora-alcance-extremo-y-resiliencia">LoRa: Alcance extremo y resiliencia<a href="https://mrnetsky.github.io/docusaurus_personal/blog/formatos-digitales-de-comunicacion#lora-alcance-extremo-y-resiliencia" class="hash-link" aria-label="Enlace directo al LoRa: Alcance extremo y resiliencia" title="Enlace directo al LoRa: Alcance extremo y resiliencia" translate="no">​</a></h4>
+<p>El secreto detrás de las soluciones de larga distancia y bajo consumo energético como <em>Meshtastic</em> y <em>Meshcore</em> es la modulación LoRa (Long Range). Esta modulación es excepcionalmente robusta y le permite al receptor detectar la señal en condiciones muy adversas, otorgando un alcance extremo y una alta adaptabilidad ante las interferencias. Como contrapartida, LoRa se limita a un limitado ancho de banda, haciéndola ideal para la transmisión de pequeños paquetes de datos (texto, telemetría o coordenadas GPS).</p>
+<p>Lo positivo de estas tecnologías es su bajo coste de implementación, ya que los nodos son económicos y con el conocimiento necesario, puedes armar uno propio, bajando aún más los costes. El firmware al ser software libre, es de público uso y modificación, además operan en bandas ISM, lo cual no requiere de una licencia de Radioaficionado para poder operarlas.</p>
+<p>Dentro de este grupo, el firmware <a href="https://meshtastic.org/" target="_blank" rel="noopener noreferrer" class=""><strong>Meshtastic</strong></a> se ha establecido como la opción de código abierto por excelencia. Opera una Malla Nómada, donde cualquier nodo puede extender la cobertura de la red repitiendo los mensajes que escucha, y utiliza un protocolo de enrutamiento específico para que los mensajes encuentren el destino de forma automática. Esto lo logra enviando el mensaje a todos los dispositivos disponibles, saltando entre ellos, con el fin de encontrar el destinatario, pero esta capacidad de salto está a limitada a un máximo de 8.</p>
+<p>Por otro lado <a href="https://meshcore.co.uk/" target="_blank" rel="noopener noreferrer" class=""><strong>Meshcore</strong></a> utiliza la misma modulación pero implementa una Malla Fija, donde solo algunos nodos designados, actúan como repetidores y el enrutamiento similar al anterior, envía el mensaje a todos los dispositivos disponibles, con el fin de encontrar la ruta más corta de llegada a un nodo, una vez logrado esto, guarda la ruta, haciendo que la comunicación sea más rápida y que un mensaje pueda saltar hasta 64 veces, mucho más que en Meshtastic.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="rf-digital-licenciada-agilidad-y-arquitectura-propietaria">RF Digital Licenciada: Agilidad y arquitectura propietaria<a href="https://mrnetsky.github.io/docusaurus_personal/blog/formatos-digitales-de-comunicacion#rf-digital-licenciada-agilidad-y-arquitectura-propietaria" class="hash-link" aria-label="Enlace directo al RF Digital Licenciada: Agilidad y arquitectura propietaria" title="Enlace directo al RF Digital Licenciada: Agilidad y arquitectura propietaria" translate="no">​</a></h4>
+<p>Las plataformas como <em>goTenna</em> y <em>Beartooth</em> optan por una modulación distinta a las tecnologías del bloque anterior. Poseen una mayor velocidad de datos relativa y una gestión de red que puede estar mejor optimizada para tareas específicas. Además estas tecnologías poseen un mejor soporte que las anteriormente mencionadas.</p>
+<p>Ambas soluciones crean una red de malla, un concepto fundamental que describe una red formada de manera espontánea por dispositivos que se comunican directamente sin depender de una infraestructura central.</p>
+<p><a href="https://gotenna.com/" target="_blank" rel="noopener noreferrer" class=""><strong>goTenna</strong></a> Mesh utiliza su propio protocolo propietario Aspen Grove para crear esta red mesh. Su diseño está optimizado para la mensajería de texto y GPS, ofreciendo una experiencia plug-and-play con un firmware cerrado que opera en bandas VHF (142-175 MHz) y UHF (445-480 MHz). Sumado a una potencia significativamente superior a las demás, logra un alcance superior, además de la calidad militar de sus componente, hacen que sorteen mejor la interferencia por ruido u obstáculos. Pero es y con diferencia, la tecnología más costosa de las aquí presentadas.</p>
+<p><a href="https://beartooth.com/" target="_blank" rel="noopener noreferrer" class=""><strong>Beartooth</strong></a>, por su parte, se enfocó en paquetes de datos más grandes, como la Voz PTT (Push-to-Talk), aprovechando la mayor velocidad de datos. Se encuentra operada en bandas ISM, lo que le permite ser utilizado sin licencia. En cuanto al alcance está por detras de las demás tecnologías también permite trabajar con la ubicación GPS.</p>
+<hr>
+<p>La exploración de los formatos de comunicación digital fuera de la red revela un panorama donde no existe una solución única, cada una tiene caractísticas particularmente únicas y positivas, así como también sus contras. Cada uno de estos sistemas puede complementar los medios de comunicación habitualmente usados, con el fin de satisfacer necesidades de comunicación específicas en contextos vulnerables.</p>
+<p>Desde este espacio queremos resaltar que el futuro de la conectividad descentralizada no reside en la victoria de una tecnología sobre otra. Sin embargo, nosotros <strong>NO</strong> hemos definido una tecnología con la cual llevar adelante este proyecto, pero por el momento intentaremos utilizar la tecnología Meshtastic, aunque estamos abiertos al uso de una tecnología complementaria o a un cambio de tecnología en un futuro, de ser necesario.</p>
+<p>Creemos que Meshtastic nos permite solucionar los mencionados problemas de comunicación a un costo asequible, además de brindar un panorama estable de partida con el cual empezar a trabajar. Somos conscientes que es una tecnología en desarrollo, que nos queda mucho por aprender y practicar, pero estamos dispuestos a ello para ayudar tanto a los combatientes y rescatistas, como al proyecto Meshtastic, así como su comunidad hispanoparlante.</p>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <author>
+            <name>Nicolas Pace</name>
+            <uri>https://nico.today</uri>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Más alla del tamaño: La guía definitiva para elegir un dispositivo basado en su función]]></title>
+        <id>https://MrNetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos</id>
+        <link href="https://MrNetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos"/>
+        <updated>2025-12-01T11:08:40.000Z</updated>
+        <summary type="html"><![CDATA[En un mundo cada vez más dependiente de la infraestructura centralizada, la capacidad de comunicarse fuera de la red (u off-grid) se ha convertido en una necesidad vital. El proyecto Meshtastic, basado en la robusta tecnología de radio LoRa, ofrece precisamente esta solución: una red de malla descentralizada, sin necesidad de Wi-Fi o cobertura celular.]]></summary>
+        <content type="html"><![CDATA[<p>En un mundo cada vez más dependiente de la infraestructura centralizada, la capacidad de comunicarse fuera de la red (u off-grid) se ha convertido en una necesidad vital. El proyecto Meshtastic, basado en la robusta tecnología de radio LoRa, ofrece precisamente esta solución: una red de malla descentralizada, sin necesidad de Wi-Fi o cobertura celular.</p>
+<p>La clave para desplegar y optimizar tu propia red radica en elegir el dispositivo correcto para cada función. La comunidad Meshtastic ha generado una impresionante diversidad de hardware, lo que puede resultar abrumador a la hora de decidir.</p>
+<p>Esta guía ha sido diseñada para simplificar esa elección. Analizaremos los nodos Meshtastic separándolos en dos grandes pilares según su propósito y entorno operativo:</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Para tener en cuenta...</div><div class="admonitionContent_BuS1"><p>En este artículo se hablará sobre chips nRF52840 y ESP32, que se utilizan para el funcionamiento de los dispositivos Meshtastic, en este artículo NO se ahondará sobre las diferencias técnicas, lo que SÍ debe saber es que el primero consume menos energía que el segundo.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="portables">Portables<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#portables" class="hash-link" aria-label="Enlace directo al Portables" title="Enlace directo al Portables" translate="no">​</a></h2>
+<p>Si la meta principal de Meshtastic es la comunicación descentralizada, los nodos portátiles son las herramientas que ponen esa capacidad directamente en manos del usuario, el excursionista o el explorador. A diferencia de los nodos que pueden utilizarse como estaciones o bases estáticas, estos dispositivos están diseñados para operar con baterías de manera eficiente y acompañarte en el campo.</p>
+<p>Esta categoría es la más diversa y se define por un constante equilibrio entre la portabilidad y la funcionalidad. Aquí, la elección se reduce a dos preguntas clave: ¿necesitas interacción inmediata o máxima autonomía?. En base a ello, te presentamos las siguientes opciones:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="con-pantalla">Con pantalla<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#con-pantalla" class="hash-link" aria-label="Enlace directo al Con pantalla" title="Enlace directo al Con pantalla" translate="no">​</a></h3>
+<p>Son dispositivos diseñados para funcionar como pequeños comunicadores autónomos, similares a un walkie-talkie de texto, lo que los hace ideales para un usuario que quiere inmediatez y visibilidad del estado de la red sin depender siempre de un móvil. Busca un equilibrio entre la retroalimentación visual y la autonomía de la batería. Su propósito principal no es escribir mensajes, sino mostrar información clave de forma inmediata.</p>
+<p>Pueden incluir una pantalla OLED, LCD o E-Paper (las más eficientes en consumo de energía), buzzer y sensores. La mayoría se controlan mediante botones, algunos incluyen la posibilidad de encender o apagar el GPS, permitiendo extender la duración de la batería, ya que el uso del GPS resulta ser el mayor consumo del dispositivo.</p>
+<p>La resolución y el tamaño limitan la cantidad de información que se puede mostrar a la vez. El usuario debe seguir utilizando el móvil para la mayoría de las interacciones, escritura y configuración avanzada.</p>
+<div style="text-align:center;margin-bottom:40px"><img src="https://meshnology.com/cdn/shop/files/meshnology-n37-black-1pcs.png?v=1763800746&amp;width=800" alt="Dispositivo portable con pantalla" style="max-width:100%;height:auto;display:block;margin:0 auto"><p><strong>Meshnology N37 (basado en un WioTracker L1)</strong></p></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sin-pantalla">Sin pantalla<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#sin-pantalla" class="hash-link" aria-label="Enlace directo al Sin pantalla" title="Enlace directo al Sin pantalla" translate="no">​</a></h3>
+<p>Perfectos para aquellos que solo necesitan un nodo que funcione como rastreador GPS o repetidor personal, sin llamar la atención u ocupar mucho espacio..</p>
+<p>La ausencia de pantalla le permite un mayor espacio para antenas y baterías, que junto a un chip nRF52840, obtiene una eficiencia energética similar al que viene con pantalla, independientemente del tipo de ésta.</p>
+<p>La gran mayoría no poseen una certificación IP (a excepción de RM-1 Ruggedized MANET Radio, de Constellation Response, pero su precio es muy alto en comparación al resto de la categoría e incluso comparado con todos los tipos de dispositivos Meshtastic).</p>
+<p>Si hay problemas de conexión Bluetooth o el firmware falla, puede ser difícil de diagnosticar y actualizar sin conectar un cable USB. La interacción es menos intuitiva que en un dispositivo con pantalla. Esto es un problema que no solo pertenece a este tipo de dispositivo, sino a todo aquel que no posea una pantalla, ya que la pantalla resulta versátil especialmente para lograr la conexión bluetooth entre este y el teléfono.</p>
+<div style="display:flex;gap:20px;justify-content:center"><div style="flex:1;text-align:center"><img src="https://atlavox.com/cdn/shop/files/M1915Swivel.png?v=1752610387&amp;width=823" alt="Dispositivo portable sin pantalla" style="max-width:100%;height:auto;max-height:300px;object-fit:contain"><p><strong>Atlavox M1</strong></p></div><div style="flex:1;text-align:center"><img src="https://store.rakwireless.com/cdn/shop/files/wismesh-mini-pocket-11_d7d736c7-860b-4a50-b297-6b3dacd0c42e_900x.progressive.png?v=1745821658" alt="Dispositivo portable sin pantalla" style="max-width:100%;height:auto;max-height:300px;object-fit:contain"><p><strong>WisMesh pocket mini</strong></p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tipo-tarjeta">Tipo tarjeta<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#tipo-tarjeta" class="hash-link" aria-label="Enlace directo al Tipo tarjeta" title="Enlace directo al Tipo tarjeta" translate="no">​</a></h3>
+<p>Ultra-delgados y livianos, a menudo pensados para caber cómodamente en una billetera, bolsillo de ropa o integrarse en objetos pequeños. Ideales para tracking. Permiten una duración de batería aceptable a pesar de tener una capacidad muy limitada. Son perfectos para usuarios no técnicos que solo necesitan un nodo que funcione y reporte su posición.</p>
+<p>Poseen una ficha de carga distinta (como puede verse en la imágen inferior), no el convencional USB tipo C, lo que nos obliga a extremar los cuidados sobre el cargador ya que, hasta el momento, en base a nuestra investigación no hemos encontrado sustitutos alternativos en el mercado argentino y cuando lleguen al mercado habrá que testear la compatibilidad y la funcionalidad, es decir, por el momento es necesario usar el original. En caso de tener dos o más dispositivos se reutiliza el de otro dispositivo, pero si no, deberás indagar sobre la disponibilidad en el mercado extranjero para importar uno, ya que este tipo de nodo no posee otro tipo puerto de carga.</p>
+<div style="text-align:center;margin-bottom:40px"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/_/_/___1_.jpg" alt="Dispositivo portable tipo card" style="max-width:100%;height:auto;display:block;margin:0 auto"><p><strong>SenseCAP card tracker T-1000</strong></p></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="powerbank">Powerbank<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#powerbank" class="hash-link" aria-label="Enlace directo al Powerbank" title="Enlace directo al Powerbank" translate="no">​</a></h3>
+<p>Ideal para usar como nodo de reserva en una mochila, nodo de viaje o como un repetidor temporal de "larga vida".  Lo que este autor se pregunta es si vale la pena este tipo de dispositivos, ya que por el precio puedes conseguir powerbanks más grandes y de mayor calidad para abastecer tu dispositivo Meshtastic principal.  En el caso de que necesites un nodo de reserva, podés utilizar otro de los mencionados anteriormente.</p>
+<p>Los hay con y sin pantalla, con la potencia de radio similar a los dispositivos tipo tarjeta. Poseen una batería de gran capacidad y en el caso particular del dispositivo que se muestra en pantalla, posee carga inalámbrica. Cabe aclarar que según nuestras investigaciones hasta la fecha, no existen dispositivos que puedan aprovechar esta funcionalidad, pero si hay celulares que pueden. También recomendamos ejemplares que posean un chip nRF52840, ya que los ESP32 disminuyen el potencial del nodo porque demandan un mayor consumo de energía.</p>
+<div style="text-align:center;margin-bottom:40px"><img src="https://heltec.org/wp-content/uploads/2025/03/a-6-1536x1536.jpg" alt="Dispositivo portable tipo powerbank" style="max-width:100%;height:auto;display:block;margin:0 auto"><p><strong>Meshpocket Qi2</strong></p></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="smartwach">Smartwach<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#smartwach" class="hash-link" aria-label="Enlace directo al Smartwach" title="Enlace directo al Smartwach" translate="no">​</a></h3>
+<p>Combinan la portabilidad extrema con una interacción directa limitada. Al estar sujeto en la muñeca del usuario, minimizan la posibilidad de que el dispositivo se extravíe. Esto es relevante, porque donde esté el dispositivo casi con seguridad también se encontrará el combatiente. Esto gana importancia en caso de que el combatiente se encuentre incapacitado para comunicarse.</p>
+<p>Es una iniciativa interesante, ya que, además de su posición, potencialmente puede enviar datos de vital importancia relacionado con la salud en tiempo real del combatiente del fuego como lo puede ser la oxigenación en sangre o presión. Permitiendo a quienes coordinan el operativo saber en todo momento no sólo dónde se encuentran sus combatientes, sino también su estado de salud. Aunque en este momento esta es una funcionalidad NO existente.</p>
+<p>Actualmente, tienen una escasa variedad en lo que a cantidad, modelos y marcas se refiere. Los modelos existentes poseen un chip ESP32, que es más demandante en cuanto a energía y sumado a una pequeña batería lo hace poco autónomo. Desde este espacio estamos atentos y a la expectativa de cómo avanza la tecnología de estos dispositivos.</p>
+<div style="text-align:center;margin-bottom:40px"><img src="https://lilygo.cc/cdn/shop/files/LILYGO-T-Watch-S3_1.jpg?v=1685513964&amp;width=823" alt="Dispositivo portable tipo smartwatch" style="max-width:100%;height:auto;display:block;margin:0 auto"><p><strong>LilyGo T-Watch S3</strong></p></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tipo-celular">Tipo celular<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#tipo-celular" class="hash-link" aria-label="Enlace directo al Tipo celular" title="Enlace directo al Tipo celular" translate="no">​</a></h3>
+<p>Estos dispositivos están diseñados para ser las unidades principales de comunicación personal en una red Meshtastic. Tienen una pantalla grande con teclado físico o una pantalla táctil y la capacidad de llevar una antena externa de alta eficiencia. Permite una operación totalmente independiente del móvil, un gran plus en entornos donde el móvil puede fallar o estar apagado.</p>
+<p>Al igual que los dispositivos tipo smartwach, poseen un ESP32, que, sumado a todas las funcionalidades que aportan, limitan mucho la autonomía de la batería del aparato. Debido a esto, puede que dependa de un powerbank para poder usarse en una jornada completa de combate contra el fuego, pero puede ser una unidad interesante en posiciones donde tenga acceso a energía de donde recargarse.</p>
+<div style="display:flex;gap:20px;justify-content:center"><div style="flex:1;text-align:center"><img src="https://lilygo.cc/cdn/shop/files/T-DECK-PLUS_6.jpg?v=1748422600&amp;width=823" alt="Dispositivo portable tipo celular N°1" style="max-width:100%;height:auto;max-height:300px;object-fit:contain"><p><strong>LilyGo T-deck Plus</strong></p></div><div style="flex:1;text-align:center"><img src="https://specfive.com/cdn/shop/files/2_8809a9c0-7ad4-433b-99e5-2838c0eaf02a.png?v=1738930723&amp;width=810" alt="Dispositivo portable tipo celular N°2" style="max-width:100%;height:auto;max-height:300px;object-fit:contain"><p><strong>Spec5 Spectre</strong></p></div></div>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>ACLARACIÓN:</div><div class="admonitionContent_BuS1"><p>El T-deck Plus es una unidad autónoma que solo ejecuta meshtastic. El Spec5 Spectre es un nodo meshtastic conectado a un telefono android mini.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fijos">Fijos<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#fijos" class="hash-link" aria-label="Enlace directo al Fijos" title="Enlace directo al Fijos" translate="no">​</a></h2>
+<p>Si los dispositivos portátiles son los comunicadores en primera línea, los nodos fijos son la infraestructura que da sentido a la red Meshtastic. Esta categoría incluye los nodos de alta potencia montados en estaciones de trabajo y los dispositivos para vehículos, cuya misión es garantizar la máxima cobertura y estabilidad a largo plazo.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="estaciones-de-trabajo">Estaciones de trabajo<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#estaciones-de-trabajo" class="hash-link" aria-label="Enlace directo al Estaciones de trabajo" title="Enlace directo al Estaciones de trabajo" translate="no">​</a></h3>
+<p>Están diseñados para usar antenas externas de alta ganancia para maximizar el alcance y la recepción. Se montan típicamente en altura para obtener la mejor línea de visión.</p>
+<p>Pueden configurarse como Gateways para enlazar la red LoRa con Internet (a través de Wi-Fi/Ethernet) usando protocolos como MQTT. Esto permite a los usuarios enviar mensajes a través de Meshtastic a otros nodos en cualquier parte del mundo.</p>
+<p>Incluyen, en su mayoría, paneles solares y disponibilidad 24/7. Al estar conectados permanentemente, no tienen tiempo de inactividad, además la mayoría de los modelos incluyen baterías que le dan un poco más de autonomía en caso de un corte en el suministro energético.</p>
+<div style="text-align:center;margin-bottom:40px"><img src="https://store.rakwireless.com/cdn/shop/files/meshtastic-wismesh-repeater-mounted_865x@2x.progressive.png?v=1751439728" alt="Dispositivo fijo" style="max-width:100%;height:auto;display:block;margin:0 auto"><p><strong>WisMesh Repeater</strong></p></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="para-vehículos">Para vehículos<a href="https://mrnetsky.github.io/docusaurus_personal/blog/tipos-de-dispositivos#para-veh%C3%ADculos" class="hash-link" aria-label="Enlace directo al Para vehículos" title="Enlace directo al Para vehículos" translate="no">​</a></h3>
+<p>Es una forma dinámica y eficiente de mapear y extender el alcance de la red sobre grandes distancias, como una carretera. Viene dotado de un panel y una batería, además de la posibilidad de conectarlo directamente al vehículo para alimentación alternativa.</p>
+<p>Ideal para logística, seguimiento de flotas o simplemente para compartir la ubicación durante un viaje en grupo. Quedará para un artículo del futuro hablar sobre si la interferencia electromagnética del auto afecta a la señal del nodo.</p>
+<div style="text-align:center;margin-bottom:40px"><img src="https://specfive.com/cdn/shop/files/5_2d20a3eb-3499-47bd-b3d9-f158698a2f97.jpg?v=1753353253&amp;width=810" alt="Dispositivo fijo para vehículos" style="max-width:100%;height:auto;display:block;margin:0 auto"><p><strong>Spec5 Voyager</strong></p></div>
+<hr>
+<p>El proyecto Meshtastic no es solo un conjunto de dispositivos; es una plataforma de resiliencia y comunicación descentralizada habilitada por la tecnología LoRa. Elegir el nodo adecuado, tal como hemos visto, se reduce a alinear la capacidad del hardware con la misión o el entorno operativo específico.</p>
+<p>Para el usuario en movimiento (excursionista, combatiente, explorador), la decisión se centra en el equilibrio entre inmediatez y autonomía:</p>
+<ul>
+<li class="">
+<p>Los dispositivos con pantalla y los de tipo celular ofrecen una interfaz de comunicación directa, vital cuando no se puede depender de un smartphone, a costa de una menor eficiencia energética (especialmente con chips ESP32).</p>
+</li>
+<li class="">
+<p>Los nodos sin pantalla y de tipo tarjeta priorizan la máxima autonomía y la portabilidad discreta, siendo ideales como trackers personales o repetidores de bolsillo de larga duración, sobre todo cuando usan el chip nRF52 de bajo consumo.</p>
+</li>
+</ul>
+<p>Por otro lado, la estabilidad y el alcance definen la categoría de nodos Fijos:</p>
+<ul>
+<li class="">Las Estaciones de trabajo y los Repetidores para vehículos son la columna vertebral de la red, garantizando la máxima cobertura y ofreciendo funcionalidades avanzadas como la conectividad Gateway para enlazar la red local LoRa con el Internet global, esencial para operaciones de gran escala o logísticas.</li>
+</ul>
+<p>En definitiva, la verdadera potencia de Meshtastic reside en la capacidad de combinar inteligentemente estos distintos tipos de nodos. Una red de malla optimizada usará repetidores fijos de alta potencia en puntos estratégicos (Estaciones de trabajo) para crear un área de cobertura robusta, mientras que el personal en el terreno llevará dispositivos portátiles (sin pantalla para rastreo y con pantalla para comunicación) adaptados a las demandas de su jornada.</p>
+<p>Al comprender las fortalezas y debilidades —desde la durabilidad hasta la autonomía del chip (nRF52 vs. ESP32)—, el usuario puede diseñar una red de malla verdaderamente a medida, garantizando la comunicación off-grid en cualquier escenario, desde la aventura solitaria hasta un complejo operativo de respuesta ante emergencias.</p>]]></content>
+        <author>
+            <name>Pablo Acosta Cuestas</name>
+            <uri>https://linkedin.com/in/pablo-acosta-cuestas-88426828a/</uri>
+        </author>
+        <author>
+            <name>Nicolas Pace</name>
+            <uri>https://nico.today</uri>
+        </author>
+        <author>
+            <name>Agus Las Peñas</name>
+        </author>
+        <category label="Hardware y clientes Meshtastic" term="Hardware y clientes Meshtastic"/>
+    </entry>
+</feed>

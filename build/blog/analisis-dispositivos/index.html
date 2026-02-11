@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Análisis de nuestros dispositivos dispositivos | RootNode</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://MrNetsky.github.io/docusaurus_personal/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://MrNetsky.github.io/docusaurus_personal/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Análisis de nuestros dispositivos dispositivos | RootNode"><meta data-rh="true" name="description" content="Este artículo se encuentra en proceso."><meta data-rh="true" property="og:description" content="Este artículo se encuentra en proceso."><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2026-01-02T17:28:54.000Z"><meta data-rh="true" property="article:author" content="https://linkedin.com/in/pablo-acosta-cuestas-88426828a/"><meta data-rh="true" property="article:tag" content="Hardware y clientes Meshtastic"><link data-rh="true" rel="icon" href="/docusaurus_personal/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos"><link data-rh="true" rel="alternate" href="https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos" hreflang="es"><link data-rh="true" rel="alternate" href="https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos","mainEntityOfPage":"https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos","url":"https://MrNetsky.github.io/docusaurus_personal/blog/analisis-dispositivos","headline":"Análisis de nuestros dispositivos dispositivos","name":"Análisis de nuestros dispositivos dispositivos","description":"Este artículo se encuentra en proceso.","datePublished":"2026-01-02T17:28:54.000Z","author":{"@type":"Person","name":"Pablo Acosta Cuestas","description":"Fullstack en Python","url":"https://linkedin.com/in/pablo-acosta-cuestas-88426828a/","image":"https://github.com/MrNetsky.png"},"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://MrNetsky.github.io/docusaurus_personal/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/docusaurus_personal/blog/rss.xml" title="RootNode RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/docusaurus_personal/blog/atom.xml" title="RootNode Atom Feed">
+
+
+
+
+<script src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&amp;version=v18.0&amp;appId=1555483722403051" async defer="defer" crossorigin="anonymous"></script><link rel="stylesheet" href="/docusaurus_personal/assets/css/styles.018eb9b8.css">
+<script src="/docusaurus_personal/assets/js/runtime~main.cf009555.js" defer="defer"></script>
+<script src="/docusaurus_personal/assets/js/main.ea46cf02.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/docusaurus_personal/img/logo.svg"><link rel="preload" as="image" href="https://github.com/MrNetsky.png"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/docusaurus_personal/"><div class="navbar__logo"><img src="/docusaurus_personal/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/docusaurus_personal/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">RootNode</b></a><a class="navbar__item navbar__link" href="/docusaurus_personal/docs/meshtastic-cli">Documentación</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docusaurus_personal/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/MrNetsky/docusaurus_personal" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_eExm"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Navegación de publicaciones recientes"><div class="sidebarItemTitle_pO2u margin-bottom--md">Recent posts</div><div role="group"><h3 class="yearGroupHeading_rMGB">2026</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/conceptos-necesarios">Entendiendo el funcionamiento del universo Meshtastic</a></li><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/docusaurus_personal/blog/analisis-dispositivos">Análisis de nuestros dispositivos dispositivos</a></li></ul></div><div role="group"><h3 class="yearGroupHeading_rMGB">2025</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/sin-nombre">Proceso de pensamiento</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/testing-dispositivos">testing-dispositivos</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/compras-12-25-p2">Compras 12/2025 - Parte 2</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/configuracion-meshtastic">Configuración inicial Meshtastic</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/primeros-pasos-meshtastic">Primeros pasos en el mundo Meshtastic</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/compras-12-25">Compras 12/2025 - Parte 1</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/consideraciones-previas-compras">Consideraciones técnicas previas a la compra de dispositivos</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/fabricantes-ensambladores">Fabricantes y ensambladores de dispositivos</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/formatos-digitales-de-comunicacion">Formatos de comunicación digital Off-Grid</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/docusaurus_personal/blog/tipos-de-dispositivos">Tipos de dispositivos</a></li></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class="title_xvU1">Análisis de nuestros dispositivos dispositivos</h1><div class="container_iJTo margin-vert--md"><time datetime="2026-01-02T17:28:54.000Z">2 de enero de 2026</time> · <!-- -->10 min de lectura</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_q4o9"><div class="avatar margin-bottom--sm"><a class="avatar__photo-link" href="/docusaurus_personal/blog/authors/mr-netsky"><img class="avatar__photo authorImage_XqGP" src="https://github.com/MrNetsky.png" alt="Pablo Acosta Cuestas"></a><div class="avatar__intro authorDetails_lV9A"><div class="avatar__name"><a href="/docusaurus_personal/blog/authors/mr-netsky"><span class="authorName_yefp" translate="no">Pablo Acosta Cuestas</span></a></div><small class="authorTitle_nd0D" title="Fullstack en Python">Fullstack en Python</small><div class="authorSocials_rSDt"><a href="https://github.com/MrNetsky" target="_blank" rel="noopener noreferrer" class="authorSocialLink_owbf" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 250" preserveAspectRatio="xMidYMid" style="--dark:#000;--light:#fff" class="authorSocialIcon_XYv3 githubSvg_Uu4N"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"></path></svg></a></div></div></div></div></div></header><div id="__blog-post-container" class="markdown"><div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Advertencia</div><div class="admonitionContent_BuS1"><p>Este artículo se encuentra en proceso.</p></div></div>
+<p>En el siguiente artículo, podrás ver cuales, bajo nuestro criterio, son las características positivas, negativas y un balance de los dispositivos que nosotros utilizamos así como las apps que utilizamos para conectar dichos dispositivos. Es importante recalcar que estas observaciones no son absolutas e imparciales, ya que, nosotros los evaluamos desde un contexto en específico, el de los combatientes del fuego, por lo que puede que sin no formas parte de este entorno, pero lees este artículo para informarte sobre esta tecnología, lo que para nosotros es una característica negativa, puede que para vos no lo sea o tengas un punto de vista diferente.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dispositivos">Dispositivos<a href="#dispositivos" class="hash-link" aria-label="Enlace directo al Dispositivos" title="Enlace directo al Dispositivos" translate="no">​</a></h2>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>No actualizar el firmware vía BLE</div><div class="admonitionContent_BuS1"><p>En caso de haberlo hecho tocará desconectar la batería, conectarlo vía USB C al PC, presionar el botón de reinicio dos veces, eso lo hará entrar en modo DFU y aquí tocará actualizar el firmware. Cuando se desconecte solo del PC, reconectar la batería y rearmar el dispositivo.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meshnology-n37---wio-tracker-l1">Meshnology N37 - Wio Tracker L1<a href="#meshnology-n37---wio-tracker-l1" class="hash-link" aria-label="Enlace directo al Meshnology N37 - Wio Tracker L1" title="Enlace directo al Meshnology N37 - Wio Tracker L1" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Batería. Los 3000mAh han hecho que dure apróx 5 días.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">No viene armado.</li>
+<li class="">Buzzer. Debería tener más potencia de sonido.</li>
+<li class="">GPS Lock. Incapacidad de ubicarse dentro de un espacio cerrado.</li>
+<li class="">Case. Es el apartado principal que lo distingue de Wio Tracker L1 y pierde por goleada en este aspecto.<!-- -->
+<ul>
+<li class="">El material en el que fue impreso no debe estar expuesto al sol y al calor en tiempos prolongados, lo cual es exactamente el caso al que deben enfrentarse.</li>
+<li class="">Intersticios donde entra polvo. Si bien era sabido que no posee una certificación IP, no se esperaba que en el borde de la antena GPS hubiera tantísimo espacio sin cerrar.</li>
+<li class="">Movilidad limitada del joystick. Pese a que posee una interfaz dinámica y accesible, la experiencia del joystick lo convierte en una absoluta pesadilla, convirtiendo la experiencia de uso de pobre a muy mala.</li>
+<li class="">La base no le da estabilidad al dispositivo, es recomendable dejarlo recostado con la pantalla hacia arriba.</li>
+<li class="">Fragilidad. Una caída accidental de unos 75cm de altura, rompió el área de la carcasa que contiene el GPS, esto puede deberse al peso del mismo que es significativamente major al de los demás, pero particularmente al mal diseño de esta sección de la carcasa.</li>
+<li class="">Pantalla. Tiene una abertura de 1mm menos que el L1 Pro</li>
+</ul>
+</li>
+<li class="">Conexión con la pc. Técnicamente no son desconecciones esporádicas, porque figura que está conectado, pero no funciona bien como si estuviera conectado.</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<p>Las diferencias con el L1 Pro son el precio, la batería y el case. En el primer apartado no hay diferencias significativas, en el segundo apartado hay una diferencia notable, pero la pregunta acá sería ¿Es necesario? Y desde este espacio, creemos que no.
+Por último, el case. En este apartado pierde y por goleada porque no hay nada bien hecho, esto no significa que sea todo malo en cuanto al diseño de la carcasa pero pierde en muchísimos aspectos y en otros no mejora en comparativa con la carcasa del L1 Pro.
+Para redondear, aplaudimos la iniciativa del ensamblador, pero hoy no existen motivos por el cual elegir al N37 por encima del L1 Pro. Es un producto que necesita mejoras de mínimo o un rediseño, pero estaremos atentos a las novedades de este ensamblador.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sensecap-solar-node-p1">SenseCAP Solar Node P1<a href="#sensecap-solar-node-p1" class="hash-link" aria-label="Enlace directo al SenseCAP Solar Node P1" title="Enlace directo al SenseCAP Solar Node P1" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Buen sistema de agarre.</li>
+<li class="">Alcance. Hasta el momento se realizaron comunicaciones de 2.5Km</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Baterías. Si bien se explica cuál debe llevar, no se aclara que deben poseer un teton, ya que de otra manera, no harán contacto</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thinknode-m1">ThinkNode M1<a href="#thinknode-m1" class="hash-link" aria-label="Enlace directo al ThinkNode M1" title="Enlace directo al ThinkNode M1" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Accesibilidad, manejo entre menúes óptimo y sencillo de entender y aprender.</li>
+<li class="">Hermeticidad. Posee una junta en la conexión de la antena LoRa.</li>
+<li class="">Rango. Conexión desde todos los presets de la radio a 4.5Km.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Buzzer. Tiene un volúmen muy bajo, sería casi como no tenerlo equipado.</li>
+<li class="">GPS Lock.<!-- -->
+<ul>
+<li class="">Exagerado el tiempo de conexión.</li>
+<li class="">Ubicación poco precisa.</li>
+</ul>
+</li>
+<li class="">Batería. No dura las 48hs prometidas por el fabricante.</li>
+<li class="">Pantalla.<!-- -->
+<ul>
+<li class="">Gran delay en el inicio del dispositivo y en el scroll entre menúes.</li>
+<li class="">Mientras tenga conectado el USB C, no reconoce que está desconectado del suministro energético. Le llevó aproximadamente 5&#x27; actualizar el estado, mientras se scroleaba entre menúes y se usa con total normalidad.</li>
+</ul>
+</li>
+<li class="">Bluetooth. Problemas para detectar este dispositivo desde Meshtastic CLI.</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<p>Posee un buen packaging, está buenísimo que incluya una correa y el cable de carga. Es muy cómodo de usar, de agarrar, habrá que encontrar cómo configurarlo para el uso, ya que la batería es un apartado donde pierde mucho, porque dura mucho menos que el L1 Pro, N37 y WishMesh Tag, poseyendo este último una batería más pequeña.</p>
+<p>Teníamos la <em>Hipótesis</em> de que el problema de la demora en el inicio y el scroll entre menús, es la interfaz con el parlante, ya que el T-Echo tiene el mismo firmware, con la misma pantalla, pero inicia más rápido y es mejor el scroll entre menúes, eso si, no posee buzzer. Luego de desactivar el buzzer para la interacción con el sistema, nos dimos cuenta que mejora el scroll entre menúes, pero sigue siendo más lento que el T-Echo y el inicio se mantuvo sin cambios, siendo hasta 6s más lento.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thinknode-m5-pro">ThinkNode M5 Pro<a href="#thinknode-m5-pro" class="hash-link" aria-label="Enlace directo al ThinkNode M5 Pro" title="Enlace directo al ThinkNode M5 Pro" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Accesibilidad, manejo entre menúes óptimo y sencillo de entender y aprender.</li>
+<li class="">Hermeticidad. Posee una junta en la conexión de la antena LoRa.</li>
+<li class="">Rango. Conexión desde todos los presets de la radio a 4.5Km.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Batería. Muestra que se encuentra cargando cuando no los está. Desde la app no se registra que tenga batería el nodo</li>
+<li class="">Firmware. Puede ser una casualidad, pero el 22/1/26 quisimos flashearlo y se brickeo. El día siguiente funcionó sin problemas, creemos que puede deberse a un cambio en la interfaz de Meshtsatic.flasher que justo cambió en ese lapso de tiempo.</li>
+<li class="">Pantalla. No muetra diferencias en la velocidad de movimiento entre menúes. Es igual que el M1, pero este tiene un procesador más potente.</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="thinknode-m6">ThinkNode M6<a href="#thinknode-m6" class="hash-link" aria-label="Enlace directo al ThinkNode M6" title="Enlace directo al ThinkNode M6" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Firmware.<!-- -->
+<ul>
+<li class="">No existente (01/26)</li>
+<li class="">Alfa 2.7.19 compilada sin soporte.</li>
+</ul>
+</li>
+<li class="">Soporte.<!-- -->
+<ul>
+<li class="">Material. Plástico, se ve endeble.</li>
+<li class="">Limitado. No se puede poner en cualquier lado.</li>
+</ul>
+</li>
+<li class="">Antenas.<!-- -->
+<ul>
+<li class="">GPS y LoRa. Ambas diferenciadas una de otra. Sin embargo no indican dónde conectarlas.</li>
+</ul>
+</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="t-echo">T-Echo<a href="#t-echo" class="hash-link" aria-label="Enlace directo al T-Echo" title="Enlace directo al T-Echo" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Pantalla. Inicio rápido, óptimo scroll entre menúes.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">GPS Lock. Ubicación poco precisa.</li>
+<li class="">Batería. No reporta el nivel de batería</li>
+<li class="">Botones.<!-- -->
+<ul>
+<li class="">Tener muy expuesto el botón de reset puede ser problemático.</li>
+<li class="">Usar solo un botón para el uso de todo el dispositivo es impráctico.</li>
+</ul>
+</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<p>Creemos que el dispositivo con el que habrá que compararlo es el M1. Poseen la misma pantalla, pero es más lenta que la del M1, tiene una batería más pequeña y uno de los dispositivos se le rompió un botón pese a tener un bajo uso, puede ser un hecho aislado, como puede hablar de la calidad de este producto, pero desde este espacio no podemos aseverar una u otra opción, pero es nuestra obligación mostrar los hechos. Si está bueno el plástico de la carcasa, posiblemente sea el mejor comparado con los otros nodos portátiles. La antena es la misma y en cuanto al precio no hay diferencias significativas. Por lo que creemos que es un producto que de mínimo, no supera al M1, e incluso puede que esté un poco por debajo.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="t-deck">T-Deck<a href="#t-deck" class="hash-link" aria-label="Enlace directo al T-Deck" title="Enlace directo al T-Deck" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Pantalla táctil. Salva la usabilidad del producto, ya que soluciona todos los problemas del trackball.</li>
+<li class="">Lenguaje. Disponible en español, su configuración es muy sencila.</li>
+<li class="">Interfaz.<!-- -->
+<ul>
+<li class="">Mensajería. Clara visibilidad de los mensajes, historial, sus destinatarios y canales.</li>
+<li class="">Mapas.</li>
+</ul>
+</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Trackbal. Inutil e inneficiente</li>
+<li class="">Conectividad.<!-- -->
+<ul>
+<li class="">BLE. Inutiliza el dispositivo, únicamente operable desde el celular.</li>
+<li class="">Ubicación del Bluetooth, es improbable que encuentres dónde hacer la conectividad mediante esta vía. Me pasó de reiniciar dos veces el dispositivo antes de entender cómo funcionaba.</li>
+</ul>
+</li>
+<li class="">Reset. Su botón está muy expuesto.</li>
+<li class="">Interfaz. Esta bien, pero aún necesita mejoras significativas.<!-- -->
+<ul>
+<li class="">No se puede copiar y pegar mensajes.</li>
+<li class="">Las opciones seleccionadas casi no se distinguen, dificultando saber dónde estás</li>
+</ul>
+</li>
+<li class="">Buzzer.<!-- -->
+<ul>
+<li class="">Volumen bajo.</li>
+<li class="">Bajísima duración.</li>
+</ul>
+</li>
+<li class="">Case.<!-- -->
+<ul>
+<li class="">Endeble</li>
+</ul>
+</li>
+<li class="">Teclado. Funcionamiento inadecuado</li>
+</ul>
+<p>--&gt; Diferenciar firmware Meshtastic con Meshtastic UI</p>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="voyager">Voyager<a href="#voyager" class="hash-link" aria-label="Enlace directo al Voyager" title="Enlace directo al Voyager" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Diseño. No hay botones de encendido, reset o puerto USB C. Hay que desarmarlo para:<!-- -->
+<ul>
+<li class="">Encenderlo. Es necesario que sepas cómo conectar la batería.</li>
+<li class="">Actualización de Firmware.<!-- -->
+<ul>
+<li class="">Deberás conectarlo al USB C que contiene dentro.</li>
+<li class="">El firmware que deberás usar es el del WisBlock</li>
+</ul>
+</li>
+<li class="">Tornillos. Torx ¿En serio? ¿Con qué necesidad?</li>
+</ul>
+</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wishmesh-tag">WishMesh Tag<a href="#wishmesh-tag" class="hash-link" aria-label="Enlace directo al WishMesh Tag" title="Enlace directo al WishMesh Tag" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Tamaño. Totalmente fácil de llevar.</li>
+<li class="">GPS.<!-- -->
+<ul>
+<li class="">Sorprende que incluso en espacios cerrados, se ubique.</li>
+<li class="">Oprimiendo dos veces el botón central se envía la posición actual.</li>
+</ul>
+</li>
+<li class="">Buzzer. Potencia, realmente es claro y alto el sonido.</li>
+<li class="">Adopción. Pese a tener dos botones, el acompañamiento de luces y el sonido hacen casi innecesaria la interacción con una pantalla.</li>
+<li class="">Batería. Duración superior a las 48hs</li>
+<li class="">Botón trasero.<!-- -->
+<ul>
+<li class="">Pasa inadvertido</li>
+<li class="">Difícil de apretar</li>
+</ul>
+</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>
+<p>Productazo, literalmente había pocas expectativas con respecto a este producto, pero está bueno el case, la duración de la batería es óptima, su uso con un solo botón es fácil de entender, muy portátil, que traiga la correa es un plus que esta muy bueno y además incluye el USB de carga que quizás pueda que les parezca la norma, pero hay dispositivos que no lo incluyen, no es el caso de este producto. El packaging es ultra seguro. Es un muy buen producto.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="wio-tracker-l1-pro">Wio Tracker L1 Pro<a href="#wio-tracker-l1-pro" class="hash-link" aria-label="Enlace directo al Wio Tracker L1 Pro" title="Enlace directo al Wio Tracker L1 Pro" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<ul>
+<li class="">Joystick. Buen funcionamiento, es poco probable un movimiento accidental.</li>
+</ul>
+<u><strong>Aspectos negativos:</strong></u>
+<ul>
+<li class="">Joystick. No se puede usar con guantes.</li>
+<li class="">Buzzer. Desde la web te anuncian que no lo incluye, pero si lo trae.</li>
+<li class="">Manual. No incluido</li>
+<li class="">Case.<!-- -->
+<ul>
+<li class="">Hermeticidad. Tipo rejilla trasera donde puede entrar muchísima suciedad.</li>
+<li class="">Inestabilidad, al tener un centro de masa movido hacia atrás, hace que se caiga con poco esfuerzo.</li>
+</ul>
+</li>
+<li class="">Carga. No hay una notificación en pantalla que se encuentre cargando, pero si se enciende una luz al costado en este estado.</li>
+</ul>
+<u><strong>Balance:</strong></u>
+<p>Creo que hay detalles, que si bien no podría catalogarlos como negativos, estaría bueno que los tengan en cuenta. Como por ejemplo el no traer un manual o guía de inicio rápido. Está bueno que tenga dentro del diseño la posibilidad de ponerle una correa al dispositivo, pero incluila en el paquete, Elecrow o RAK lo han hecho con el M1 y el WishMesh Tag. Repito, no son aspectos negativos, pero sí serían le sumarían un valor agregado al producto, que de por sí es bueno, tiene un packaging minimalista que me gusta.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="clientes">Clientes<a href="#clientes" class="hash-link" aria-label="Enlace directo al Clientes" title="Enlace directo al Clientes" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meshtastic-android-app">Meshtastic Android app<a href="#meshtastic-android-app" class="hash-link" aria-label="Enlace directo al Meshtastic Android app" title="Enlace directo al Meshtastic Android app" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meshsense">MeshSense<a href="#meshsense" class="hash-link" aria-label="Enlace directo al MeshSense" title="Enlace directo al MeshSense" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="clientmeshtasticorg">client.meshtastic.org<a href="#clientmeshtasticorg" class="hash-link" aria-label="Enlace directo al client.meshtastic.org" title="Enlace directo al client.meshtastic.org" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meshtastic-network-manager">Meshtastic Network Manager<a href="#meshtastic-network-manager" class="hash-link" aria-label="Enlace directo al Meshtastic Network Manager" title="Enlace directo al Meshtastic Network Manager" translate="no">​</a></h3>
+<u><strong>Aspectos positivos:</strong></u>
+<u><strong>Aspectos negativos:</strong></u>
+<u><strong>Balance:</strong></u></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><b>Etiquetas:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" title="Experiencias y análisis técnico/operativo de los dispositivos que conforman el ecosistema Meshtastic." class="tag_zVej tagRegular_sFm0" href="/docusaurus_personal/blog/tags/dispositivos">Hardware y clientes Meshtastic</a></li></ul></div></div></footer><div class="fb-comments" data-width="100%" data-numposts="5"></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Barra de paginación de publicaciones del blog"><a class="pagination-nav__link pagination-nav__link--prev" href="/docusaurus_personal/blog/conceptos-necesarios"><div class="pagination-nav__sublabel">Publicación más reciente</div><div class="pagination-nav__label">Entendiendo el funcionamiento del universo Meshtastic</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docusaurus_personal/blog/sin-nombre"><div class="pagination-nav__sublabel">Publicación más antigua</div><div class="pagination-nav__label">Proceso de pensamiento</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#dispositivos" class="table-of-contents__link toc-highlight">Dispositivos</a><ul><li><a href="#meshnology-n37---wio-tracker-l1" class="table-of-contents__link toc-highlight">Meshnology N37 - Wio Tracker L1</a></li><li><a href="#sensecap-solar-node-p1" class="table-of-contents__link toc-highlight">SenseCAP Solar Node P1</a></li><li><a href="#thinknode-m1" class="table-of-contents__link toc-highlight">ThinkNode M1</a></li><li><a href="#thinknode-m5-pro" class="table-of-contents__link toc-highlight">ThinkNode M5 Pro</a></li><li><a href="#thinknode-m6" class="table-of-contents__link toc-highlight">ThinkNode M6</a></li><li><a href="#t-echo" class="table-of-contents__link toc-highlight">T-Echo</a></li><li><a href="#t-deck" class="table-of-contents__link toc-highlight">T-Deck</a></li><li><a href="#voyager" class="table-of-contents__link toc-highlight">Voyager</a></li><li><a href="#wishmesh-tag" class="table-of-contents__link toc-highlight">WishMesh Tag</a></li><li><a href="#wio-tracker-l1-pro" class="table-of-contents__link toc-highlight">Wio Tracker L1 Pro</a></li></ul></li><li><a href="#clientes" class="table-of-contents__link toc-highlight">Clientes</a><ul><li><a href="#meshtastic-android-app" class="table-of-contents__link toc-highlight">Meshtastic Android app</a></li><li><a href="#meshsense" class="table-of-contents__link toc-highlight">MeshSense</a></li><li><a href="#clientmeshtasticorg" class="table-of-contents__link toc-highlight">client.meshtastic.org</a></li><li><a href="#meshtastic-network-manager" class="table-of-contents__link toc-highlight">Meshtastic Network Manager</a></li></ul></li></ul></div></div></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">-</div><ul class="footer__items clean-list"></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Social</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.linkedin.com/pablo-acosta-cuestas-88426828a/" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/PablitooAC97" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/MrNetsky/docusaurus_personal" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

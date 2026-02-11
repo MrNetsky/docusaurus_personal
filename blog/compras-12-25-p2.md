@@ -13,6 +13,7 @@ tags:
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import FacebookComments from '@site/src/components/FacebookComments';
 
 :::warning Advertencia
 Este artículo se encuentra en proceso.
@@ -140,3 +141,5 @@ El proceso de compra que inició en los primeros días de Diciembre se extendió
 Se adquirieron 35 unidades de todos los fabricantes de hardware. Nodos que pueden cumplir diferentes funciones, abarcando los dos procesadores del mercado como lo son el ESP32 y el nRF52.
 
 Creemos que es un buen punto de partida para empezar a testear escenarios posibles y coordinar con nuestro equipo, así como con combatientes y gente aficionada que quiera formar parte de las primeras pruebas de campo en esta zona. Estamos felices y expectantes de los resultados que arrojarán estas pruebas así como ansiosos de poder ayudar a nuestra comunidad.
+
+<FacebookComments url="https://mrnetsky.github.io/docusaurus_personal/blog/compras-12-25-p2" />
