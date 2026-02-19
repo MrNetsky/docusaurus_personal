@@ -5,6 +5,9 @@ authors: [MrNetsky]
 tags: [dispositivos]
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Análisis de nuestro ecosistema Meshtastic
 
 :::warning Advertencia
@@ -148,40 +151,113 @@ Creemos que el dispositivo con el que habrá que compararlo es el M1. Poseen la 
 
 <u>**Aspectos positivos:**</u>
 
-+ Pantalla táctil. Salva la usabilidad del producto, ya que soluciona todos los problemas del trackball.
-+ Lenguaje. Disponible en español, su configuración es muy sencila.
-+ Interfaz. 
-  - Mensajería. Clara visibilidad de los mensajes, historial, sus destinatarios y canales.
-  - Mapas.
+<Tabs>
+  <TabItem 
+    value="meshtastic+" 
+    label={
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span>Meshtastic</span>
+      </div>
+    } 
+  >
+
+  + Visibilidad. Debido a su gran pantalla. También se ve de buena manera en pleno sol.
+  </TabItem>
+
+  <TabItem 
+    value="meshtasticiu-" 
+    label={
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span>Meshtastic UI</span>
+      </div>
+    }
+    default
+  >
+  
+  + Visibilidad. Debido a su gran pantalla. También se ve de buena manera en pleno sol.
+  + Pantalla táctil. Salva la usabilidad del producto, ya que soluciona todos los problemas del trackball.
+  + Lenguaje. Disponible en español, su configuración es muy sencila.
+  + Interfaz. 
+    - Mensajería. Clara visibilidad de los mensajes, historial, sus destinatarios y canales.
+    - Mapas.
+
+  </TabItem>
+</Tabs>
 
 <u>**Aspectos negativos:**</u>
 
+<Tabs>
+  <TabItem 
+    value="meshtastic" 
+    label={
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span>Meshtastic</span>
+      </div>
+    } 
+  >
+  
+  + Interfaz.
+    - Trackball. Deben decidir si funciona o no como 'enter' en todos los menúes.
+    - Mensajería. Para enviar un mensaje, debes seleccionar la opción 'New freetext msj', misma que solo está disponible en el menú de la pantalla principal. 
+    - Pantalla táctil. Unicamente sirve para encender la pantalla. Totalmente desaprovechada.
+    - Teclado, salvo que sepas que puedes escribir un mensaje y dónde hacerlo, no sirve para nada. A excepción del enter.
+  + Funicionalidad 
+    - Enviar info del nodo
+    - Mensaje libre usando teclado.
+  Esas son las dos diferencias en funcionalidad con L1 Pro o un ThinkNode M1. 
+
+  </TabItem>
+
+  <TabItem 
+    value="meshtasticiu" 
+    label={
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <span>Meshtastic UI</span>
+      </div>
+    }
+    default
+  >
+  
+  + Conectividad.
+    - BLE. Inutiliza el dispositivo, únicamente operable desde el celular.
+    - Ubicación del Bluetooth, es improbable que encuentres dónde hacer la conectividad mediante esta vía. Me pasó de reiniciar dos veces el dispositivo antes de entender cómo funcionaba.
+  + Reset. Su botón está muy expuesto.
+  + Interfaz. Esta bien, pero aún necesita mejoras significativas.
+    - No se puede copiar y pegar mensajes.
+    - Las opciones seleccionadas casi no se distinguen, dificultando saber dónde estás.
+  + Buzzer.
+    - Volumen bajo.
+    - Bajísima duración.
+  
+  </TabItem>
+</Tabs>
+
+----
+
++ Falta.
+  - Manual
+  - Cable USB
+  - Memoria MicroSD 
 + Trackbal. Inutil e inneficiente
-+ Conectividad.
-  - BLE. Inutiliza el dispositivo, únicamente operable desde el celular.
-  - Ubicación del Bluetooth, es improbable que encuentres dónde hacer la conectividad mediante esta vía. Me pasó de reiniciar dos veces el dispositivo antes de entender cómo funcionaba.
-+ Reset. Su botón está muy expuesto.
-+ Interfaz. Esta bien, pero aún necesita mejoras significativas.
-  - No se puede copiar y pegar mensajes.
-  - Las opciones seleccionadas casi no se distinguen, dificultando saber dónde estás
-+ Buzzer.
-  - Volumen bajo.
-  - Bajísima duración.
 + Case.
   - Endeble
-+ Teclado. Funcionamiento inadecuado
-
---> Diferenciar firmware Meshtastic con Meshtastic UI
+  - Baja calidad
++ Teclado. 
+  - Funcionamiento inadecuado
+  - Baja calidad
 
 <u>**Balance:**</u>
 
-
+Potencialmente puede llegar a ser una herramienta útil. Hoy NO lo es y está lejos de serlo, creo que tocará esperar mejoras significativas o manipular el firmware para lograr que sea de utilidad, ya que en este estado, pierde contra cualquier nodo de esta lista. Párrafo aparte para la mala calidad de productos y el dinero que se pagó por este nodo.
+Más allá de las mejoras potenciles que se le pueda hacer al los firmwares disponibles para este nodo, necesita un rediseño solucionando todos los problemas evitables que han generado y mejorando la calidad de los materiales.
 
 ### Voyager
 
 <u>**Aspectos positivos:**</u>
 
-
+- Hermeticidad
+- Funicionalidad
+- Agarre
 
 <u>**Aspectos negativos:**</u>
 
@@ -194,7 +270,7 @@ Creemos que el dispositivo con el que habrá que compararlo es el M1. Poseen la 
 
 <u>**Balance:**</u>
 
-
+Es útil, aunque deja sensaciones de poco trabajo por parte de Spec5, posibliemente haya dentro de la comunidad soluciones similares, de bajo costo y calidad similar o superior.
 
 ### WishMesh Tag
 
