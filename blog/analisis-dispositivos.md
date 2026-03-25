@@ -48,6 +48,42 @@ Las diferencias con el L1 Pro son el precio, la batería y el case. En el primer
 Por último, el case. En este apartado pierde y por goleada porque no hay nada bien hecho, esto no significa que sea todo malo en cuanto al diseño de la carcasa pero pierde en muchísimos aspectos y en otros no mejora en comparativa con la carcasa del L1 Pro.
 Para redondear, aplaudimos la iniciativa del ensamblador, pero hoy no existen motivos por el cual elegir al N37 por encima del L1 Pro. Es un producto que necesita mejoras de mínimo o un rediseño, pero estaremos atentos a las novedades de este ensamblador.
 
+### MeshPocket Qi2
+
+<u>**Aspectos positivos:**</u>
+
++ Gestión de carga. Capacidad de cambiar de velocidad de carga. 
++ Firmware: InkHUD
+  - Rotación. Hace un mejor uso de la pantalla al ser ancha, lo que tambipen permite un uso más cómodo de los botones.
+  - Scroll. Entre menúes y opciones, es más rápido.
+  - Historial. Podrás ver los últimos mensajes en un canal y quén los envió. Combinado con la rotación es aún mejor.
++ Firmware: Meshtastic
+  - Interfaz
+    * No muestra la hora, por lo que no se actualiza minuto a minuto y no desgasta la batería.
+    * Permite hacer una cantidad significativa de configuraciones desde el dispositivo.
+
+<u>**Aspectos negativos:**</u>
+
++ Acabado. Se ve frágil.
++ Peso. Considerablemente mayor al resto de los dispositivos portátiles.
++ Botones.
+  - Cantidad. Pese a tener 3, solo puedes usar uno para TODO el funcionamiento del dispositivo.
+  - Reset. Muy expuesto
+  - Gestión de carga. Es fácil cambiar de perfil de carga al estar muy expuesto el boton
++ Pantalla.
+  - Ghosting (rastros tenues de imágenes o texto anteriores)
+  - Rescribe la pantalla en intérvalos más cortos que la de las pantallas del M1, M5Pro y T-Echo.
++ Firmware: InkHUD
+  - Rotación. La falta de ancho hace que algunas cuestiones no entren del todo.
+  - Información. Posee una interfaz muchísimo menos cargada.
++ Firmware: Meshtastic
+  - Inicio. Más lento que InkHUD
+
+<u>**Balance:**</u>
+
+El mejor de todos los packaging, por escándalo, manual, funda, 2 cables, anillo magnético con adhesivo para pegarlo en un teléfono, da toda la impresión que compras un teléfono o un aparato tecnológico de otro nivel.
+Es un dispositivo que hay atributos que no sé si son positivos o negativos, supongo dependerá de nuestro contexto. Por ejemplo, hablando de la interfaz fabrica, ambas dependen de la conexión a un teléfono, pero la InkHUD, no puede directamente sin un teléfono, mientras que la interfaz de Meshtastic, te da cierto grado de independencia, además de proveerte de un poco más de información, pero es más compleja de usar que la InkHUD, que a su vez posee un manejo mas orgánico desde la pantalla de los mensajes, lo cual no se si es positivo, porque si vas a usar el teléfono, para qué te pondrías con el nodo si el celular es más rápido y claro. Ambos están en Ingles, una interfaz es más sencilla que la otra, pero se queda en el camino, creo que si querés algo con pantalla, deberías usar la interfaz de Meshtastic, pero si no, sugeriría que uses un WishMesh Tag, con un powerbank. Esto es lo que creo en base a que InkHUD tiene buena ideas pero no es viable desde mi punto de vista, posiblemente deba mejorar bastante.
+
 ### SenseCAP Solar Node P1
 
 <u>**Aspectos positivos:**</u>
@@ -61,6 +97,7 @@ Para redondear, aplaudimos la iniciativa del ensamblador, pero hoy no existen mo
 
 <u>**Balance:**</u>
 
+Cumple con las 3 'b'. Bueno, bonito y barato.
 
 ### ThinkNode M1
 
@@ -88,8 +125,6 @@ Posee un buen packaging, está buenísimo que incluya una correa y el cable de c
 
 Teníamos la *Hipótesis* de que el problema de la demora en el inicio y el scroll entre menús, es la interfaz con el parlante, ya que el T-Echo tiene el mismo firmware, con la misma pantalla, pero inicia más rápido y es mejor el scroll entre menúes, eso si, no posee buzzer. Luego de desactivar el buzzer para la interacción con el sistema, nos dimos cuenta que mejora el scroll entre menúes, pero sigue siendo más lento que el T-Echo y el inicio se mantuvo sin cambios, siendo hasta 6s más lento.
 
-
-
 ### ThinkNode M5 Pro
 
 <u>**Aspectos positivos:**</u>
@@ -106,7 +141,7 @@ Teníamos la *Hipótesis* de que el problema de la demora en el inicio y el scro
 
 <u>**Balance:**</u>
 
-
+No muestra diferencias significativas con los M1, en rendimiento desde el dispositivo, mas allá de las notables por poseer un ESP32.
 
 ### ThinkNode M6  
 
@@ -310,6 +345,7 @@ Productazo, literalmente había pocas expectativas con respecto a este producto,
   + Hermeticidad. Tipo rejilla trasera donde puede entrar muchísima suciedad.
   + Inestabilidad, al tener un centro de masa movido hacia atrás, hace que se caiga con poco esfuerzo.
 - Carga. No hay una notificación en pantalla que se encuentre cargando, pero si se enciende una luz al costado en este estado.
+- 
 
 <u>**Balance:**</u>
 
